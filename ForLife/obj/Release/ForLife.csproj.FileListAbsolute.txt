@@ -1,0 +1,9 @@
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.csproj.AssemblyReference.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.Forms.Frm_Insumos_UC.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.Forms.Frm_Login.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.Forms.Frm_MenuPrincipal_MDI.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.Forms.Frm_GerenciarUsuario_UC.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.Forms.Frm_TelaPrincipal_MDI.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.Properties.Resources.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.csproj.GenerateResource.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Release\ForLife.csproj.CoreCompileInputs.cache

@@ -1,0 +1,7 @@
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.dll.config
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.dll
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.AssemblyReference.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.dll
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.pdb
