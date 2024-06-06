@@ -74,14 +74,17 @@ namespace ForLife.Forms
             {
                 U.Cargo = 1;
             }
+
             if (Rbtn_Comercial.Checked)
             {
                 U.Cargo = 2;
             }
+
             if (Rbtn_Gestor.Checked)
             {
                 U.Cargo = 3;
             }
+
 
             if (Chk_Bloqueado.Checked)
             {

@@ -15,12 +15,12 @@ namespace ForLifeBiblioteca.Classes
     {
         public class Unit
         {
+            [Required(ErrorMessage = "O Tipo Usuário é obrigatório")]
+            [RegularExpression("(^[1-3]$)", ErrorMessage = "O Tipo Usuário é obrigatório")]
+            public int Cargo { get; set; }
 
             [Required(ErrorMessage = "Nome é obrigatório")]
             public string Nome { get; set; }
-
-            [Required(ErrorMessage = "O Tipo Usuário é obrigatório")]
-            public int Cargo { get; set; }
 
             [Required(ErrorMessage = "O usuário é obrigatório")]
             public string Usuario { get; set; }
