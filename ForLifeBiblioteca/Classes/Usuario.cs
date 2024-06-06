@@ -103,6 +103,7 @@ namespace ForLifeBiblioteca.Classes
                     }
 
                 }
+
                 catch (Exception ex)
                 {
                     throw new Exception("Erro ao buscar o cliente: " + ex.Message);
@@ -113,10 +114,7 @@ namespace ForLifeBiblioteca.Classes
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Usuario WHERE usuario = '@usuario'";
-
-                    SqlCommand cmd = new SqlCommand(SQL);
-                    cmd.Parameters.AddWithValue("@usuario", Usuario);
+                    string SQL = "SELECT * FROM Usuario WHERE usuario = '" + this.Usuario + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -144,10 +142,7 @@ namespace ForLifeBiblioteca.Classes
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Usuario WHERE usuario = '@usuario'";
-
-                    SqlCommand cmd = new SqlCommand(SQL);
-                    cmd.Parameters.AddWithValue("@usuario", this.Usuario);
+                    string SQL = "SELECT * FROM Usuario WHERE usuario = '" + this.Usuario + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -238,14 +233,11 @@ namespace ForLifeBiblioteca.Classes
                         ,'@icBloqueado'
                         WHERE
                         @usuario = ";
-
-                SqlCommand cmd = new SqlCommand(SQL);
-
-                cmd.Parameters.AddWithValue("@nome", Nome);
-                cmd.Parameters.AddWithValue("@usuario", Usuario);
-                cmd.Parameters.AddWithValue("@senha", Senha);
-                cmd.Parameters.AddWithValue("@cargo", Cargo);
-                cmd.Parameters.AddWithValue("@icBloqueado", icBloqueado);
+                SQL += "('" + this.Nome + "'";
+                SQL += ",'" + this.Usuario + "'";
+                SQL += ",'" + this.Senha + "'";
+                SQL += ",'" + Convert.ToInt32(this.Cargo) + "'";
+                SQL += ",'" + Convert.ToInt32(this.icBloqueado) + "')";
 
                 return SQL;
             }

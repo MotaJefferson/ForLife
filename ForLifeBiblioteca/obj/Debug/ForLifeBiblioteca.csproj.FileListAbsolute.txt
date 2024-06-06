@@ -5,3 +5,5 @@ C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\For
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.CoreCompileInputs.cache
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.dll
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.Properties.Resources.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.GenerateResource.cache

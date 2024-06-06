@@ -18,8 +18,7 @@ namespace ForLife.Forms
 
     public partial class Frm_GerenciarUsuario_UC : UserControl
     {
-
-        
+              
         private void HabilitarCampos(bool habilitarDesabilitar)
         {
             if(habilitarDesabilitar == true)
@@ -81,6 +80,15 @@ namespace ForLife.Forms
             {
                 U.Cargo = 3;
             }
+
+            if (Chk_Bloqueado.Checked)
+            {
+                U.icBloqueado = 1;
+            }
+            else
+            {
+                U.icBloqueado = 0;
+            }
             
             U.Nome = Txt_NomeCompleto.Text;
             U.Usuario = Txt_CodAcesso.Text;
@@ -125,87 +133,7 @@ namespace ForLife.Forms
             InitializeComponent();
 
             HabilitarCampos(false);
-            LimparCampos();
-
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
-        {
-
-        }
-
-        private void Txt_Telefone_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void Frm_CadastroUsuario_UC_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_NomeCompleto_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Lbl_Email_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void Lbl_Nome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_CPF_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lbl_DadosPessoais_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void Tbtn_Adicionar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void tBtn_Editar_Click(object sender, EventArgs e)
-        {
-            
+            LimparCampos();           
         }
 
         private void Tbtn_Cancelar_Click(object sender, EventArgs e)
@@ -213,13 +141,6 @@ namespace ForLife.Forms
             LimparCampos();
             HabilitarCampos(false);
         }
-
-
-        private void Txt_ConfirmarSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void Btn_VerSenha_Click(object sender, EventArgs e)
         {
@@ -251,52 +172,24 @@ namespace ForLife.Forms
             Lbl_ValidaSenha.Text = forca.ToString();
         }
 
-        private void label1_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lbl_InfoUsuarios_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void Txt_CodAcesso_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lbl_Senha_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Senha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Btn_Adicionar_Click(object sender, EventArgs e)
         {
-            HabilitarCampos(true);
-            
+            LimparCampos();
+            HabilitarCampos(true);            
         }
 
         private void Btn_Editar_Click(object sender, EventArgs e)
         {
-            HabilitarCampos(true);
-
+            
+            if(Txt_CodAcesso.Text == "")
+            {
+                MessageBox.Show("Pesquise um registro para editar", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                HabilitarCampos(true);
+            }
+            
         }
 
         private void Btn_Voltar_Click(object sender, EventArgs e)
@@ -365,7 +258,6 @@ namespace ForLife.Forms
 
             }
 
-            
         }
     }
 }
