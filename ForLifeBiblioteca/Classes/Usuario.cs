@@ -63,30 +63,54 @@ namespace ForLifeBiblioteca.Classes
                 
             public void IncluirSQL()
             {
+
                 try
                 {
-                    string SQL;
-                    SQL = this.ToInsert();
-                    var db = new SQLServerClass();
-                    db.SQLCommand(SQL);
-                    db.Close();
-
+                    if (BuscaUsuarioExistenteSQL(this.Usuario) == false)
+                    {
+                        string SQL;
+                        SQL = this.ToInsert();
+                        var db = new SQLServerClass();
+                        db.SQLCommand(SQL);
+                        db.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário " + Usuario + " já existe na nossa base","ForLife",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    
                 }
                 catch (Exception ex)
                 {
                     throw new Exception("Inclusão não permitida do usuário: " + this.Usuario + ", erro: " + ex.Message);
                 }
+               
 
+            }
+
+            public bool BuscaUsuarioExistenteSQL(string Usuario)
+            {
+                string SQL = "SELECT * FROM Usuario WHERE usuario = '" + Usuario + "'";
+
+                var db = new SQLServerClass();
+                var Dt = db.SQLQuery(SQL);
+
+                if (Dt.Rows.Count == 0)
+                {
+                    db.Close();
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
 
             public Unit BuscarSQL(string Usuario)
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Usuario WHERE usuario = '@usuario'";
-
-                    SqlCommand cmd = new SqlCommand(SQL);
-                    cmd.Parameters.AddWithValue("@usuario", Usuario);
+                    string SQL = "SELECT * FROM Usuario WHERE usuario = '"+ Usuario +"'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -154,7 +178,7 @@ namespace ForLifeBiblioteca.Classes
                     }
                     else
                     {
-                        SQL = "DELETE FROM Usuarios WHERE usuario = '" + this.Usuario + "'";
+                        SQL = "DELETE FROM Usuario WHERE usuario = '" + this.Usuario + "'";
                         db.SQLCommand(SQL);
                         db.Close();
                     }
@@ -173,7 +197,7 @@ namespace ForLifeBiblioteca.Classes
 
                 try
                 {
-                    var SQL = "SELECT * FROM Usuarios";
+                    var SQL = "SELECT * FROM Usuario";
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
 
@@ -183,7 +207,7 @@ namespace ForLifeBiblioteca.Classes
                         ListaBusca.Add(new List<string> {   Dt.Rows[i]["Usuario"].ToString(),
                                                             Dt.Rows[i]["Nome"].ToString(),
                                                             Dt.Rows[i]["Cargo"].ToString(),
-                                                            Dt.Rows[i]["Bloqueado"].ToString()
+                                                            Dt.Rows[i]["icBloqueado"].ToString()
                         }) ;
                     }
                     return ListaBusca;
@@ -219,25 +243,17 @@ namespace ForLifeBiblioteca.Classes
 
                 return SQL;
             }
-
             
             public string ToUpdate(string Usuario)
             {
                 string SQL;
 
-                SQL = @"UPDATE Usuario SET 
-                        '@nome'
-                        ,'@usuario'
-                        ,'@senha'
-                        ,@cargo
-                        ,'@icBloqueado'
-                        WHERE
-                        @usuario = ";
-                SQL += "('" + this.Nome + "'";
-                SQL += ",'" + this.Usuario + "'";
-                SQL += ",'" + this.Senha + "'";
-                SQL += ",'" + Convert.ToInt32(this.Cargo) + "'";
-                SQL += ",'" + Convert.ToInt32(this.icBloqueado) + "')";
+                SQL = @"UPDATE Usuario SET ";
+                SQL += "nome = '" + this.Nome + "'";
+                SQL += ",senha = '" + this.Senha + "'";
+                SQL += ",cargo = '" + Convert.ToInt32(this.Cargo) + "'";
+                SQL += ",icBloqueado = '" + Convert.ToInt32(this.icBloqueado) + "'";
+                SQL += "WHERE usuario = '" + this.Usuario + "'";
 
                 return SQL;
             }

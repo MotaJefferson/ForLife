@@ -18,7 +18,9 @@ namespace ForLife.Forms
 
     public partial class Frm_GerenciarUsuario_UC : UserControl
     {
-              
+
+        bool VerSenha = false;
+
         private void HabilitarCampos(bool habilitarDesabilitar)
         {
             if(habilitarDesabilitar == true)
@@ -100,40 +102,37 @@ namespace ForLife.Forms
 
         void EscreveCampos(Usuario.Unit c)
         {
+
             Txt_NomeCompleto.Text = c.Nome;
             Txt_CodAcesso.Text = c.Usuario;
             Txt_Senha.Text = c.Senha;
-            //Verificar
             Txt_ConfirmarSenha.Text = c.Senha;
 
-            if(c.Cargo == 1)
+            if (c.Cargo == 1)
             {
                 Rbtn_Agricultor.Checked = true;
             }
-            if(c.Cargo == 2)
+            if (c.Cargo == 2)
             {
                 Rbtn_Comercial.Checked = true;
             }
-            if(c.Cargo == 3)
+            if (c.Cargo == 3)
             {
                 Rbtn_Gestor.Checked = true;
             }
 
-            if(c.icBloqueado == 1)
+            if (c.icBloqueado == 1)
             {
                 Chk_Bloqueado.Checked = true;
             }
-
+                        
         }
-
-        bool VerSenha = false;
-
-        public Frm_GerenciarUsuario_UC()
-        {
+               
+        public Frm_GerenciarUsuario_UC()  
+        {            
             InitializeComponent();
-
-            HabilitarCampos(false);
-            LimparCampos();           
+            HabilitarCampos(false);            
+            LimparCampos();            
         }
 
         private void Tbtn_Cancelar_Click(object sender, EventArgs e)
@@ -175,12 +174,12 @@ namespace ForLife.Forms
         private void Btn_Adicionar_Click(object sender, EventArgs e)
         {
             LimparCampos();
-            HabilitarCampos(true);            
+            HabilitarCampos(true);                                  
         }
 
         private void Btn_Editar_Click(object sender, EventArgs e)
         {
-            
+
             if(Txt_CodAcesso.Text == "")
             {
                 MessageBox.Show("Pesquise um registro para editar", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -188,6 +187,7 @@ namespace ForLife.Forms
             else
             {
                 HabilitarCampos(true);
+                Txt_CodAcesso.Enabled = false;
             }
             
         }
@@ -195,40 +195,65 @@ namespace ForLife.Forms
         private void Btn_Voltar_Click(object sender, EventArgs e)
         {
             LimparCampos();
-            HabilitarCampos(false);
-            
+            HabilitarCampos(false);            
         }
 
         private void Btn_Salvar_Click(object sender, EventArgs e)
         {
-            try
+            if(Txt_CodAcesso.Enabled == false)
             {
-                Usuario.Unit U = new Usuario.Unit();
-                U = LeituraFormulario();
-                U.ValidaClasse();
-                U.ValidaComplemento();
-                U.IncluirSQL();
-              
+                MessageBox.Show("Inclua ou edite um registro para salvar","ForLife",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                try
+                {
+                    Usuario.Unit U = new Usuario.Unit();
+                    U = LeituraFormulario();
+                    U.ValidaClasse();
+                    U.ValidaComplemento();
 
-                MessageBox.Show("O usuário " + Txt_CodAcesso.Text + " cadastrado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                HabilitarCampos(false);
+                    if (Txt_CodAcesso.Enabled == true)
+                    {
+                        if (U.BuscaUsuarioExistenteSQL(Txt_CodAcesso.Text) == false)
+                        {
+                            U.IncluirSQL();
+
+                            MessageBox.Show("O usuário " + Txt_CodAcesso.Text + " cadastrado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            HabilitarCampos(false);
+                        }
+                        else
+                        {
+                            MessageBox.Show("O usuário " + Txt_CodAcesso.Text + " já existe na nossa base", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else
+                    {
+                        U.AlterarSQL();
+
+                        MessageBox.Show("O usuário " + Txt_CodAcesso.Text + " alterado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        HabilitarCampos(false);
+
+                    }
+
+
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message, "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
-            catch (ValidationException Ex)
-            {
-                MessageBox.Show(Ex.Message, "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message, "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            
         }
 
         private void Btn_Excluir_Click(object sender, EventArgs e)
         {
+            
             if(Txt_CodAcesso.Text == "")
             {
-                MessageBox.Show("Campo do usuário está vazio", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                MessageBox.Show("Pesquise um registro para excluir", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
             else
             {
@@ -249,6 +274,7 @@ namespace ForLife.Forms
                         C.ApagarSQL();
                         MessageBox.Show("Usuário apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LimparCampos();
+                        HabilitarCampos(false);
                     }
                 }
                 catch (Exception Ex)
@@ -258,6 +284,19 @@ namespace ForLife.Forms
 
             }
 
+        }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+
+            Frm_Pesquisa F = new Frm_Pesquisa();
+            F.ShowDialog();
+
+            if(F.RetornoPesquisa != null)
+            {
+                EscreveCampos(F.RetornoPesquisa);
+            }
+                        
         }
 
     }
