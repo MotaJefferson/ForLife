@@ -106,11 +106,11 @@ namespace ForLifeBiblioteca.Classes
                 }
             }
 
-            public Unit BuscarSQL(string Usuario)
+            public Unit BuscarSQL(string usuario)
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Usuario WHERE usuario = '"+ Usuario +"'";
+                    string SQL = "SELECT * FROM Usuario WHERE usuario = '"+ usuario + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -118,7 +118,7 @@ namespace ForLifeBiblioteca.Classes
                     if(Dt.Rows.Count == 0)
                     {
                         db.Close();
-                        throw new Exception("Usuário não existe");
+                        throw new Exception("A pesquisa não retornou valores");
                     }
                     else
                     {
@@ -191,8 +191,62 @@ namespace ForLifeBiblioteca.Classes
 
             }
 
-            public List<List<string>> BuscarTodosSQL()
+            public List<List<string>> BuscarVariosSQL(string Campo, string Valor)
             {
+                List<List<string>> ListaBusca = new List<List<string>>();
+
+                try
+                {
+                    var SQL = "SELECT * FROM Usuario WHERE " + Campo + " LIKE '%" + Valor + "%' ";
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+                    for (int i = 0; i <= Dt.Rows.Count - 1; i++)
+                    {
+                        string Cargo = "";
+                        string Bloqueado = "";
+
+                        if(Convert.ToInt32(Dt.Rows[i]["Cargo"]) == 1)
+                        {
+                            Cargo = "Agricultor";
+
+                        } else if (Convert.ToInt32(Dt.Rows[i]["Cargo"]) == 2)
+                        {
+                            Cargo = "Comercial";
+                        }
+                        else if (Convert.ToInt32(Dt.Rows[i]["Cargo"]) == 3)
+                        {
+                            Cargo = "Gestor";
+                        }
+
+                        if (Convert.ToInt32(Dt.Rows[i]["icBloqueado"]) == 0)
+                        {
+                            Bloqueado = "Desbloqueado";
+
+                        }
+                        else if (Convert.ToInt32(Dt.Rows[i]["icBloqueado"]) == 1)
+                        {
+                            Bloqueado = "Bloqueado";
+                        }
+
+                        //Adicionar os campos necessários da busca
+                        ListaBusca.Add(new List<string> {   Dt.Rows[i]["Usuario"].ToString(),
+                                                            Dt.Rows[i]["Nome"].ToString(),
+                                                            Cargo,
+                                                            Bloqueado
+                        });
+                    }
+                    return ListaBusca;
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Conexão gerou o erro: " + ex.Message);
+                }
+            }
+
+            public List<List<string>> BuscarTodosSQL()
+                {
                 List<List<string>> ListaBusca = new List<List<string>>();
 
                 try
@@ -217,6 +271,7 @@ namespace ForLifeBiblioteca.Classes
                 {
                     throw new Exception("Conexão gerou o erro: " + ex.Message);
                 }
+
 
             }
 

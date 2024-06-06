@@ -5,11 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ForLifeBiblioteca;
 using ForLifeBiblioteca.Classes;
 using ForLifeBiblioteca.Databases;
+using ForLifeBiblioteca.ForLifeDataSetTableAdapters;
 
 namespace ForLife.Forms
 
@@ -25,36 +28,79 @@ namespace ForLife.Forms
 
         }
 
-        private void AtualizaGrid()
+
+        private void Btn_Pesquisar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Usuario.Unit U = new Usuario.Unit();
 
-                var ListaGrid = U.BuscarTodosSQL();
-                Grd_Resultados.Rows.Clear();
-
-                for (int i = 0; i <= ListaGrid.Count - 1; i++)
+                if (Cmb_TipoUsuario.Text != "")
                 {
-                    DataGridViewRow row = new DataGridViewRow();
-                    row.CreateCells(Grd_Resultados);
-                    row.Cells[0].Value = ListaGrid[i][0].ToString();
-                    row.Cells[1].Value = ListaGrid[i][1].ToString();
-                    row.Cells[2].Value = ListaGrid[i][2].ToString();
-                    row.Cells[3].Value = ListaGrid[i][3].ToString();
-                    Grd_Resultados.Rows.Add(row);
+                    int index = 0;
+
+                    if (Cmb_TipoUsuario.SelectedIndex > 0)
+                    {
+                        index = Cmb_TipoUsuario.SelectedIndex;
+                    }
+
+                    var ListaGrid = U.BuscarVariosSQL("cargo", index.ToString());
+                    Grd_Resultados.Rows.Clear();
+
+                    for (int i = 0; i <= ListaGrid.Count - 1; i++)
+                    {
+                        DataGridViewRow row = new DataGridViewRow();
+                        row.CreateCells(Grd_Resultados);
+                        row.Cells[0].Value = ListaGrid[i][0].ToString();
+                        row.Cells[1].Value = ListaGrid[i][1].ToString();
+                        row.Cells[2].Value = ListaGrid[i][2].ToString();
+                        row.Cells[3].Value = ListaGrid[i][3].ToString();
+                        Grd_Resultados.Rows.Add(row);
+                    }
                 }
+
+                else if(Txt_Nome.Text != "")
+                {
+                    var ListaGrid = U.BuscarVariosSQL("nome", Txt_Nome.Text);
+                    Grd_Resultados.Rows.Clear();
+
+                    for (int i = 0; i <= ListaGrid.Count - 1; i++)
+                    {
+                        DataGridViewRow row = new DataGridViewRow();
+                        row.CreateCells(Grd_Resultados);
+                        row.Cells[0].Value = ListaGrid[i][0].ToString();
+                        row.Cells[1].Value = ListaGrid[i][1].ToString();
+                        row.Cells[2].Value = ListaGrid[i][2].ToString();
+                        row.Cells[3].Value = ListaGrid[i][3].ToString();
+                        Grd_Resultados.Rows.Add(row);
+                    }
+                }
+                                
+                else if (Txt_Usuario.Text != "")
+                {
+                    var ListaGrid = U.BuscarVariosSQL("usuario", Txt_Usuario.Text);
+                    Grd_Resultados.Rows.Clear();
+
+                    for (int i = 0; i <= ListaGrid.Count - 1; i++)
+                    {
+                        DataGridViewRow row = new DataGridViewRow();
+                        row.CreateCells(Grd_Resultados);
+                        row.Cells[0].Value = ListaGrid[i][0].ToString();
+                        row.Cells[1].Value = ListaGrid[i][1].ToString();
+                        row.Cells[2].Value = ListaGrid[i][2].ToString();
+                        row.Cells[3].Value = ListaGrid[i][3].ToString();
+                        Grd_Resultados.Rows.Add(row);
+                    }
+                }
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void Btn_Pesquisar_Click(object sender, EventArgs e)
-        {
-            AtualizaGrid();
+            
         }
 
         private void Grd_Resultados_DoubleClick(object sender, EventArgs e)
@@ -84,9 +130,10 @@ namespace ForLife.Forms
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Selecione um valor", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Ex.Message);
             }
-        }       
+        }
+
 
     }
 }

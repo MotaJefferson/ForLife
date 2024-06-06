@@ -200,7 +200,7 @@ namespace ForLife.Forms
 
         private void Btn_Salvar_Click(object sender, EventArgs e)
         {
-            if(Txt_CodAcesso.Enabled == false)
+            if(Txt_NomeCompleto.Enabled == false)
             {
                 MessageBox.Show("Inclua ou edite um registro para salvar","ForLife",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
