@@ -84,7 +84,11 @@ namespace ForLife.Forms
             
             if(!(Tbc_Aplicacoes.SelectedTab == null))
             {
-                Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab);
+                if (Tbc_Aplicacoes.SelectedIndex != 0)
+                {
+                    Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab);
+
+                }
             }
         }
 

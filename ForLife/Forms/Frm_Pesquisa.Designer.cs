@@ -33,10 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Pesquisa));
             this.Grd_Resultados = new System.Windows.Forms.DataGridView();
-            this.Usuário = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bloqueado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Txt_Nome = new System.Windows.Forms.TextBox();
             this.Txt_Usuario = new System.Windows.Forms.TextBox();
             this.Lbl_Nome = new System.Windows.Forms.Label();
@@ -47,6 +43,10 @@
             this.Btn_Pesquisar = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btn_listarTodos = new System.Windows.Forms.Button();
+            this.Usuário = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bloqueado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Grd_Resultados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -85,38 +85,6 @@
             this.Grd_Resultados.Size = new System.Drawing.Size(825, 311);
             this.Grd_Resultados.TabIndex = 1;
             this.Grd_Resultados.DoubleClick += new System.EventHandler(this.Grd_Resultados_DoubleClick);
-            // 
-            // Usuário
-            // 
-            this.Usuário.HeaderText = "Usuário";
-            this.Usuário.MinimumWidth = 6;
-            this.Usuário.Name = "Usuário";
-            this.Usuário.ReadOnly = true;
-            this.Usuário.Width = 150;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome Completo";
-            this.Nome.MinimumWidth = 6;
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 200;
-            // 
-            // TipoCadastro
-            // 
-            this.TipoCadastro.HeaderText = "Tipo do Cadastro";
-            this.TipoCadastro.MinimumWidth = 6;
-            this.TipoCadastro.Name = "TipoCadastro";
-            this.TipoCadastro.ReadOnly = true;
-            this.TipoCadastro.Width = 140;
-            // 
-            // Bloqueado
-            // 
-            this.Bloqueado.HeaderText = "Bloqueado";
-            this.Bloqueado.MinimumWidth = 6;
-            this.Bloqueado.Name = "Bloqueado";
-            this.Bloqueado.ReadOnly = true;
-            this.Bloqueado.Width = 125;
             // 
             // Txt_Nome
             // 
@@ -217,6 +185,37 @@
             this.btn_listarTodos.UseVisualStyleBackColor = true;
             this.btn_listarTodos.Click += new System.EventHandler(this.btn_listarTodos_Click);
             // 
+            // Usuário
+            // 
+            this.Usuário.HeaderText = "Usuário";
+            this.Usuário.MinimumWidth = 6;
+            this.Usuário.Name = "Usuário";
+            this.Usuário.ReadOnly = true;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome Completo";
+            this.Nome.MinimumWidth = 6;
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 200;
+            // 
+            // TipoCadastro
+            // 
+            this.TipoCadastro.HeaderText = "Tipo do Cadastro";
+            this.TipoCadastro.MinimumWidth = 6;
+            this.TipoCadastro.Name = "TipoCadastro";
+            this.TipoCadastro.ReadOnly = true;
+            this.TipoCadastro.Width = 140;
+            // 
+            // Bloqueado
+            // 
+            this.Bloqueado.HeaderText = "Bloqueado";
+            this.Bloqueado.MinimumWidth = 6;
+            this.Bloqueado.Name = "Bloqueado";
+            this.Bloqueado.ReadOnly = true;
+            this.Bloqueado.Width = 125;
+            // 
             // Frm_Pesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,11 +257,11 @@
         private System.Windows.Forms.ComboBox Cmb_TipoUsuario;
         private System.Windows.Forms.Button Btn_Pesquisar;
         private System.Windows.Forms.ImageList imageIcons;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button btn_listarTodos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuário;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoCadastro;
         private System.Windows.Forms.DataGridViewTextBoxColumn Bloqueado;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Button btn_listarTodos;
     }
 }
