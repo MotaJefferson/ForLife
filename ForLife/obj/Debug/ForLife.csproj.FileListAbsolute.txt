@@ -17,3 +17,21 @@ C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\For
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\ForLifeBiblioteca.dll.config
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.csproj.Up2Date
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.Forms.Frm_Pesquisa.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\ForLife.exe.config
+C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\ForLife.exe
+C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\ForLife.pdb
+C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\ForLifeBiblioteca.dll
+C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\ForLifeBiblioteca.pdb
+C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\ForLifeBiblioteca.dll.config
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.csproj.AssemblyReference.cache
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_Insumos_UC.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_Login.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_MenuPrincipal_MDI.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciarUsuario_UC.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_Pesquisa.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Properties.Resources.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.csproj.GenerateResource.cache
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.csproj.CoreCompileInputs.cache
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.csproj.Up2Date
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.exe
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.pdb

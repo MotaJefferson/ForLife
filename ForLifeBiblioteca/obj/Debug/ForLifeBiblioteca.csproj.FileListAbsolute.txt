@@ -7,3 +7,12 @@ C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\For
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.pdb
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.Properties.Resources.resources
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.GenerateResource.cache
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.dll.config
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.dll
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.pdb
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.AssemblyReference.cache
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.Properties.Resources.resources
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.GenerateResource.cache
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.dll
+C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.pdb
