@@ -117,14 +117,5 @@ namespace ForLife.Forms
             }
         }
 
-        private void Tbc_Aplicacoes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Frm_MenuPrincipal_MDI_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

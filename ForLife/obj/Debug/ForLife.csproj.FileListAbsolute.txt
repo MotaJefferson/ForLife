@@ -11,7 +11,6 @@ C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\For
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.Forms.Frm_Login.resources
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciarUsuario_UC.resources
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.Forms.Frm_Insumos_UC.resources
-C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.Forms.Frm_TelaPrincipal_MDI.resources
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\ForLifeBiblioteca.dll
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\ForLifeBiblioteca.pdb
 C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\ForLifeBiblioteca.dll.config
