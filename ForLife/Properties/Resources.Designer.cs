@@ -93,6 +93,16 @@ namespace ForLife.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background___ForLife {
+            get {
+                object obj = ResourceManager.GetObject("Background___ForLife", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Editar {
             get {
                 object obj = ResourceManager.GetObject("Editar", resourceCulture);
@@ -126,56 +136,6 @@ namespace ForLife.Properties {
         internal static System.Drawing.Bitmap Logo_ForLife {
             get {
                 object obj = ResourceManager.GetObject("Logo ForLife", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logo_Horizontal {
-            get {
-                object obj = ResourceManager.GetObject("Logo_Horizontal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logo_Horizontal_PNG {
-            get {
-                object obj = ResourceManager.GetObject("Logo_Horizontal_PNG", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logo_Vertical {
-            get {
-                object obj = ResourceManager.GetObject("Logo_Vertical", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logo_Vertical_PNG {
-            get {
-                object obj = ResourceManager.GetObject("Logo_Vertical_PNG", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap LogoSimplesBranco {
-            get {
-                object obj = ResourceManager.GetObject("LogoSimplesBranco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

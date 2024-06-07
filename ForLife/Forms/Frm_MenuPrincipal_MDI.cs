@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.Design;
 
 namespace ForLife.Forms
 {
@@ -15,8 +16,9 @@ namespace ForLife.Forms
         public Frm_MenuPrincipal_MDI()
         {
             InitializeComponent();
-            
-        }
+
+
+    }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -116,6 +118,7 @@ namespace ForLife.Forms
                 Tbc_Aplicacoes.SelectedIndex = 1;
             }
         }
+
 
     }
 }

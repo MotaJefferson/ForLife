@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MenuPrincipal_MDI));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +50,9 @@
             this.realizarVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
+            this.tabPaginaInicial = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
+            this.Tbc_Aplicacoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,7 +69,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1205, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1200, 31);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -124,7 +127,7 @@
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
@@ -134,7 +137,7 @@
             this.insumoToolStripMenuItem,
             this.produtoToolStripMenuItem});
             this.materialToolStripMenuItem.Name = "materialToolStripMenuItem";
-            this.materialToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.materialToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
             this.materialToolStripMenuItem.Text = "Material";
             this.materialToolStripMenuItem.Click += new System.EventHandler(this.materialToolStripMenuItem_Click);
             // 
@@ -154,13 +157,13 @@
             // fornecedorToolStripMenuItem
             // 
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // estoqueToolStripMenuItem
@@ -219,6 +222,7 @@
             // 
             // Tbc_Aplicacoes
             // 
+            this.Tbc_Aplicacoes.Controls.Add(this.tabPaginaInicial);
             this.Tbc_Aplicacoes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tbc_Aplicacoes.HotTrack = true;
             this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 31);
@@ -226,8 +230,20 @@
             this.Tbc_Aplicacoes.MinimumSize = new System.Drawing.Size(1200, 738);
             this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
             this.Tbc_Aplicacoes.SelectedIndex = 0;
-            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(1205, 753);
+            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(1200, 742);
             this.Tbc_Aplicacoes.TabIndex = 3;
+            // 
+            // tabPaginaInicial
+            // 
+            this.tabPaginaInicial.BackgroundImage = global::ForLife.Properties.Resources.Background___ForLife;
+            this.tabPaginaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPaginaInicial.Location = new System.Drawing.Point(4, 25);
+            this.tabPaginaInicial.Name = "tabPaginaInicial";
+            this.tabPaginaInicial.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPaginaInicial.Size = new System.Drawing.Size(1192, 713);
+            this.tabPaginaInicial.TabIndex = 0;
+            this.tabPaginaInicial.Text = "Página Inicial";
+            this.tabPaginaInicial.UseVisualStyleBackColor = true;
             // 
             // Frm_MenuPrincipal_MDI
             // 
@@ -235,10 +251,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1205, 784);
+            this.ClientSize = new System.Drawing.Size(1200, 773);
             this.Controls.Add(this.Tbc_Aplicacoes);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -248,6 +265,7 @@
             this.Text = "ForLife";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.Tbc_Aplicacoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +294,6 @@
         private System.Windows.Forms.ToolStripMenuItem realizarVendaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fecharGuiaToolStripMenuItem;
         private System.Windows.Forms.TabControl Tbc_Aplicacoes;
+        private System.Windows.Forms.TabPage tabPaginaInicial;
     }
 }

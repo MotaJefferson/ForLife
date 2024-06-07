@@ -8,10 +8,12 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ForLife</RootNamespace>
     <AssemblyName>ForLife</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -47,10 +48,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Composition.Registration" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll</HintPath>
@@ -85,11 +91,6 @@
     </Compile>
     <Compile Include="Forms\Frm_Insumos_UC.Designer.cs">
       <DependentUpon>Frm_Insumos_UC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -135,6 +136,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -166,25 +172,13 @@
     <None Include="Icons\Salvar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Icons\Logo_Horizontal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\Logo_Vertical.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\Logo_Horizontal_PNG.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\Logo_Vertical_PNG.png" />
+    <None Include="Icons\.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\User.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\Voltar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\LogoSimplesBranco.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\Invisivel.png" />
@@ -218,6 +212,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo ForLife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background - ForLife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

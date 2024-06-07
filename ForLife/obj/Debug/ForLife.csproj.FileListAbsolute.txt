@@ -34,3 +34,7 @@ C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.csproj.CoreCompile
 C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.csproj.Up2Date
 C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.exe
 C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\Microsoft.CSharp.dll
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\System.Data.dll
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\bin\Debug\System.dll
