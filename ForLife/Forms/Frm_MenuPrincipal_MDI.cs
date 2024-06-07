@@ -121,5 +121,10 @@ namespace ForLife.Forms
         {
 
         }
+
+        private void Frm_MenuPrincipal_MDI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

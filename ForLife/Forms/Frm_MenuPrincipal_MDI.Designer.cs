@@ -221,12 +221,12 @@
             // 
             this.Tbc_Aplicacoes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tbc_Aplicacoes.HotTrack = true;
-            this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 28);
+            this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 0);
             this.Tbc_Aplicacoes.Margin = new System.Windows.Forms.Padding(2);
             this.Tbc_Aplicacoes.MinimumSize = new System.Drawing.Size(900, 600);
             this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
             this.Tbc_Aplicacoes.SelectedIndex = 0;
-            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(904, 609);
+            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(904, 637);
             this.Tbc_Aplicacoes.TabIndex = 3;
             this.Tbc_Aplicacoes.SelectedIndexChanged += new System.EventHandler(this.Tbc_Aplicacoes_SelectedIndexChanged);
             // 
@@ -234,10 +234,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ForLife.Properties.Resources.Logo_ForLife;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 637);
-            this.Controls.Add(this.Tbc_Aplicacoes);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.Tbc_Aplicacoes);
+            this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -245,6 +247,7 @@
             this.Name = "Frm_MenuPrincipal_MDI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForLife";
+            this.Load += new System.EventHandler(this.Frm_MenuPrincipal_MDI_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -273,7 +276,7 @@
         private System.Windows.Forms.ToolStripMenuItem plantioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarVendaToolStripMenuItem;
-        private System.Windows.Forms.TabControl Tbc_Aplicacoes;
         private System.Windows.Forms.ToolStripMenuItem fecharGuiaToolStripMenuItem;
+        private System.Windows.Forms.TabControl Tbc_Aplicacoes;
     }
 }

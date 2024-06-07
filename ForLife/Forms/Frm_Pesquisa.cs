@@ -134,6 +134,14 @@ namespace ForLife.Forms
             }
         }
 
+        private void Lbl_Usuario_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btn_listarTodos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
