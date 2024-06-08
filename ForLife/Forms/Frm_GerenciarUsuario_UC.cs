@@ -153,7 +153,7 @@ namespace ForLife.Forms
                 VerSenha = true;
                 Btn_VerSenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
                 Btn_VerSenha.Image = global::ForLife.Properties.Resources.Invisível;
-                
+
             }
             else
             {

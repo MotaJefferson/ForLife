@@ -143,6 +143,16 @@ namespace ForLife.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_ForLife_SemFundo {
+            get {
+                object obj = ResourceManager.GetObject("Logo_ForLife_SemFundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pesquisar {
             get {
                 object obj = ResourceManager.GetObject("Pesquisar", resourceCulture);

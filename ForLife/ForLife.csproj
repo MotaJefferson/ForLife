@@ -218,6 +218,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LogoIcon.ico" />
+    <None Include="Resources\Logo ForLife_SemFundo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

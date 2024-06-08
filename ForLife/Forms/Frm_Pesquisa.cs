@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -134,14 +135,32 @@ namespace ForLife.Forms
             }
         }
 
-        private void Lbl_Usuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_listarTodos_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Usuario.Unit U = new Usuario.Unit();
 
+                var ListaGrid = U.BuscarTodosSQL();
+                Grd_Resultados.Rows.Clear();
+
+                for (int i = 0; i <= ListaGrid.Count - 1; i++)
+                {
+                    DataGridViewRow row = new DataGridViewRow();
+                    row.CreateCells(Grd_Resultados);
+                    row.Cells[0].Value = ListaGrid[i][0].ToString();
+                    row.Cells[1].Value = ListaGrid[i][1].ToString();
+                    row.Cells[2].Value = ListaGrid[i][2].ToString();
+                    row.Cells[3].Value = ListaGrid[i][3].ToString();
+                    Grd_Resultados.Rows.Add(row);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

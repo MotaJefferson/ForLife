@@ -1,4 +1,7 @@
-﻿namespace ForLife.Forms
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace ForLife.Forms
 {
     partial class Frm_MenuPrincipal_MDI
     {
@@ -34,7 +37,7 @@
             this.conectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,16 +51,16 @@
             this.plantioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fecharGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
             this.tabPaginaInicial = new System.Windows.Forms.TabPage();
+            this.fecharGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Tbc_Aplicacoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.YellowGreen;
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(253)))), ((int)(((byte)(221)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
@@ -79,7 +82,7 @@
             this.conectarToolStripMenuItem,
             this.desconectarToolStripMenuItem,
             this.toolStripSeparator1,
-            this.sairToolStripMenuItem});
+            this.fecharToolStripMenuItem});
             this.arquivoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arquivoToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
@@ -89,27 +92,31 @@
             // conectarToolStripMenuItem
             // 
             this.conectarToolStripMenuItem.Name = "conectarToolStripMenuItem";
-            this.conectarToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
+            this.conectarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.conectarToolStripMenuItem.Size = new System.Drawing.Size(249, 28);
             this.conectarToolStripMenuItem.Text = "Conectar";
             this.conectarToolStripMenuItem.Click += new System.EventHandler(this.conectarToolStripMenuItem_Click);
             // 
             // desconectarToolStripMenuItem
             // 
             this.desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
-            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
+            this.desconectarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(249, 28);
             this.desconectarToolStripMenuItem.Text = "Desconectar";
+            this.desconectarToolStripMenuItem.Click += new System.EventHandler(this.desconectarToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(185, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(246, 6);
             // 
-            // sairToolStripMenuItem
+            // fecharToolStripMenuItem
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            this.fecharToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(249, 28);
+            this.fecharToolStripMenuItem.Text = "Fechar";
+            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // cadastroToolStripMenuItem
             // 
@@ -210,25 +217,18 @@
             this.realizarVendaToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.realizarVendaToolStripMenuItem.Text = "Realizar Venda";
             // 
-            // fecharGuiaToolStripMenuItem
-            // 
-            this.fecharGuiaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.fecharGuiaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecharGuiaToolStripMenuItem.Image = global::ForLife.Properties.Resources.Excluir;
-            this.fecharGuiaToolStripMenuItem.Name = "fecharGuiaToolStripMenuItem";
-            this.fecharGuiaToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
-            this.fecharGuiaToolStripMenuItem.Text = "Fechar Aba Atual";
-            this.fecharGuiaToolStripMenuItem.Click += new System.EventHandler(this.fecharGuiaToolStripMenuItem_Click);
-            // 
             // Tbc_Aplicacoes
             // 
+            this.Tbc_Aplicacoes.AllowDrop = true;
             this.Tbc_Aplicacoes.Controls.Add(this.tabPaginaInicial);
             this.Tbc_Aplicacoes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tbc_Aplicacoes.HotTrack = true;
             this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 31);
             this.Tbc_Aplicacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tbc_Aplicacoes.MinimumSize = new System.Drawing.Size(1200, 738);
+            this.Tbc_Aplicacoes.Multiline = true;
             this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
+            this.Tbc_Aplicacoes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Tbc_Aplicacoes.SelectedIndex = 0;
             this.Tbc_Aplicacoes.Size = new System.Drawing.Size(1200, 742);
             this.Tbc_Aplicacoes.TabIndex = 3;
@@ -244,6 +244,16 @@
             this.tabPaginaInicial.TabIndex = 0;
             this.tabPaginaInicial.Text = "Página Inicial";
             this.tabPaginaInicial.UseVisualStyleBackColor = true;
+            // 
+            // fecharGuiaToolStripMenuItem
+            // 
+            this.fecharGuiaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.fecharGuiaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecharGuiaToolStripMenuItem.Image = global::ForLife.Properties.Resources.Excluir;
+            this.fecharGuiaToolStripMenuItem.Name = "fecharGuiaToolStripMenuItem";
+            this.fecharGuiaToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
+            this.fecharGuiaToolStripMenuItem.Text = "Fechar Aba Atual";
+            this.fecharGuiaToolStripMenuItem.Click += new System.EventHandler(this.fecharGuiaToolStripMenuItem_Click);
             // 
             // Frm_MenuPrincipal_MDI
             // 
@@ -277,7 +287,7 @@
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem conectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;

@@ -13,16 +13,37 @@ namespace ForLife.Forms
 {
     public partial class Frm_MenuPrincipal_MDI : Form
     {
+        
+
         public Frm_MenuPrincipal_MDI()
         {
             InitializeComponent();
 
+            conectarToolStripMenuItem.Enabled = false;
 
-    }
+        }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            bool statusLogin = false;
+
+            conectarToolStripMenuItem.Enabled = true;
+            desconectarToolStripMenuItem.Enabled = statusLogin;
+            usuárioToolStripMenuItem.Enabled = statusLogin;
+            materialToolStripMenuItem.Enabled = statusLogin;
+            fornecedorToolStripMenuItem.Enabled = statusLogin;
+            clienteToolStripMenuItem.Enabled = statusLogin;
+            insumosToolStripMenuItem.Enabled = statusLogin;
+            produtosToolStripMenuItem.Enabled = statusLogin;
+            realizarVendaToolStripMenuItem.Enabled = statusLogin;
+
+        }
+        
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,8 +58,9 @@ namespace ForLife.Forms
 
         private void conectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+            this.Hide();
             Frm_Login login = new Frm_Login();
-            login.MdiParent = this;
             login.ShowDialog();
 
         }
@@ -122,7 +144,6 @@ namespace ForLife.Forms
                 Tbc_Aplicacoes.SelectedIndex = 1;
             }
         }
-
 
     }
 }
