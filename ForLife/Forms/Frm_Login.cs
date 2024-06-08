@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ForLifeBiblioteca.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace ForLife.Forms
 
         bool VerSenha = false;
 
+
+
         public Frm_Login()
         {
             InitializeComponent();          
@@ -26,10 +29,13 @@ namespace ForLife.Forms
         {
             DialogResult = DialogResult.OK;
 
+            Session.Instance.UserID = Txt_Login.Text;
+
             this.Hide();
             Frm_MenuPrincipal_MDI frm = new Frm_MenuPrincipal_MDI();
             frm.Closed += (s, args) => this.Close();
             frm.Show();
+
             
         }
 
@@ -58,9 +64,6 @@ namespace ForLife.Forms
                 Btn_VerSenha.Image = global::ForLife.Properties.Resources.Visível;
             }
         }
-
-        private ToolTip tooltip;
-
 
     }
         

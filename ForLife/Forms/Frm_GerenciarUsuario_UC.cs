@@ -292,7 +292,7 @@ namespace ForLife.Forms
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
 
-            Frm_Pesquisa F = new Frm_Pesquisa();
+            Frm_PesquisaUsuario F = new Frm_PesquisaUsuario();
             F.ShowDialog();
 
             if(F.RetornoPesquisa != null)

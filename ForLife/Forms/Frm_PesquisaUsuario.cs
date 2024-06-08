@@ -18,12 +18,12 @@ using ForLifeBiblioteca.ForLifeDataSetTableAdapters;
 namespace ForLife.Forms
 
 {
-    public partial class Frm_Pesquisa : Form
+    public partial class Frm_PesquisaUsuario : Form
     {
 
         public Usuario.Unit RetornoPesquisa;
 
-        public Frm_Pesquisa()
+        public Frm_PesquisaUsuario()
         {
             InitializeComponent();
 

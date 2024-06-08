@@ -68,6 +68,7 @@ namespace ForLife.Forms
             // 
             // Txt_Login
             // 
+            this.Txt_Login.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.Txt_Login.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Login.Location = new System.Drawing.Point(55, 272);
             this.Txt_Login.Name = "Txt_Login";
@@ -119,7 +120,6 @@ namespace ForLife.Forms
             this.Btn_VerSenha.TabStop = false;
             this.Btn_VerSenha.UseVisualStyleBackColor = false;
             this.Btn_VerSenha.Click += new System.EventHandler(this.Btn_VerSenha_Click);
-            
             // 
             // Frm_Login
             // 

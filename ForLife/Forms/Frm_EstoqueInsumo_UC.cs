@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ForLife.Forms
 {
-    public partial class Frm_Insumos_UC : UserControl
+    public partial class Frm_EstoqueInsumo_UC : UserControl
     {
-        public Frm_Insumos_UC()
+        public Frm_EstoqueInsumo_UC()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

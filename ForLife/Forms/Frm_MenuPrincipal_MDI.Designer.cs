@@ -51,9 +51,9 @@ namespace ForLife.Forms
             this.plantioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
             this.tabPaginaInicial = new System.Windows.Forms.TabPage();
-            this.fecharGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Tbc_Aplicacoes.SuspendLayout();
             this.SuspendLayout();
@@ -134,7 +134,7 @@ namespace ForLife.Forms
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
@@ -144,33 +144,33 @@ namespace ForLife.Forms
             this.insumoToolStripMenuItem,
             this.produtoToolStripMenuItem});
             this.materialToolStripMenuItem.Name = "materialToolStripMenuItem";
-            this.materialToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.materialToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.materialToolStripMenuItem.Text = "Material";
             this.materialToolStripMenuItem.Click += new System.EventHandler(this.materialToolStripMenuItem_Click);
             // 
             // insumoToolStripMenuItem
             // 
             this.insumoToolStripMenuItem.Name = "insumoToolStripMenuItem";
-            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
+            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.insumoToolStripMenuItem.Text = "Insumo";
             this.insumoToolStripMenuItem.Click += new System.EventHandler(this.insumoToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.produtoToolStripMenuItem.Text = "Produto";
             // 
             // fornecedorToolStripMenuItem
             // 
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // estoqueToolStripMenuItem
@@ -186,13 +186,14 @@ namespace ForLife.Forms
             // insumosToolStripMenuItem
             // 
             this.insumosToolStripMenuItem.Name = "insumosToolStripMenuItem";
-            this.insumosToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
+            this.insumosToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.insumosToolStripMenuItem.Text = "Insumos";
+            this.insumosToolStripMenuItem.Click += new System.EventHandler(this.insumosToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // plantioToolStripMenuItem
@@ -216,6 +217,16 @@ namespace ForLife.Forms
             this.realizarVendaToolStripMenuItem.Name = "realizarVendaToolStripMenuItem";
             this.realizarVendaToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.realizarVendaToolStripMenuItem.Text = "Realizar Venda";
+            // 
+            // fecharGuiaToolStripMenuItem
+            // 
+            this.fecharGuiaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.fecharGuiaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecharGuiaToolStripMenuItem.Image = global::ForLife.Properties.Resources.Excluir;
+            this.fecharGuiaToolStripMenuItem.Name = "fecharGuiaToolStripMenuItem";
+            this.fecharGuiaToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
+            this.fecharGuiaToolStripMenuItem.Text = "Fechar Aba Atual";
+            this.fecharGuiaToolStripMenuItem.Click += new System.EventHandler(this.fecharGuiaToolStripMenuItem_Click);
             // 
             // Tbc_Aplicacoes
             // 
@@ -244,16 +255,6 @@ namespace ForLife.Forms
             this.tabPaginaInicial.TabIndex = 0;
             this.tabPaginaInicial.Text = "Página Inicial";
             this.tabPaginaInicial.UseVisualStyleBackColor = true;
-            // 
-            // fecharGuiaToolStripMenuItem
-            // 
-            this.fecharGuiaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.fecharGuiaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecharGuiaToolStripMenuItem.Image = global::ForLife.Properties.Resources.Excluir;
-            this.fecharGuiaToolStripMenuItem.Name = "fecharGuiaToolStripMenuItem";
-            this.fecharGuiaToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
-            this.fecharGuiaToolStripMenuItem.Text = "Fechar Aba Atual";
-            this.fecharGuiaToolStripMenuItem.Click += new System.EventHandler(this.fecharGuiaToolStripMenuItem_Click);
             // 
             // Frm_MenuPrincipal_MDI
             // 

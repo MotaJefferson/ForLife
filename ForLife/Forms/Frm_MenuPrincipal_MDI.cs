@@ -27,17 +27,31 @@ namespace ForLife.Forms
         private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            bool statusLogin = false;
+            string UsuarioLogado = Session.Instance.UserID; 
+                       
 
-            conectarToolStripMenuItem.Enabled = true;
-            desconectarToolStripMenuItem.Enabled = statusLogin;
-            usuárioToolStripMenuItem.Enabled = statusLogin;
-            materialToolStripMenuItem.Enabled = statusLogin;
-            fornecedorToolStripMenuItem.Enabled = statusLogin;
-            clienteToolStripMenuItem.Enabled = statusLogin;
-            insumosToolStripMenuItem.Enabled = statusLogin;
-            produtosToolStripMenuItem.Enabled = statusLogin;
-            realizarVendaToolStripMenuItem.Enabled = statusLogin;
+            if((MessageBox.Show("Deseja desconectar "+ UsuarioLogado +" ", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Question)) == DialogResult.Yes)
+            {
+                bool statusLogin = false;
+
+                conectarToolStripMenuItem.Enabled = true;
+                desconectarToolStripMenuItem.Enabled = statusLogin;
+                usuárioToolStripMenuItem.Enabled = statusLogin;
+                materialToolStripMenuItem.Enabled = statusLogin;
+                fornecedorToolStripMenuItem.Enabled = statusLogin;
+                clienteToolStripMenuItem.Enabled = statusLogin;
+                insumosToolStripMenuItem.Enabled = statusLogin;
+                produtosToolStripMenuItem.Enabled = statusLogin;
+                realizarVendaToolStripMenuItem.Enabled = statusLogin;
+
+                for (int i = Tbc_Aplicacoes.TabPages.Count - 1; i >= 1; i += -1)
+                {
+                    Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.TabPages[i]);
+                                        
+                }
+            }
+
+            
 
         }
         
@@ -94,7 +108,6 @@ namespace ForLife.Forms
                 TB.Controls.Add(F);
                 Tbc_Aplicacoes.TabPages.Add(TB);
                 Tbc_Aplicacoes.SelectedIndex = 1;
-
             }
 
 
@@ -116,11 +129,17 @@ namespace ForLife.Forms
 
         private void insumoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_Insumos_UC F = new Frm_Insumos_UC();
+           
+        }
+
+        private void insumosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_EstoqueInsumo_UC F = new Frm_EstoqueInsumo_UC();
             F.Dock = DockStyle.Fill;
             TabPage TB = new TabPage();
-            TB.Name = "Gerenciar Insumos";
-            TB.Text = "Gerenciar Insumos";
+            TB.Name = "Estoque - Insumo";
+            TB.Text = "Estoque - Insumo";
+
 
             int index = -1;
 
@@ -142,8 +161,8 @@ namespace ForLife.Forms
                 TB.Controls.Add(F);
                 Tbc_Aplicacoes.TabPages.Add(TB);
                 Tbc_Aplicacoes.SelectedIndex = 1;
+                
             }
         }
-
     }
 }
