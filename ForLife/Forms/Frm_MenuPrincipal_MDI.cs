@@ -129,7 +129,7 @@ namespace ForLife.Forms
 
         private void insumoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void insumosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -163,6 +163,15 @@ namespace ForLife.Forms
                 Tbc_Aplicacoes.SelectedIndex = 1;
                 
             }
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_CadastroProduto_UC CP = new Frm_CadastroProduto_UC();
+            CP.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Gerenciamento - Produto";
+            TB.Text = "Gerenciamento - Produto";
         }
     }
 }
