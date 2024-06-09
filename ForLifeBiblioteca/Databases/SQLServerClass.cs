@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 namespace ForLifeBiblioteca.Databases
 {
@@ -17,7 +18,7 @@ namespace ForLifeBiblioteca.Databases
         {
             try
             {
-                stringConn = "Data Source=JEFFERSON;Initial Catalog=ForLife;User ID=sa;Password=P@ssw0rd;Encrypt=False";
+                stringConn =  ConfigurationManager.ConnectionStrings["ForLifeConnectionString"].ConnectionString;
                 connDB = new SqlConnection(stringConn);
                 connDB.Open();
             }

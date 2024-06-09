@@ -87,7 +87,6 @@ namespace ForLife.Forms
             TB.Name = "Usuário";
             TB.Text = "Usuário";
             
-
             int index = -1;
 
             for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
@@ -107,7 +106,7 @@ namespace ForLife.Forms
             {
                 TB.Controls.Add(F);
                 Tbc_Aplicacoes.TabPages.Add(TB);
-                Tbc_Aplicacoes.SelectedIndex = 1;
+                Tbc_Aplicacoes.SelectTab(TB);
             }
 
 
@@ -140,6 +139,37 @@ namespace ForLife.Forms
             TB.Name = "Estoque - Insumo";
             TB.Text = "Estoque - Insumo";
 
+            int index = -1;
+
+            for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
+            {
+                if (Tbc_Aplicacoes.TabPages[i].Text.Trim() == TB.Text.Trim())
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Tbc_Aplicacoes.SelectedIndex = index;
+            }
+            else
+            {
+                TB.Controls.Add(F);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+                Tbc_Aplicacoes.SelectTab(TB);
+
+            }
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_CadastroProduto_UC F = new Frm_CadastroProduto_UC();
+            F.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Gerenciamento - Produto";
+            TB.Text = "Gerenciamento - Produto";
 
             int index = -1;
 
@@ -160,18 +190,10 @@ namespace ForLife.Forms
             {
                 TB.Controls.Add(F);
                 Tbc_Aplicacoes.TabPages.Add(TB);
-                Tbc_Aplicacoes.SelectedIndex = 1;
-                
-            }
-        }
+                Tbc_Aplicacoes.SelectTab(TB);
 
-        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_CadastroProduto_UC CP = new Frm_CadastroProduto_UC();
-            CP.Dock = DockStyle.Fill;
-            TabPage TB = new TabPage();
-            TB.Name = "Gerenciamento - Produto";
-            TB.Text = "Gerenciamento - Produto";
+            }
+
         }
     }
 }
