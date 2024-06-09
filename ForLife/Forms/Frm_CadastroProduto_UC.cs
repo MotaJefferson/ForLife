@@ -16,10 +16,6 @@ namespace ForLife.Forms
         {
             InitializeComponent();
         }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }

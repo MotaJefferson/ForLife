@@ -59,6 +59,56 @@ namespace ForLifeBiblioteca.Classes
                 }
             }
 
+            #region Funções CRUD
+
+            public string ToInsert()
+            {
+                string SQL;
+
+                SQL = @"INSERT INTO Usuario
+                        (nome
+                        ,usuario
+                        ,senha
+                        ,cargo
+                        ,icBloqueado)
+                        VALUES ";
+                SQL += "('" + this.Nome + "'";
+                SQL += ",'" + this.Usuario + "'";
+                SQL += ",'" + this.Senha + "'";
+                SQL += ",'" + Convert.ToInt32(this.Cargo) + "'";
+                SQL += ",'" + Convert.ToInt32(this.icBloqueado) + "')";
+
+                return SQL;
+            }
+            
+            public string ToUpdate(string Usuario)
+            {
+                string SQL;
+
+                SQL = @"UPDATE Usuario SET ";
+                SQL += "nome = '" + this.Nome + "'";
+                SQL += ",senha = '" + this.Senha + "'";
+                SQL += ",cargo = '" + Convert.ToInt32(this.Cargo) + "'";
+                SQL += ",icBloqueado = '" + Convert.ToInt32(this.icBloqueado) + "'";
+                SQL += "WHERE usuario = '" + this.Usuario + "'";
+
+                return SQL;
+            }
+
+            public Unit DataRowToUnit (DataRow dr)
+            {
+                Unit u = new Unit();
+                u.Nome = dr["Nome"].ToString();
+                u.Usuario = dr["Usuario"].ToString();
+                u.Senha = dr["Senha"].ToString();
+                u.Cargo = Convert.ToInt32(dr["Cargo"]);
+                u.icBloqueado = Convert.ToInt32(dr["icBloqueado"]);
+
+                return u;
+            }
+                
+            #endregion
+
             #region CRUD SQLServer
                 
             public void IncluirSQL()
@@ -130,7 +180,7 @@ namespace ForLifeBiblioteca.Classes
 
                 catch (Exception ex)
                 {
-                    throw new Exception("Erro ao buscar o cliente: " + ex.Message);
+                    throw new Exception("Erro ao buscar o usuario. " + ex.Message);
                 }
             }
 
@@ -304,56 +354,6 @@ namespace ForLifeBiblioteca.Classes
 
             }
 
-            #endregion
-
-            #region Funções CRUD
-
-            public string ToInsert()
-            {
-                string SQL;
-
-                SQL = @"INSERT INTO Usuario
-                        (nome
-                        ,usuario
-                        ,senha
-                        ,cargo
-                        ,icBloqueado)
-                        VALUES ";
-                SQL += "('" + this.Nome + "'";
-                SQL += ",'" + this.Usuario + "'";
-                SQL += ",'" + this.Senha + "'";
-                SQL += ",'" + Convert.ToInt32(this.Cargo) + "'";
-                SQL += ",'" + Convert.ToInt32(this.icBloqueado) + "')";
-
-                return SQL;
-            }
-            
-            public string ToUpdate(string Usuario)
-            {
-                string SQL;
-
-                SQL = @"UPDATE Usuario SET ";
-                SQL += "nome = '" + this.Nome + "'";
-                SQL += ",senha = '" + this.Senha + "'";
-                SQL += ",cargo = '" + Convert.ToInt32(this.Cargo) + "'";
-                SQL += ",icBloqueado = '" + Convert.ToInt32(this.icBloqueado) + "'";
-                SQL += "WHERE usuario = '" + this.Usuario + "'";
-
-                return SQL;
-            }
-
-            public Unit DataRowToUnit (DataRow dr)
-            {
-                Unit u = new Unit();
-                u.Nome = dr["Nome"].ToString();
-                u.Usuario = dr["Usuario"].ToString();
-                u.Senha = dr["Senha"].ToString();
-                u.Cargo = Convert.ToInt32(dr["Cargo"]);
-                u.icBloqueado = Convert.ToInt32(dr["icBloqueado"]);
-
-                return u;
-            }
-                
             #endregion
 
         }
