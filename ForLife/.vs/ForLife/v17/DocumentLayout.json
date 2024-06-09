@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_estoqueinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_estoqueinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -21,6 +22,36 @@
     {
       "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_gerenciamentoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECE412C0-5BA5-4077-8134-1EDE640C18D1}|..\\ForLifeBiblioteca\\ForLifeBiblioteca.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlifebiblioteca\\classes\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECE412C0-5BA5-4077-8134-1EDE640C18D1}|..\\ForLifeBiblioteca\\ForLifeBiblioteca.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlifebiblioteca\\classes\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forms\\frm_cadastroproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_cadastroproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forms\\frm_cadastroproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_cadastroproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
     }
   ],
   "DocumentGroupContainers": [
@@ -34,6 +65,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "Frm_PesquisaUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaUsuario.cs",
@@ -54,16 +86,118 @@
               "RelativeToolTip": "Forms\\Frm_EstoqueInsumo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T19:42:21.712Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Frm_Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_Login.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_Login.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_Login.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T03:26:52.127Z",
+>>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T03:25:13.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_MenuPrincipal_MDI.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs*",
+              "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T03:22:04.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Frm_MenuPrincipal_MDI.cs [Design]",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
               "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
               "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs [Design]",
               "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs [Design]",
+=======
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs [Design]*",
+              "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T03:22:00.883Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLifeBiblioteca\\Classes\\Produto.cs",
+              "RelativeDocumentMoniker": "..\\ForLifeBiblioteca\\Classes\\Produto.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLifeBiblioteca\\Classes\\Produto.cs*",
+              "RelativeToolTip": "..\\ForLifeBiblioteca\\Classes\\Produto.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T02:46:24.242Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "463808eb-ebca-43ac-a72c-0ce1a22faa17",
+        "Display": 0,
+        "X": 52,
+        "Y": 130,
+        "Width": 1326,
+        "Height": 771,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Frm_CadastroProduto_UC.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_CadastroProduto_UC.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_CadastroProduto_UC.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_CadastroProduto_UC.cs",
+              "RelativeToolTip": "Forms\\Frm_CadastroProduto_UC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T02:45:00.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Frm_CadastroProduto_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_CadastroProduto_UC.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_CadastroProduto_UC.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\Forms\\Frm_CadastroProduto_UC.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_CadastroProduto_UC.cs [Design]",
+>>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T19:37:17.719Z",
               "EditorCaption": " [Design]"
@@ -82,6 +216,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "Frm_GerenciamentoInsumo.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoInsumo.cs",
@@ -91,6 +226,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T03:45:35.193Z",
               "EditorCaption": " [Design]"
+=======
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLifeBiblioteca\\Classes\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\ForLifeBiblioteca\\Classes\\Usuario.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLifeBiblioteca\\Classes\\Usuario.cs",
+              "RelativeToolTip": "..\\ForLifeBiblioteca\\Classes\\Usuario.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAIwEkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T02:45:25.971Z",
+              "EditorCaption": ""
+>>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             }
           ]
         }

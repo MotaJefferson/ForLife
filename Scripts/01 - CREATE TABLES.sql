@@ -26,7 +26,7 @@ CREATE TABLE Fornecedor (
 CREATE TABLE Cliente (
     id_cliente INT IDENTITY(1,1) PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
-    CPF varchar (14) NOT NULL,
+    CPF varchar (14) NOT NULL UNIQUE,
     telefone VARCHAR(20) NOT NULL,
     endereco VARCHAR(255) NOT NULL
 );
@@ -34,7 +34,7 @@ CREATE TABLE Cliente (
 -- Tabela Insumo
 CREATE TABLE Insumo (
     id_insumo INT IDENTITY(1,1) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
+    nome VARCHAR(255) NOT NULL UNIQUE,
     tipo VARCHAR(50) NOT NULL,
     ativo BIT NOT NULL,
     periodo_vencimento INT NOT NULL,
@@ -81,12 +81,13 @@ CREATE TABLE InsumoEstoque (
 -- Tabela Produto
 CREATE TABLE Produto (
     id_produto INT IDENTITY(1,1) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
+    nome VARCHAR(255) NOT NULL UNIQUE,
     insumo_id INT NOT NULL,
     periodo_colheita INT NOT NULL,
     periodo_vencimento INT NOT NULL,
     periodo_limite_colheita INT NOT NULL,
     usuario_id INT NOT NULL,
+	status BIT NOT NULL,
     FOREIGN KEY (insumo_id) REFERENCES Insumo(id_insumo),
     FOREIGN KEY (usuario_id) REFERENCES Usuario(id_usuario)
 );

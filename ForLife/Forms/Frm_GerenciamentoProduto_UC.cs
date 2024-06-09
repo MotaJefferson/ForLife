@@ -16,6 +16,7 @@ namespace ForLife.Forms
         {
             InitializeComponent();
         }
+<<<<<<< HEAD:ForLife/Forms/Frm_GerenciamentoProduto_UC.cs
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -26,5 +27,8 @@ namespace ForLife.Forms
         {
 
         }
+=======
+        
+>>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7:ForLife/Forms/Frm_CadastroProduto_UC.cs
     }
 }
