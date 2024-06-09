@@ -44,4 +44,8 @@ C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\System.Data.DataSetExtensi
 C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\Microsoft.CSharp.xml
 C:\Users\jaque\source\repos\ForLife\ForLife\bin\Debug\System.Data.xml
 C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_PesquisaUsuario.resources
-C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_CadastroProduto_UC.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\obj\Debug\ForLife.Forms.Frm_CadastroProduto_UC.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoInsumo.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoProduto_UC.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoCliente.resources
+C:\Users\jaque\source\repos\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoFornecedor.resources

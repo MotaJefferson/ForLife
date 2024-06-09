@@ -151,14 +151,14 @@ namespace ForLife.Forms
             // insumoToolStripMenuItem
             // 
             this.insumoToolStripMenuItem.Name = "insumoToolStripMenuItem";
-            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.insumoToolStripMenuItem.Text = "Insumo";
             this.insumoToolStripMenuItem.Click += new System.EventHandler(this.insumoToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.produtoToolStripMenuItem.Text = "Produto";
             this.produtoToolStripMenuItem.Click += new System.EventHandler(this.produtoToolStripMenuItem_Click);
             // 
@@ -237,12 +237,12 @@ namespace ForLife.Forms
             this.Tbc_Aplicacoes.HotTrack = true;
             this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 28);
             this.Tbc_Aplicacoes.Margin = new System.Windows.Forms.Padding(2);
-            this.Tbc_Aplicacoes.MinimumSize = new System.Drawing.Size(900, 600);
+            this.Tbc_Aplicacoes.MinimumSize = new System.Drawing.Size(675, 488);
             this.Tbc_Aplicacoes.Multiline = true;
             this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
             this.Tbc_Aplicacoes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Tbc_Aplicacoes.SelectedIndex = 0;
-            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(902, 600);
+            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(902, 581);
             this.Tbc_Aplicacoes.TabIndex = 3;
             // 
             // tabPaginaInicial
@@ -250,10 +250,10 @@ namespace ForLife.Forms
             this.tabPaginaInicial.BackgroundImage = global::ForLife.Properties.Resources.Background___ForLife;
             this.tabPaginaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPaginaInicial.Location = new System.Drawing.Point(4, 22);
-            this.tabPaginaInicial.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPaginaInicial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPaginaInicial.Name = "tabPaginaInicial";
-            this.tabPaginaInicial.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPaginaInicial.Size = new System.Drawing.Size(894, 574);
+            this.tabPaginaInicial.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPaginaInicial.Size = new System.Drawing.Size(894, 555);
             this.tabPaginaInicial.TabIndex = 0;
             this.tabPaginaInicial.Text = "Página Inicial";
             this.tabPaginaInicial.UseVisualStyleBackColor = true;
@@ -271,8 +271,8 @@ namespace ForLife.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(918, 597);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(918, 596);
             this.Name = "Frm_MenuPrincipal_MDI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForLife";

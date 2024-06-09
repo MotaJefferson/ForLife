@@ -80,6 +80,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Frm_EstoqueInsumo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_EstoqueInsumo.Designer.cs">
+      <DependentUpon>Frm_EstoqueInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_GerenciamentoCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_GerenciamentoCliente.Designer.cs">
+      <DependentUpon>Frm_GerenciamentoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_GerenciamentoFornecedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_GerenciamentoFornecedor.Designer.cs">
+      <DependentUpon>Frm_GerenciamentoFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_GerenciamentoProduto_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +143,15 @@
     <Compile Include="Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Frm_EstoqueInsumo.resx">
+      <DependentUpon>Frm_EstoqueInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_GerenciamentoCliente.resx">
+      <DependentUpon>Frm_GerenciamentoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_GerenciamentoFornecedor.resx">
+      <DependentUpon>Frm_GerenciamentoFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_GerenciamentoInsumo.resx">
       <DependentUpon>Frm_GerenciamentoInsumo.cs</DependentUpon>
     </EmbeddedResource>

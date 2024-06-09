@@ -52,12 +52,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox_ConfigEstoqueColheita = new System.Windows.Forms.GroupBox();
             this.Btn_VoltarProduto = new System.Windows.Forms.Button();
+            this.imgList_Usuario = new System.Windows.Forms.ImageList(this.components);
             this.Btn_BuscarProduto = new System.Windows.Forms.Button();
             this.Btn_ExcluirProduto = new System.Windows.Forms.Button();
             this.Btn_SalvarProduto = new System.Windows.Forms.Button();
             this.Btn_EditarProduto = new System.Windows.Forms.Button();
             this.Btn_NovoProduto = new System.Windows.Forms.Button();
-            this.imgList_Usuario = new System.Windows.Forms.ImageList(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -321,6 +321,18 @@
             this.Btn_VoltarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_VoltarProduto.UseVisualStyleBackColor = true;
             // 
+            // imgList_Usuario
+            // 
+            this.imgList_Usuario.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList_Usuario.ImageStream")));
+            this.imgList_Usuario.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgList_Usuario.Images.SetKeyName(0, "Adicionar.png");
+            this.imgList_Usuario.Images.SetKeyName(1, "Apagar.png");
+            this.imgList_Usuario.Images.SetKeyName(2, "Editar.png");
+            this.imgList_Usuario.Images.SetKeyName(3, "Excluir.png");
+            this.imgList_Usuario.Images.SetKeyName(4, "Pesquisar.png");
+            this.imgList_Usuario.Images.SetKeyName(5, "Salvar.png");
+            this.imgList_Usuario.Images.SetKeyName(6, "Voltar.png");
+            // 
             // Btn_BuscarProduto
             // 
             this.Btn_BuscarProduto.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -402,18 +414,6 @@
             this.Btn_NovoProduto.Text = "Novo";
             this.Btn_NovoProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_NovoProduto.UseVisualStyleBackColor = true;
-            // 
-            // imgList_Usuario
-            // 
-            this.imgList_Usuario.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList_Usuario.ImageStream")));
-            this.imgList_Usuario.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgList_Usuario.Images.SetKeyName(0, "Adicionar.png");
-            this.imgList_Usuario.Images.SetKeyName(1, "Apagar.png");
-            this.imgList_Usuario.Images.SetKeyName(2, "Editar.png");
-            this.imgList_Usuario.Images.SetKeyName(3, "Excluir.png");
-            this.imgList_Usuario.Images.SetKeyName(4, "Pesquisar.png");
-            this.imgList_Usuario.Images.SetKeyName(5, "Salvar.png");
-            this.imgList_Usuario.Images.SetKeyName(6, "Voltar.png");
             // 
             // Frm_GerenciamentoProduto_UC
             // 

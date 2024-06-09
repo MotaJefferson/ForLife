@@ -43,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.Lbl_statusInsumo = new System.Windows.Forms.Label();
             this.Btn_VoltarInsumo = new System.Windows.Forms.Button();
+            this.imgList_Usuario = new System.Windows.Forms.ImageList(this.components);
             this.Btn_BuscarInsumo = new System.Windows.Forms.Button();
             this.Btn_ExcluirInsumo = new System.Windows.Forms.Button();
             this.Btn_SalvarInsumo = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.Rdb_TipoMuda = new System.Windows.Forms.RadioButton();
             this.Rdb_TipoSemente = new System.Windows.Forms.RadioButton();
             this.groupBox_TipodeInsumo = new System.Windows.Forms.GroupBox();
-            this.imgList_Usuario = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -213,6 +213,18 @@
             this.Btn_VoltarInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_VoltarInsumo.UseVisualStyleBackColor = true;
             // 
+            // imgList_Usuario
+            // 
+            this.imgList_Usuario.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList_Usuario.ImageStream")));
+            this.imgList_Usuario.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgList_Usuario.Images.SetKeyName(0, "Adicionar.png");
+            this.imgList_Usuario.Images.SetKeyName(1, "Apagar.png");
+            this.imgList_Usuario.Images.SetKeyName(2, "Editar.png");
+            this.imgList_Usuario.Images.SetKeyName(3, "Excluir.png");
+            this.imgList_Usuario.Images.SetKeyName(4, "Pesquisar.png");
+            this.imgList_Usuario.Images.SetKeyName(5, "Salvar.png");
+            this.imgList_Usuario.Images.SetKeyName(6, "Voltar.png");
+            // 
             // Btn_BuscarInsumo
             // 
             this.Btn_BuscarInsumo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -335,22 +347,11 @@
             this.groupBox_TipodeInsumo.TabStop = false;
             this.groupBox_TipodeInsumo.Text = "Tipo de insumo";
             // 
-            // imgList_Usuario
-            // 
-            this.imgList_Usuario.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList_Usuario.ImageStream")));
-            this.imgList_Usuario.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgList_Usuario.Images.SetKeyName(0, "Adicionar.png");
-            this.imgList_Usuario.Images.SetKeyName(1, "Apagar.png");
-            this.imgList_Usuario.Images.SetKeyName(2, "Editar.png");
-            this.imgList_Usuario.Images.SetKeyName(3, "Excluir.png");
-            this.imgList_Usuario.Images.SetKeyName(4, "Pesquisar.png");
-            this.imgList_Usuario.Images.SetKeyName(5, "Salvar.png");
-            this.imgList_Usuario.Images.SetKeyName(6, "Voltar.png");
-            // 
             // Frm_GerenciamentoInsumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(253)))), ((int)(((byte)(221)))));
             this.Controls.Add(this.Btn_VoltarInsumo);
             this.Controls.Add(this.Btn_BuscarInsumo);
             this.Controls.Add(this.Btn_ExcluirInsumo);
