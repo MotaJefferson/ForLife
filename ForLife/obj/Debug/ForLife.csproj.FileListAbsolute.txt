@@ -75,3 +75,25 @@ C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T
 C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLife\obj\Debug\ForLife.csproj.Up2Date
 C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLife\obj\Debug\ForLife.exe
 C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLife\obj\Debug\ForLife.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.csproj.AssemblyReference.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_EstoqueInsumo.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoCliente.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoFornecedor.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoInsumo.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciamentoProduto_UC.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_Login.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_MenuPrincipal_MDI.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_GerenciarUsuario_UC.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Forms.Frm_PesquisaUsuario.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.Properties.Resources.resources
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.csproj.GenerateResource.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.exe
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\bin\Debug\ForLife.exe.config
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\bin\Debug\ForLife.exe
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\bin\Debug\ForLife.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\bin\Debug\ForLifeBiblioteca.dll
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\bin\Debug\ForLifeBiblioteca.pdb
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\bin\Debug\ForLifeBiblioteca.dll.config
+C:\Users\jeffe\OneDrive\Documentos\UNIP\2º Semestre\PIM - 2º Semestre 2024\ForLife - Projeto\ForLife\ForLife\obj\Debug\ForLife.csproj.Up2Date

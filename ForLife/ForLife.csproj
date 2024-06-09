@@ -104,12 +104,6 @@
     <Compile Include="Forms\Frm_GerenciamentoProduto_UC.Designer.cs">
       <DependentUpon>Frm_GerenciamentoProduto_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Frm_EstoqueInsumo_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Frm_EstoqueInsumo_UC.Designer.cs">
-      <DependentUpon>Frm_EstoqueInsumo_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Frm_GerenciamentoInsumo.cs">
       <SubType>UserControl</SubType>
     </Compile>

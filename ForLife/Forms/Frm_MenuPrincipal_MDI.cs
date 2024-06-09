@@ -133,7 +133,7 @@ namespace ForLife.Forms
 
         private void insumosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_EstoqueInsumo_UC F = new Frm_EstoqueInsumo_UC();
+            Frm_EstoqueInsumo F = new Frm_EstoqueInsumo();
             F.Dock = DockStyle.Fill;
             TabPage TB = new TabPage();
             TB.Name = "Estoque - Insumo";
