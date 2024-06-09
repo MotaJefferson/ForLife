@@ -80,17 +80,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Frm_CadastroProduto_UC.cs">
+    <Compile Include="Forms\Frm_GerenciamentoProduto_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Frm_CadastroProduto_UC.Designer.cs">
-      <DependentUpon>Frm_CadastroProduto_UC.cs</DependentUpon>
+    <Compile Include="Forms\Frm_GerenciamentoProduto_UC.Designer.cs">
+      <DependentUpon>Frm_GerenciamentoProduto_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_EstoqueInsumo_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Frm_EstoqueInsumo_UC.Designer.cs">
       <DependentUpon>Frm_EstoqueInsumo_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_GerenciamentoInsumo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_GerenciamentoInsumo.Designer.cs">
+      <DependentUpon>Frm_GerenciamentoInsumo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_PesquisaUsuario.cs">
       <SubType>Form</SubType>
@@ -119,8 +125,11 @@
     <Compile Include="Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Frm_CadastroProduto_UC.resx">
-      <DependentUpon>Frm_CadastroProduto_UC.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Frm_GerenciamentoInsumo.resx">
+      <DependentUpon>Frm_GerenciamentoInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_GerenciamentoProduto_UC.resx">
+      <DependentUpon>Frm_GerenciamentoProduto_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>

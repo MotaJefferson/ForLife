@@ -187,14 +187,14 @@ namespace ForLife.Forms
             // insumosToolStripMenuItem
             // 
             this.insumosToolStripMenuItem.Name = "insumosToolStripMenuItem";
-            this.insumosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.insumosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.insumosToolStripMenuItem.Text = "Insumos";
             this.insumosToolStripMenuItem.Click += new System.EventHandler(this.insumosToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // plantioToolStripMenuItem
@@ -216,7 +216,7 @@ namespace ForLife.Forms
             // realizarVendaToolStripMenuItem
             // 
             this.realizarVendaToolStripMenuItem.Name = "realizarVendaToolStripMenuItem";
-            this.realizarVendaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.realizarVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.realizarVendaToolStripMenuItem.Text = "Realizar Venda";
             // 
             // fecharGuiaToolStripMenuItem

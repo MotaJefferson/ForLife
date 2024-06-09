@@ -1,6 +1,6 @@
 ﻿namespace ForLife.Forms
 {
-    partial class Frm_CadastroProduto_UC
+    partial class Frm_GerenciamentoProduto_UC
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_GerenciamentoProduto_UC));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Lbl_statusProduto = new System.Windows.Forms.Label();
@@ -55,6 +57,7 @@
             this.Btn_SalvarProduto = new System.Windows.Forms.Button();
             this.Btn_EditarProduto = new System.Windows.Forms.Button();
             this.Btn_NovoProduto = new System.Windows.Forms.Button();
+            this.imgList_Usuario = new System.Windows.Forms.ImageList(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -124,13 +127,14 @@
             // 
             this.Rbtn_ProdutoInativo.AutoSize = true;
             this.Rbtn_ProdutoInativo.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rbtn_ProdutoInativo.Location = new System.Drawing.Point(166, 137);
+            this.Rbtn_ProdutoInativo.Location = new System.Drawing.Point(140, 137);
             this.Rbtn_ProdutoInativo.Margin = new System.Windows.Forms.Padding(2);
             this.Rbtn_ProdutoInativo.Name = "Rbtn_ProdutoInativo";
             this.Rbtn_ProdutoInativo.Size = new System.Drawing.Size(73, 24);
             this.Rbtn_ProdutoInativo.TabIndex = 31;
             this.Rbtn_ProdutoInativo.Text = "Inativo";
             this.Rbtn_ProdutoInativo.UseVisualStyleBackColor = true;
+            this.Rbtn_ProdutoInativo.CheckedChanged += new System.EventHandler(this.Rbtn_ProdutoInativo_CheckedChanged);
             // 
             // Rbtn_ProdutoAtivo
             // 
@@ -308,6 +312,7 @@
             this.Btn_VoltarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_VoltarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_VoltarProduto.ImageKey = "Voltar.png";
+            this.Btn_VoltarProduto.ImageList = this.imgList_Usuario;
             this.Btn_VoltarProduto.Location = new System.Drawing.Point(631, 462);
             this.Btn_VoltarProduto.Name = "Btn_VoltarProduto";
             this.Btn_VoltarProduto.Size = new System.Drawing.Size(97, 28);
@@ -323,6 +328,7 @@
             this.Btn_BuscarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_BuscarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_BuscarProduto.ImageKey = "Pesquisar.png";
+            this.Btn_BuscarProduto.ImageList = this.imgList_Usuario;
             this.Btn_BuscarProduto.Location = new System.Drawing.Point(528, 462);
             this.Btn_BuscarProduto.Name = "Btn_BuscarProduto";
             this.Btn_BuscarProduto.Size = new System.Drawing.Size(97, 28);
@@ -338,6 +344,7 @@
             this.Btn_ExcluirProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ExcluirProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_ExcluirProduto.ImageKey = "Apagar.png";
+            this.Btn_ExcluirProduto.ImageList = this.imgList_Usuario;
             this.Btn_ExcluirProduto.Location = new System.Drawing.Point(426, 462);
             this.Btn_ExcluirProduto.Name = "Btn_ExcluirProduto";
             this.Btn_ExcluirProduto.Size = new System.Drawing.Size(97, 28);
@@ -353,6 +360,7 @@
             this.Btn_SalvarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_SalvarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_SalvarProduto.ImageKey = "Salvar.png";
+            this.Btn_SalvarProduto.ImageList = this.imgList_Usuario;
             this.Btn_SalvarProduto.Location = new System.Drawing.Point(323, 462);
             this.Btn_SalvarProduto.Name = "Btn_SalvarProduto";
             this.Btn_SalvarProduto.Size = new System.Drawing.Size(97, 28);
@@ -368,6 +376,7 @@
             this.Btn_EditarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_EditarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_EditarProduto.ImageKey = "Editar.png";
+            this.Btn_EditarProduto.ImageList = this.imgList_Usuario;
             this.Btn_EditarProduto.Location = new System.Drawing.Point(218, 462);
             this.Btn_EditarProduto.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_EditarProduto.Name = "Btn_EditarProduto";
@@ -384,6 +393,7 @@
             this.Btn_NovoProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_NovoProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_NovoProduto.ImageKey = "Adicionar.png";
+            this.Btn_NovoProduto.ImageList = this.imgList_Usuario;
             this.Btn_NovoProduto.Location = new System.Drawing.Point(111, 462);
             this.Btn_NovoProduto.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_NovoProduto.Name = "Btn_NovoProduto";
@@ -393,7 +403,19 @@
             this.Btn_NovoProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_NovoProduto.UseVisualStyleBackColor = true;
             // 
-            // Frm_CadastroProduto_UC
+            // imgList_Usuario
+            // 
+            this.imgList_Usuario.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList_Usuario.ImageStream")));
+            this.imgList_Usuario.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgList_Usuario.Images.SetKeyName(0, "Adicionar.png");
+            this.imgList_Usuario.Images.SetKeyName(1, "Apagar.png");
+            this.imgList_Usuario.Images.SetKeyName(2, "Editar.png");
+            this.imgList_Usuario.Images.SetKeyName(3, "Excluir.png");
+            this.imgList_Usuario.Images.SetKeyName(4, "Pesquisar.png");
+            this.imgList_Usuario.Images.SetKeyName(5, "Salvar.png");
+            this.imgList_Usuario.Images.SetKeyName(6, "Voltar.png");
+            // 
+            // Frm_GerenciamentoProduto_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -414,7 +436,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox_ConfigEstoqueColheita);
-            this.Name = "Frm_CadastroProduto_UC";
+            this.Name = "Frm_GerenciamentoProduto_UC";
             this.Size = new System.Drawing.Size(900, 600);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -460,5 +482,6 @@
         private System.Windows.Forms.Button Btn_SalvarProduto;
         private System.Windows.Forms.Button Btn_EditarProduto;
         private System.Windows.Forms.Button Btn_NovoProduto;
+        private System.Windows.Forms.ImageList imgList_Usuario;
     }
 }

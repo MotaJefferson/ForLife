@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ForLife.Forms
 {
-    public partial class Frm_CadastroProduto_UC : UserControl
+    public partial class Frm_GerenciamentoInsumo : UserControl
     {
-        public Frm_CadastroProduto_UC()
+        public Frm_GerenciamentoInsumo()
         {
             InitializeComponent();
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

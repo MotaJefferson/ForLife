@@ -167,7 +167,7 @@ namespace ForLife.Forms
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_CadastroProduto_UC CP = new Frm_CadastroProduto_UC();
+            Frm_GerenciamentoProduto_UC CP = new Frm_GerenciamentoProduto_UC();
             CP.Dock = DockStyle.Fill;
             TabPage TB = new TabPage();
             TB.Name = "Gerenciamento - Produto";
