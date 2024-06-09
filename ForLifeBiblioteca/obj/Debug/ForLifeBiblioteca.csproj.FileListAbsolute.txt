@@ -16,3 +16,12 @@ C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBibliotec
 C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.CoreCompileInputs.cache
 C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.dll
 C:\Users\jaque\source\repos\ForLife\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.pdb
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.dll.config
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.dll
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\bin\Debug\ForLifeBiblioteca.pdb
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.AssemblyReference.cache
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.Properties.Resources.resources
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.GenerateResource.cache
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.dll
+C:\Users\jeffe\OneDrive\Documentos\Desenvolvimento\C#\ForLife - Backup-20240609T231349Z-001\ForLife - Backup\ForLifeBiblioteca\obj\Debug\ForLifeBiblioteca.pdb

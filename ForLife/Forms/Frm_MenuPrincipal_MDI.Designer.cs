@@ -134,11 +134,7 @@ namespace ForLife.Forms
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-<<<<<<< HEAD
             this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
->>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
@@ -148,54 +144,34 @@ namespace ForLife.Forms
             this.insumoToolStripMenuItem,
             this.produtoToolStripMenuItem});
             this.materialToolStripMenuItem.Name = "materialToolStripMenuItem";
-<<<<<<< HEAD
             this.materialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
-            this.materialToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
->>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             this.materialToolStripMenuItem.Text = "Estoque";
             this.materialToolStripMenuItem.Click += new System.EventHandler(this.materialToolStripMenuItem_Click);
             // 
             // insumoToolStripMenuItem
             // 
             this.insumoToolStripMenuItem.Name = "insumoToolStripMenuItem";
-<<<<<<< HEAD
             this.insumoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-=======
-            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
->>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             this.insumoToolStripMenuItem.Text = "Insumo";
             this.insumoToolStripMenuItem.Click += new System.EventHandler(this.insumoToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-<<<<<<< HEAD
             this.produtoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-=======
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
->>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             this.produtoToolStripMenuItem.Text = "Produto";
             this.produtoToolStripMenuItem.Click += new System.EventHandler(this.produtoToolStripMenuItem_Click);
             // 
             // fornecedorToolStripMenuItem
             // 
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-<<<<<<< HEAD
             this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
->>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-<<<<<<< HEAD
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
->>>>>>> f9b533efb333e65f2642dd658f4dfdba581939d7
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // estoqueToolStripMenuItem
