@@ -86,6 +86,12 @@
     <Compile Include="Forms\Frm_EstoqueInsumo.Designer.cs">
       <DependentUpon>Frm_EstoqueInsumo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Frm_EstoqueProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_EstoqueProduto.Designer.cs">
+      <DependentUpon>Frm_EstoqueProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_GerenciamentoCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Frm_EstoqueInsumo.resx">
       <DependentUpon>Frm_EstoqueInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_EstoqueProduto.resx">
+      <DependentUpon>Frm_EstoqueProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_GerenciamentoCliente.resx">
       <DependentUpon>Frm_GerenciamentoCliente.cs</DependentUpon>
