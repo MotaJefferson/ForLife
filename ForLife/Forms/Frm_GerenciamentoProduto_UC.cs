@@ -143,6 +143,7 @@ namespace ForLife.Forms
             if (Txt_NomeProduto.Enabled == false)
             {
                 MessageBox.Show("Inclua ou edite um registro para salvar", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             else
             {
