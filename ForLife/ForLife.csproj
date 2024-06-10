@@ -80,6 +80,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForLifeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForLifeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_EstoqueInsumo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +120,12 @@
     </Compile>
     <Compile Include="Forms\Frm_GerenciamentoInsumo.Designer.cs">
       <DependentUpon>Frm_GerenciamentoInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_PesquisaInsumoOrigem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_PesquisaInsumoOrigem.Designer.cs">
+      <DependentUpon>Frm_PesquisaInsumoOrigem.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_PesquisaUsuario.cs">
       <SubType>Form</SubType>
@@ -170,6 +181,9 @@
     <EmbeddedResource Include="Forms\Frm_GerenciarUsuario_UC.resx">
       <DependentUpon>Frm_GerenciarUsuario_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_PesquisaInsumoOrigem.resx">
+      <DependentUpon>Frm_PesquisaInsumoOrigem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_PesquisaUsuario.resx">
       <DependentUpon>Frm_PesquisaUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +192,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ForLifeDataSet.xsc">
+      <DependentUpon>ForLifeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ForLifeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ForLifeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ForLifeDataSet.xss">
+      <DependentUpon>ForLifeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

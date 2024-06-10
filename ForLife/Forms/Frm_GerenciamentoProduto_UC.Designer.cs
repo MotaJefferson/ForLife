@@ -43,26 +43,29 @@
             this.Txt_NomeProduto = new System.Windows.Forms.TextBox();
             this.Lbl_NomeProduto = new System.Windows.Forms.Label();
             this.Lbl_IdInsumoOrigem = new System.Windows.Forms.Label();
-            this.comboBox_InsumoOrigem = new System.Windows.Forms.ComboBox();
             this.label_PeriodoVenc = new System.Windows.Forms.Label();
-            this.numericUpDown_venc = new System.Windows.Forms.NumericUpDown();
+            this.Num_Vencimento = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown_Colheita = new System.Windows.Forms.NumericUpDown();
+            this.Num_Colheita = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox_ConfigEstoqueColheita = new System.Windows.Forms.GroupBox();
-            this.Btn_VoltarProduto = new System.Windows.Forms.Button();
             this.imgList_Usuario = new System.Windows.Forms.ImageList(this.components);
+            this.botaoPesquisaSimples = new System.Windows.Forms.ImageList(this.components);
+            this.Txt_InsumoOrigem = new System.Windows.Forms.TextBox();
+            this.Btn_PesquisaInsumo = new System.Windows.Forms.Button();
+            this.Btn_VoltarProduto = new System.Windows.Forms.Button();
             this.Btn_BuscarProduto = new System.Windows.Forms.Button();
             this.Btn_ExcluirProduto = new System.Windows.Forms.Button();
             this.Btn_SalvarProduto = new System.Windows.Forms.Button();
             this.Btn_EditarProduto = new System.Windows.Forms.Button();
             this.Btn_NovoProduto = new System.Windows.Forms.Button();
+            this.imgPesquisaSimples = new System.Windows.Forms.ImageList(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_venc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Colheita)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Num_Vencimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Num_Colheita)).BeginInit();
             this.groupBox_ConfigEstoqueColheita.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +99,7 @@
             this.Lbl_statusProduto.Name = "Lbl_statusProduto";
             this.Lbl_statusProduto.Size = new System.Drawing.Size(177, 25);
             this.Lbl_statusProduto.TabIndex = 20;
-            this.Lbl_statusProduto.Text = "Status do produto";
+            this.Lbl_statusProduto.Text = "Status do Produto";
             // 
             // panel1
             // 
@@ -117,9 +120,9 @@
             this.Lbl_TitleProduto.ForeColor = System.Drawing.Color.Ivory;
             this.Lbl_TitleProduto.Location = new System.Drawing.Point(17, 14);
             this.Lbl_TitleProduto.Name = "Lbl_TitleProduto";
-            this.Lbl_TitleProduto.Size = new System.Drawing.Size(399, 37);
+            this.Lbl_TitleProduto.Size = new System.Drawing.Size(398, 37);
             this.Lbl_TitleProduto.TabIndex = 0;
-            this.Lbl_TitleProduto.Text = "Gerenciamento do produto";
+            this.Lbl_TitleProduto.Text = "Gerenciamento do Produto";
             // 
             // Rbtn_ProdutoInativo
             // 
@@ -188,7 +191,7 @@
             this.Txt_NomeProduto.Location = new System.Drawing.Point(47, 343);
             this.Txt_NomeProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_NomeProduto.Name = "Txt_NomeProduto";
-            this.Txt_NomeProduto.Size = new System.Drawing.Size(823, 30);
+            this.Txt_NomeProduto.Size = new System.Drawing.Size(1064, 30);
             this.Txt_NomeProduto.TabIndex = 33;
             // 
             // Lbl_NomeProduto
@@ -197,28 +200,19 @@
             this.Lbl_NomeProduto.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_NomeProduto.Location = new System.Drawing.Point(41, 309);
             this.Lbl_NomeProduto.Name = "Lbl_NomeProduto";
-            this.Lbl_NomeProduto.Size = new System.Drawing.Size(132, 23);
+            this.Lbl_NomeProduto.Size = new System.Drawing.Size(158, 23);
             this.Lbl_NomeProduto.TabIndex = 34;
-            this.Lbl_NomeProduto.Text = "Nome produto";
+            this.Lbl_NomeProduto.Text = "Nome do Produto";
             // 
             // Lbl_IdInsumoOrigem
             // 
             this.Lbl_IdInsumoOrigem.AutoSize = true;
             this.Lbl_IdInsumoOrigem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_IdInsumoOrigem.Location = new System.Drawing.Point(43, 433);
+            this.Lbl_IdInsumoOrigem.Location = new System.Drawing.Point(43, 420);
             this.Lbl_IdInsumoOrigem.Name = "Lbl_IdInsumoOrigem";
-            this.Lbl_IdInsumoOrigem.Size = new System.Drawing.Size(160, 23);
+            this.Lbl_IdInsumoOrigem.Size = new System.Drawing.Size(163, 23);
             this.Lbl_IdInsumoOrigem.TabIndex = 35;
-            this.Lbl_IdInsumoOrigem.Text = "Insumo de origem";
-            // 
-            // comboBox_InsumoOrigem
-            // 
-            this.comboBox_InsumoOrigem.FormattingEnabled = true;
-            this.comboBox_InsumoOrigem.Location = new System.Drawing.Point(47, 462);
-            this.comboBox_InsumoOrigem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox_InsumoOrigem.Name = "comboBox_InsumoOrigem";
-            this.comboBox_InsumoOrigem.Size = new System.Drawing.Size(359, 24);
-            this.comboBox_InsumoOrigem.TabIndex = 36;
+            this.Lbl_IdInsumoOrigem.Text = "Insumo de Origem";
             // 
             // label_PeriodoVenc
             // 
@@ -231,14 +225,14 @@
             this.label_PeriodoVenc.TabIndex = 37;
             this.label_PeriodoVenc.Text = "Vencimento";
             // 
-            // numericUpDown_venc
+            // Num_Vencimento
             // 
-            this.numericUpDown_venc.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown_venc.Location = new System.Drawing.Point(39, 65);
-            this.numericUpDown_venc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.numericUpDown_venc.Name = "numericUpDown_venc";
-            this.numericUpDown_venc.Size = new System.Drawing.Size(79, 26);
-            this.numericUpDown_venc.TabIndex = 38;
+            this.Num_Vencimento.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Num_Vencimento.Location = new System.Drawing.Point(39, 65);
+            this.Num_Vencimento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Num_Vencimento.Name = "Num_Vencimento";
+            this.Num_Vencimento.Size = new System.Drawing.Size(79, 26);
+            this.Num_Vencimento.TabIndex = 38;
             // 
             // label1
             // 
@@ -264,14 +258,14 @@
             this.label2.TabIndex = 42;
             this.label2.Text = "Dia(s)";
             // 
-            // numericUpDown_Colheita
+            // Num_Colheita
             // 
-            this.numericUpDown_Colheita.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown_Colheita.Location = new System.Drawing.Point(237, 65);
-            this.numericUpDown_Colheita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.numericUpDown_Colheita.Name = "numericUpDown_Colheita";
-            this.numericUpDown_Colheita.Size = new System.Drawing.Size(79, 26);
-            this.numericUpDown_Colheita.TabIndex = 41;
+            this.Num_Colheita.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Num_Colheita.Location = new System.Drawing.Point(237, 65);
+            this.Num_Colheita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Num_Colheita.Name = "Num_Colheita";
+            this.Num_Colheita.Size = new System.Drawing.Size(79, 26);
+            this.Num_Colheita.TabIndex = 41;
             // 
             // label3
             // 
@@ -290,11 +284,11 @@
             this.groupBox_ConfigEstoqueColheita.Controls.Add(this.label3);
             this.groupBox_ConfigEstoqueColheita.Controls.Add(this.label2);
             this.groupBox_ConfigEstoqueColheita.Controls.Add(this.label1);
-            this.groupBox_ConfigEstoqueColheita.Controls.Add(this.numericUpDown_Colheita);
-            this.groupBox_ConfigEstoqueColheita.Controls.Add(this.numericUpDown_venc);
+            this.groupBox_ConfigEstoqueColheita.Controls.Add(this.Num_Colheita);
+            this.groupBox_ConfigEstoqueColheita.Controls.Add(this.Num_Vencimento);
             this.groupBox_ConfigEstoqueColheita.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_ConfigEstoqueColheita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
-            this.groupBox_ConfigEstoqueColheita.Location = new System.Drawing.Point(439, 396);
+            this.groupBox_ConfigEstoqueColheita.Location = new System.Drawing.Point(599, 409);
             this.groupBox_ConfigEstoqueColheita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox_ConfigEstoqueColheita.Name = "groupBox_ConfigEstoqueColheita";
             this.groupBox_ConfigEstoqueColheita.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -302,23 +296,6 @@
             this.groupBox_ConfigEstoqueColheita.TabIndex = 43;
             this.groupBox_ConfigEstoqueColheita.TabStop = false;
             this.groupBox_ConfigEstoqueColheita.Text = "Configurações de estoque/colheita";
-            // 
-            // Btn_VoltarProduto
-            // 
-            this.Btn_VoltarProduto.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Btn_VoltarProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Btn_VoltarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_VoltarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_VoltarProduto.ImageKey = "Voltar.png";
-            this.Btn_VoltarProduto.ImageList = this.imgList_Usuario;
-            this.Btn_VoltarProduto.Location = new System.Drawing.Point(841, 569);
-            this.Btn_VoltarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Btn_VoltarProduto.Name = "Btn_VoltarProduto";
-            this.Btn_VoltarProduto.Size = new System.Drawing.Size(129, 34);
-            this.Btn_VoltarProduto.TabIndex = 49;
-            this.Btn_VoltarProduto.Text = "Voltar";
-            this.Btn_VoltarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_VoltarProduto.UseVisualStyleBackColor = true;
             // 
             // imgList_Usuario
             // 
@@ -332,6 +309,54 @@
             this.imgList_Usuario.Images.SetKeyName(5, "Salvar.png");
             this.imgList_Usuario.Images.SetKeyName(6, "Voltar.png");
             // 
+            // botaoPesquisaSimples
+            // 
+            this.botaoPesquisaSimples.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("botaoPesquisaSimples.ImageStream")));
+            this.botaoPesquisaSimples.TransparentColor = System.Drawing.Color.Transparent;
+            this.botaoPesquisaSimples.Images.SetKeyName(0, "PesquisaSimples.png");
+            // 
+            // Txt_InsumoOrigem
+            // 
+            this.Txt_InsumoOrigem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F);
+            this.Txt_InsumoOrigem.Location = new System.Drawing.Point(48, 464);
+            this.Txt_InsumoOrigem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_InsumoOrigem.Name = "Txt_InsumoOrigem";
+            this.Txt_InsumoOrigem.Size = new System.Drawing.Size(373, 30);
+            this.Txt_InsumoOrigem.TabIndex = 51;
+            // 
+            // Btn_PesquisaInsumo
+            // 
+            this.Btn_PesquisaInsumo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Btn_PesquisaInsumo.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_PesquisaInsumo.ImageKey = "Pesquisar.png";
+            this.Btn_PesquisaInsumo.ImageList = this.imgList_Usuario;
+            this.Btn_PesquisaInsumo.Location = new System.Drawing.Point(435, 464);
+            this.Btn_PesquisaInsumo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_PesquisaInsumo.Name = "Btn_PesquisaInsumo";
+            this.Btn_PesquisaInsumo.Size = new System.Drawing.Size(35, 33);
+            this.Btn_PesquisaInsumo.TabIndex = 50;
+            this.Btn_PesquisaInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_PesquisaInsumo.UseVisualStyleBackColor = true;
+            this.Btn_PesquisaInsumo.Click += new System.EventHandler(this.Btn_PesquisaInsumo_Click);
+            // 
+            // Btn_VoltarProduto
+            // 
+            this.Btn_VoltarProduto.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Btn_VoltarProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Btn_VoltarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_VoltarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_VoltarProduto.ImageKey = "Voltar.png";
+            this.Btn_VoltarProduto.ImageList = this.imgList_Usuario;
+            this.Btn_VoltarProduto.Location = new System.Drawing.Point(857, 645);
+            this.Btn_VoltarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_VoltarProduto.Name = "Btn_VoltarProduto";
+            this.Btn_VoltarProduto.Size = new System.Drawing.Size(129, 34);
+            this.Btn_VoltarProduto.TabIndex = 49;
+            this.Btn_VoltarProduto.Text = "Voltar";
+            this.Btn_VoltarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_VoltarProduto.UseVisualStyleBackColor = true;
+            this.Btn_VoltarProduto.Click += new System.EventHandler(this.Btn_VoltarProduto_Click);
+            // 
             // Btn_BuscarProduto
             // 
             this.Btn_BuscarProduto.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -340,7 +365,7 @@
             this.Btn_BuscarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_BuscarProduto.ImageKey = "Pesquisar.png";
             this.Btn_BuscarProduto.ImageList = this.imgList_Usuario;
-            this.Btn_BuscarProduto.Location = new System.Drawing.Point(704, 569);
+            this.Btn_BuscarProduto.Location = new System.Drawing.Point(720, 645);
             this.Btn_BuscarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_BuscarProduto.Name = "Btn_BuscarProduto";
             this.Btn_BuscarProduto.Size = new System.Drawing.Size(129, 34);
@@ -348,6 +373,7 @@
             this.Btn_BuscarProduto.Text = "Buscar";
             this.Btn_BuscarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_BuscarProduto.UseVisualStyleBackColor = true;
+            this.Btn_BuscarProduto.Click += new System.EventHandler(this.Btn_BuscarProduto_Click);
             // 
             // Btn_ExcluirProduto
             // 
@@ -357,7 +383,7 @@
             this.Btn_ExcluirProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_ExcluirProduto.ImageKey = "Apagar.png";
             this.Btn_ExcluirProduto.ImageList = this.imgList_Usuario;
-            this.Btn_ExcluirProduto.Location = new System.Drawing.Point(568, 569);
+            this.Btn_ExcluirProduto.Location = new System.Drawing.Point(584, 645);
             this.Btn_ExcluirProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_ExcluirProduto.Name = "Btn_ExcluirProduto";
             this.Btn_ExcluirProduto.Size = new System.Drawing.Size(129, 34);
@@ -374,7 +400,7 @@
             this.Btn_SalvarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_SalvarProduto.ImageKey = "Salvar.png";
             this.Btn_SalvarProduto.ImageList = this.imgList_Usuario;
-            this.Btn_SalvarProduto.Location = new System.Drawing.Point(431, 569);
+            this.Btn_SalvarProduto.Location = new System.Drawing.Point(447, 645);
             this.Btn_SalvarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_SalvarProduto.Name = "Btn_SalvarProduto";
             this.Btn_SalvarProduto.Size = new System.Drawing.Size(129, 34);
@@ -382,6 +408,7 @@
             this.Btn_SalvarProduto.Text = "Salvar";
             this.Btn_SalvarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_SalvarProduto.UseVisualStyleBackColor = true;
+            this.Btn_SalvarProduto.Click += new System.EventHandler(this.Btn_SalvarProduto_Click);
             // 
             // Btn_EditarProduto
             // 
@@ -391,7 +418,7 @@
             this.Btn_EditarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_EditarProduto.ImageKey = "Editar.png";
             this.Btn_EditarProduto.ImageList = this.imgList_Usuario;
-            this.Btn_EditarProduto.Location = new System.Drawing.Point(291, 569);
+            this.Btn_EditarProduto.Location = new System.Drawing.Point(307, 645);
             this.Btn_EditarProduto.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Btn_EditarProduto.Name = "Btn_EditarProduto";
             this.Btn_EditarProduto.Size = new System.Drawing.Size(129, 34);
@@ -408,7 +435,7 @@
             this.Btn_NovoProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_NovoProduto.ImageKey = "Adicionar.png";
             this.Btn_NovoProduto.ImageList = this.imgList_Usuario;
-            this.Btn_NovoProduto.Location = new System.Drawing.Point(148, 569);
+            this.Btn_NovoProduto.Location = new System.Drawing.Point(164, 645);
             this.Btn_NovoProduto.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Btn_NovoProduto.Name = "Btn_NovoProduto";
             this.Btn_NovoProduto.Size = new System.Drawing.Size(129, 34);
@@ -416,19 +443,33 @@
             this.Btn_NovoProduto.Text = "Novo";
             this.Btn_NovoProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_NovoProduto.UseVisualStyleBackColor = true;
+            this.Btn_NovoProduto.Click += new System.EventHandler(this.Btn_NovoProduto_Click);
+            // 
+            // imgPesquisaSimples
+            // 
+            this.imgPesquisaSimples.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgPesquisaSimples.ImageStream")));
+            this.imgPesquisaSimples.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgPesquisaSimples.Images.SetKeyName(0, "Adicionar.png");
+            this.imgPesquisaSimples.Images.SetKeyName(1, "Apagar.png");
+            this.imgPesquisaSimples.Images.SetKeyName(2, "Editar.png");
+            this.imgPesquisaSimples.Images.SetKeyName(3, "Excluir.png");
+            this.imgPesquisaSimples.Images.SetKeyName(4, "Pesquisar.png");
+            this.imgPesquisaSimples.Images.SetKeyName(5, "Salvar.png");
+            this.imgPesquisaSimples.Images.SetKeyName(6, "Voltar.png");
             // 
             // Frm_GerenciamentoProduto_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(253)))), ((int)(((byte)(221)))));
+            this.Controls.Add(this.Txt_InsumoOrigem);
+            this.Controls.Add(this.Btn_PesquisaInsumo);
             this.Controls.Add(this.Btn_VoltarProduto);
             this.Controls.Add(this.Btn_BuscarProduto);
             this.Controls.Add(this.Btn_ExcluirProduto);
             this.Controls.Add(this.Btn_SalvarProduto);
             this.Controls.Add(this.Btn_EditarProduto);
             this.Controls.Add(this.Btn_NovoProduto);
-            this.Controls.Add(this.comboBox_InsumoOrigem);
             this.Controls.Add(this.Lbl_IdInsumoOrigem);
             this.Controls.Add(this.Lbl_NomeProduto);
             this.Controls.Add(this.Txt_NomeProduto);
@@ -447,8 +488,8 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_venc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Colheita)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Num_Vencimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Num_Colheita)).EndInit();
             this.groupBox_ConfigEstoqueColheita.ResumeLayout(false);
             this.groupBox_ConfigEstoqueColheita.PerformLayout();
             this.ResumeLayout(false);
@@ -471,12 +512,11 @@
         private System.Windows.Forms.TextBox Txt_NomeProduto;
         private System.Windows.Forms.Label Lbl_NomeProduto;
         private System.Windows.Forms.Label Lbl_IdInsumoOrigem;
-        private System.Windows.Forms.ComboBox comboBox_InsumoOrigem;
         private System.Windows.Forms.Label label_PeriodoVenc;
-        private System.Windows.Forms.NumericUpDown numericUpDown_venc;
+        private System.Windows.Forms.NumericUpDown Num_Vencimento;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown_Colheita;
+        private System.Windows.Forms.NumericUpDown Num_Colheita;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox_ConfigEstoqueColheita;
         private System.Windows.Forms.Button Btn_VoltarProduto;
@@ -486,5 +526,9 @@
         private System.Windows.Forms.Button Btn_EditarProduto;
         private System.Windows.Forms.Button Btn_NovoProduto;
         private System.Windows.Forms.ImageList imgList_Usuario;
+        private System.Windows.Forms.Button Btn_PesquisaInsumo;
+        private System.Windows.Forms.ImageList botaoPesquisaSimples;
+        private System.Windows.Forms.TextBox Txt_InsumoOrigem;
+        private System.Windows.Forms.ImageList imgPesquisaSimples;
     }
 }

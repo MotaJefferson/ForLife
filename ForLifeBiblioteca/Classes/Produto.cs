@@ -10,6 +10,9 @@ using System.Diagnostics.Eventing.Reader;
 using ForLifeBiblioteca.Databases;
 using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Common;
+using System.Collections;
 
 
 namespace ForLifeBiblioteca.Classes
@@ -19,6 +22,7 @@ namespace ForLifeBiblioteca.Classes
         public class Unit
         {
             [Required(ErrorMessage = "Defina um status do produto")]
+            [RegularExpression("^(1|2)$", ErrorMessage = "Defina um status do produto")]
             public int StatusProduto { get; set; }
 
             [Required(ErrorMessage = "Nome do Produto é obrigatório")]
@@ -29,19 +33,34 @@ namespace ForLifeBiblioteca.Classes
 
 
             [Required(ErrorMessage = "Defina uma data prevista de vencimento")]
-            [RegularExpression("(^[1-100]$)", ErrorMessage = "Defina uma data prevista de vencimento")]
-            public int DtVencimento { get; set; }
+            [RegularExpression("^(100|[1-9][0-9]?|[1-9])$", ErrorMessage = "Defina uma data prevista de vencimento")]
+            public decimal DtVencimento { get; set; }
 
             [Required(ErrorMessage = "Defina uma data prevista de colheita")]
-            [RegularExpression("(^[1-100]$)", ErrorMessage = "Defina uma data prevista de vencimento")]
-            public int DtColheita { get; set; }
-            public string Usuario { get; set; }
-
-
-            public int IdUsuario { get; set; }
+            [RegularExpression("^(100|[1-9][0-9]?|[1-9])$", ErrorMessage = "Defina uma data prevista de colheita")]
+            public decimal DtColheita { get; set; }
+            
             public int IdInsumoOrigem { get; set; }
 
-            public string UsuarioLogado = Session.Instance.UserID;
+            public int UsuarioID {
+                get
+                {
+                    Produto.Unit P = new Produto.Unit();
+                    return P.ReturnIdUsuario(UsuarioLogado);
+
+                }
+                set { }
+            }
+
+
+            string UsuarioLogado = Session.Instance.UserID;
+            
+            public int IdUsuarioLogado()
+            {
+                Produto.Unit P = new Produto.Unit();
+                return P.ReturnIdUsuario(UsuarioLogado);
+            }
+            
 
             public void ValidaClasse()
             {
@@ -79,6 +98,10 @@ namespace ForLifeBiblioteca.Classes
 
             public string ToInsert()
             {
+
+                int idInsumo = ReturnIdInsumo(this.InsumoOrigem);
+                int idUsuario = IdUsuarioLogado();
+
                 string SQL;
 
                 SQL = @"INSERT INTO Produto
@@ -90,10 +113,10 @@ namespace ForLifeBiblioteca.Classes
                         ,status)
                         VALUES ";
                 SQL += "('" + this.NomeProduto + "'";
-                SQL += ",'" + Convert.ToInt32(this.IdInsumoOrigem) + "'";
+                SQL += ",'" + idInsumo + "'";
                 SQL += ",'" + Convert.ToInt32(this.DtColheita) + "'";
                 SQL += ",'" + Convert.ToInt32(this.DtVencimento) + "'";
-                SQL += ",'" + Convert.ToInt32(this.IdUsuario) + "'";
+                SQL += ",'" + idUsuario + "'";
                 SQL += ",'" + Convert.ToInt32(this.StatusProduto) + "')";
 
                 return SQL;
@@ -101,14 +124,17 @@ namespace ForLifeBiblioteca.Classes
 
             public string ToUpdate(string nome)
             {
+                int idInsumo = ReturnIdInsumo(this.InsumoOrigem);
+                int idUsuario = IdUsuarioLogado();
+
                 string SQL;
 
                 SQL = @"UPDATE Produto SET ";
                 SQL += "nome = '" + this.NomeProduto + "'";
-                SQL += ",insumo_id = '" + Convert.ToInt32(this.IdInsumoOrigem) + "'";
+                SQL += ",insumo_id = '" + idInsumo + "'";
                 SQL += ",periodo_colheita = '" + Convert.ToInt32(this.DtColheita) + "'";
                 SQL += ",periodo_vencimento = '" + Convert.ToInt32(this.DtVencimento) + "'";
-                SQL += ",usuario_id = '" + Convert.ToInt32(this.IdUsuario) + "'";
+                SQL += ",usuario_id = '" + idUsuario + "'";
                 SQL += ",status = '" + Convert.ToInt32(this.StatusProduto) + "'";
                 SQL += "WHERE nome = '" + this.NomeProduto + "'";
 
@@ -117,12 +143,13 @@ namespace ForLifeBiblioteca.Classes
 
             public Unit DataRowToUnit(DataRow dr)
             {
+
                 Unit u = new Unit();
                 u.NomeProduto = dr["nome"].ToString();
                 u.IdInsumoOrigem = Convert.ToInt32(dr["insumo_id"]);
                 u.DtColheita = Convert.ToInt32(dr["periodo_colheita"]);
                 u.DtVencimento = Convert.ToInt32(dr["periodo_vencimento"]);
-                u.IdUsuario = Convert.ToInt32(dr["usuario_id"]);
+                u.UsuarioID = Convert.ToInt32(dr["usuario_id"]);
                 u.StatusProduto = Convert.ToInt32(dr["status"]);
 
                 return u;
@@ -133,8 +160,8 @@ namespace ForLifeBiblioteca.Classes
             {
                 Unit u = new Unit();
 
-                u.IdUsuario = Convert.ToInt32(dr["id_usuario"]);
-                u.Usuario = dr["nome"].ToString();
+                u.UsuarioID = Convert.ToInt32(dr["id_usuario"]);
+                u.UsuarioLogado = dr["nome"].ToString();
 
                 return u;
             }
@@ -148,7 +175,6 @@ namespace ForLifeBiblioteca.Classes
 
                 return u;
             }
-
 
             public int ReturnIdUsuario(string usuario)
             {
@@ -168,7 +194,7 @@ namespace ForLifeBiblioteca.Classes
                     else
                     {
                         Unit u = this.DataRowToUnitUsuario(Dt.Rows[0]);
-                        return u.IdUsuario;
+                        return u.UsuarioID;
                     }
 
                 }
@@ -184,7 +210,7 @@ namespace ForLifeBiblioteca.Classes
 
                 try
                 {
-                    string SQL = "SELECT * FROM Insumo WHERE usuario = '" + insumo + "'";
+                    string SQL = "SELECT * FROM Insumo WHERE nome = '" + insumo + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -239,7 +265,7 @@ namespace ForLifeBiblioteca.Classes
 
             public bool BuscaProdutoExistenteSQL(string Produto)
             {
-                string SQL = "SELECT * FROM Produto WHERE usuario = '" + Produto + "'";
+                string SQL = "SELECT * FROM Produto WHERE nome = '" + Produto + "'";
 
                 var db = new SQLServerClass();
                 var Dt = db.SQLQuery(SQL);
@@ -254,6 +280,8 @@ namespace ForLifeBiblioteca.Classes
                     return true;
                 }
             }
+
+            
 
             #endregion
 
@@ -357,7 +385,7 @@ namespace ForLifeBiblioteca.Classes
                     }
                     else
                     {
-                        SQL = "DELETE FROM Produto WHERE nome = '" + this.Usuario + "'";
+                        SQL = "DELETE FROM Produto WHERE nome = '" + this.NomeProduto + "'";
                         db.SQLCommand(SQL);
                         db.Close();
                     }
@@ -414,33 +442,6 @@ namespace ForLifeBiblioteca.Classes
                 }
             }
 
-            public List<List<string>> ListaInsumoSQL()
-            {
-                List<List<string>> ListaBusca = new List<List<string>>();
-
-                try
-                {
-                    var SQL = "SELECT nome FROM Insumo";
-                    var db = new SQLServerClass();
-                    var Dt = db.SQLQuery(SQL);
-
-
-                    for (int i = 0; i <= Dt.Rows.Count - 1; i++)
-                    {
-
-                        ListaBusca.Add(new List<string>
-                        {
-                            Dt.Rows[i]["nome"].ToString()
-                        });
-                    }
-                    return ListaBusca;
-
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Conexão gerou o erro: " + ex.Message);
-                }
-            }
 
             public List<List<string>> BuscarTodosSQL()
             {
@@ -483,6 +484,98 @@ namespace ForLifeBiblioteca.Classes
                 catch (Exception ex)
                 {
                     throw new Exception("Conexão gerou o erro: " + ex.Message);
+                }
+            }
+
+            public List<List<string>> BuscarVariosInsumoSQL(string Valor)
+            {
+                List<List<string>> ListaBusca = new List<List<string>>();
+
+                try
+                {
+                    var SQL = "SELECT * FROM Insumo WHERE nome LIKE '%" + Valor + "%' ";
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+
+                    for (int i = 0; i <= Dt.Rows.Count - 1; i++)
+                    {
+                        
+                        //Adicionar os campos necessários da busca
+                        ListaBusca.Add(new List<string>
+                        {
+                            Dt.Rows[i]["nome"].ToString(),
+                            Dt.Rows[i]["tipo"].ToString()
+
+                        });
+                    }
+                    return ListaBusca;
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Conexão gerou o erro: " + ex.Message);
+                }
+            }
+
+            public List<List<string>> ListaInsumosSQL()
+            {
+                List<List<string>> ListaBusca = new List<List<string>>();
+
+                try
+                {
+                    var SQL = "SELECT name FROM Insumo";
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+
+                    for (int i = 0; i <= Dt.Rows.Count - 1; i++)
+                    {
+                        ListaBusca.Add(new List<string>
+                        {
+                            Dt.Rows[i]["nome"].ToString(),
+
+                        });
+                    }
+                    return ListaBusca;
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Conexão gerou o erro: " + ex.Message);
+                }
+            }
+
+            public string BuscarInsumoSQL(string Insumo)
+            {
+                try
+                {
+                    string insumo;
+
+                    string SQL = "SELECT * FROM Insumo WHERE nome = '" + Insumo + "'";
+
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+                    if (Dt.Rows.Count == 0)
+                    {
+                        db.Close();
+                        throw new Exception("A pesquisa não retornou valores");
+                    }
+                    else
+                    {
+                        Unit u = this.DataRowToUnitInsumo(Dt.Rows[0]);
+
+                        insumo = u.InsumoOrigem;
+
+                        return insumo;
+                    }
+
+                }
+
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao buscar o produto. " + ex.Message);
                 }
             }
 

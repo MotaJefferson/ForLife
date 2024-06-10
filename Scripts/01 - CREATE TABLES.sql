@@ -85,7 +85,6 @@ CREATE TABLE Produto (
     insumo_id INT NOT NULL,
     periodo_colheita INT NOT NULL,
     periodo_vencimento INT NOT NULL,
-    periodo_limite_colheita INT NOT NULL,
     usuario_id INT NOT NULL,
     FOREIGN KEY (insumo_id) REFERENCES Insumo(id_insumo),
     FOREIGN KEY (usuario_id) REFERENCES Usuario(id_usuario)
