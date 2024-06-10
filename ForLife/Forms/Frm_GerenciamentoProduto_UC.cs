@@ -21,20 +21,13 @@ namespace ForLife.Forms
 
         string UsuarioLogado = Session.Instance.UserID;
 
-        public int IdUsuarioLogado()
-        {
-            Produto.Unit P = new Produto.Unit();
-            return P.UsuarioID;
-        }
-
         private void HabilitarCampos (bool habilitarDesabilitar)
         {
             if(habilitarDesabilitar == true)
             {
                 Rbtn_ProdutoAtivo.Enabled = true;
                 Rbtn_ProdutoInativo.Enabled = true;
-                Txt_NomeProduto.Enabled = true;
-                Txt_InsumoOrigem.Enabled = true;
+                Txt_NomeProduto.Enabled = true;                
                 Num_Vencimento.Enabled = true;
                 Num_Colheita.Enabled = true;
                 Btn_PesquisaInsumo.Enabled = true;
@@ -44,7 +37,6 @@ namespace ForLife.Forms
                 Rbtn_ProdutoAtivo.Enabled = false;
                 Rbtn_ProdutoInativo.Enabled = false;
                 Txt_NomeProduto.Enabled = false;
-                Txt_InsumoOrigem.Enabled = false;
                 Num_Vencimento.Enabled = false;
                 Num_Colheita.Enabled = false;
                 Btn_PesquisaInsumo.Enabled = false;
@@ -96,7 +88,7 @@ namespace ForLife.Forms
             }
 
             Txt_NomeProduto.Text = P.NomeProduto;
-            Txt_InsumoOrigem.Text = P.InsumoOrigem;
+            Txt_InsumoOrigem.Text = P.ReturnNomeInsumo(P.IdInsumoOrigem); // P.InsumoOrigem;
 
             Num_Vencimento.Value = P.DtVencimento;
             Num_Colheita.Value = P.DtColheita;
@@ -109,6 +101,8 @@ namespace ForLife.Forms
             InitializeComponent();
             HabilitarCampos(false);
             LimparCampos();
+
+            Txt_InsumoOrigem.Enabled = false;
 
         }
         private void Btn_VoltarProduto_Click(object sender, EventArgs e)
@@ -124,7 +118,14 @@ namespace ForLife.Forms
 
         private void Btn_BuscarProduto_Click(object sender, EventArgs e)
         {
-           
+            Frm_PesquisaProduto F = new Frm_PesquisaProduto();
+            F.ShowDialog();
+
+            if (F.RetornoPesquisa != null)
+            {
+                EscreveCampos(F.RetornoPesquisa);
+            }
+
         }
 
         private void Btn_PesquisaInsumo_Click(object sender, EventArgs e)
@@ -154,28 +155,15 @@ namespace ForLife.Forms
                     P.ValidaClasse();
                     P.ValidaComplemento();
 
-
-                    MessageBox.Show(UsuarioLogado);
-                    MessageBox.Show( P.UsuarioID.ToString() );
-
-
                     if (Txt_NomeProduto.Enabled == true)
                     {
-                        if(P.BuscaProdutoExistenteSQL(Txt_NomeProduto.Text) == false)
-                        {
-                            P.IncluirSQL();
-                            MessageBox.Show("O produto " + Txt_NomeProduto.Text + " cadastrado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            HabilitarCampos(false);
-                        }
-                        else
-                        {
-                            MessageBox.Show("O produto " + Txt_NomeProduto.Text + " já existe na nossa base", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-
+                        P.IncluirSQL(UsuarioLogado);
+                        
+                        HabilitarCampos(false);
                     }
                     else
                     {
-                        P.AlterarSQL();
+                        P.AlterarSQL(UsuarioLogado);
 
                         MessageBox.Show("O produto " + Txt_NomeProduto.Text + " alterado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         HabilitarCampos(false);
@@ -187,6 +175,54 @@ namespace ForLife.Forms
                 {
                     MessageBox.Show(ex.Message, "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void Btn_EditarProduto_Click(object sender, EventArgs e)
+        {
+            if (Txt_NomeProduto.Text == "")
+            {
+                MessageBox.Show("Pesquise um registro para editar", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                HabilitarCampos(true);
+            }
+        }
+
+        private void Btn_ExcluirProduto_Click(object sender, EventArgs e)
+        {
+            if (Txt_NomeProduto.Text == "")
+            {
+                MessageBox.Show("Pesquise um registro para excluir", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+
+                try
+                {
+                    Produto.Unit P = new Produto.Unit();
+                    P = P.BuscarSQL(Txt_NomeProduto.Text);
+
+                    if (P == null)
+                    {
+
+                    }
+                    else
+                    {
+                        EscreveCampos(P);
+                        MessageBox.Show("Deseja apagar o produto " + Txt_NomeProduto.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        P.ApagarSQL();
+                        MessageBox.Show("Produto apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LimparCampos();
+                        HabilitarCampos(false);
+                    }
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message, "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
         }
     }

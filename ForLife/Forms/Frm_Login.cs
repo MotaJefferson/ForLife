@@ -36,6 +36,10 @@ namespace ForLife.Forms
             frm.Closed += (s, args) => this.Close();
             frm.Show();
 
+
+                       
+            
+
             
         }
 

@@ -229,7 +229,7 @@
             // 
             this.Num_Vencimento.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Num_Vencimento.Location = new System.Drawing.Point(39, 65);
-            this.Num_Vencimento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Num_Vencimento.Margin = new System.Windows.Forms.Padding(4);
             this.Num_Vencimento.Name = "Num_Vencimento";
             this.Num_Vencimento.Size = new System.Drawing.Size(79, 26);
             this.Num_Vencimento.TabIndex = 38;
@@ -262,7 +262,7 @@
             // 
             this.Num_Colheita.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Num_Colheita.Location = new System.Drawing.Point(237, 65);
-            this.Num_Colheita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Num_Colheita.Margin = new System.Windows.Forms.Padding(4);
             this.Num_Colheita.Name = "Num_Colheita";
             this.Num_Colheita.Size = new System.Drawing.Size(79, 26);
             this.Num_Colheita.TabIndex = 41;
@@ -289,9 +289,9 @@
             this.groupBox_ConfigEstoqueColheita.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_ConfigEstoqueColheita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.groupBox_ConfigEstoqueColheita.Location = new System.Drawing.Point(599, 409);
-            this.groupBox_ConfigEstoqueColheita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_ConfigEstoqueColheita.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_ConfigEstoqueColheita.Name = "groupBox_ConfigEstoqueColheita";
-            this.groupBox_ConfigEstoqueColheita.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_ConfigEstoqueColheita.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox_ConfigEstoqueColheita.Size = new System.Drawing.Size(432, 101);
             this.groupBox_ConfigEstoqueColheita.TabIndex = 43;
             this.groupBox_ConfigEstoqueColheita.TabStop = false;
@@ -319,7 +319,7 @@
             // 
             this.Txt_InsumoOrigem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F);
             this.Txt_InsumoOrigem.Location = new System.Drawing.Point(48, 464);
-            this.Txt_InsumoOrigem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_InsumoOrigem.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_InsumoOrigem.Name = "Txt_InsumoOrigem";
             this.Txt_InsumoOrigem.Size = new System.Drawing.Size(373, 30);
             this.Txt_InsumoOrigem.TabIndex = 51;
@@ -331,7 +331,7 @@
             this.Btn_PesquisaInsumo.ImageKey = "Pesquisar.png";
             this.Btn_PesquisaInsumo.ImageList = this.imgList_Usuario;
             this.Btn_PesquisaInsumo.Location = new System.Drawing.Point(435, 464);
-            this.Btn_PesquisaInsumo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_PesquisaInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_PesquisaInsumo.Name = "Btn_PesquisaInsumo";
             this.Btn_PesquisaInsumo.Size = new System.Drawing.Size(35, 33);
             this.Btn_PesquisaInsumo.TabIndex = 50;
@@ -348,7 +348,7 @@
             this.Btn_VoltarProduto.ImageKey = "Voltar.png";
             this.Btn_VoltarProduto.ImageList = this.imgList_Usuario;
             this.Btn_VoltarProduto.Location = new System.Drawing.Point(857, 645);
-            this.Btn_VoltarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_VoltarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_VoltarProduto.Name = "Btn_VoltarProduto";
             this.Btn_VoltarProduto.Size = new System.Drawing.Size(129, 34);
             this.Btn_VoltarProduto.TabIndex = 49;
@@ -366,7 +366,7 @@
             this.Btn_BuscarProduto.ImageKey = "Pesquisar.png";
             this.Btn_BuscarProduto.ImageList = this.imgList_Usuario;
             this.Btn_BuscarProduto.Location = new System.Drawing.Point(720, 645);
-            this.Btn_BuscarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_BuscarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_BuscarProduto.Name = "Btn_BuscarProduto";
             this.Btn_BuscarProduto.Size = new System.Drawing.Size(129, 34);
             this.Btn_BuscarProduto.TabIndex = 48;
@@ -384,13 +384,14 @@
             this.Btn_ExcluirProduto.ImageKey = "Apagar.png";
             this.Btn_ExcluirProduto.ImageList = this.imgList_Usuario;
             this.Btn_ExcluirProduto.Location = new System.Drawing.Point(584, 645);
-            this.Btn_ExcluirProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_ExcluirProduto.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_ExcluirProduto.Name = "Btn_ExcluirProduto";
             this.Btn_ExcluirProduto.Size = new System.Drawing.Size(129, 34);
             this.Btn_ExcluirProduto.TabIndex = 47;
             this.Btn_ExcluirProduto.Text = "Excluir";
             this.Btn_ExcluirProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_ExcluirProduto.UseVisualStyleBackColor = true;
+            this.Btn_ExcluirProduto.Click += new System.EventHandler(this.Btn_ExcluirProduto_Click);
             // 
             // Btn_SalvarProduto
             // 
@@ -401,7 +402,7 @@
             this.Btn_SalvarProduto.ImageKey = "Salvar.png";
             this.Btn_SalvarProduto.ImageList = this.imgList_Usuario;
             this.Btn_SalvarProduto.Location = new System.Drawing.Point(447, 645);
-            this.Btn_SalvarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_SalvarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_SalvarProduto.Name = "Btn_SalvarProduto";
             this.Btn_SalvarProduto.Size = new System.Drawing.Size(129, 34);
             this.Btn_SalvarProduto.TabIndex = 46;
@@ -426,6 +427,7 @@
             this.Btn_EditarProduto.Text = "Editar";
             this.Btn_EditarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_EditarProduto.UseVisualStyleBackColor = true;
+            this.Btn_EditarProduto.Click += new System.EventHandler(this.Btn_EditarProduto_Click);
             // 
             // Btn_NovoProduto
             // 
@@ -479,7 +481,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox_ConfigEstoqueColheita);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_GerenciamentoProduto_UC";
             this.Size = new System.Drawing.Size(1200, 738);
             this.panel2.ResumeLayout(false);

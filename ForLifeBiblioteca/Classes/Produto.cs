@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Common;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 
 namespace ForLifeBiblioteca.Classes
@@ -42,25 +43,9 @@ namespace ForLifeBiblioteca.Classes
             
             public int IdInsumoOrigem { get; set; }
 
-            public int UsuarioID {
-                get
-                {
-                    Produto.Unit P = new Produto.Unit();
-                    return P.ReturnIdUsuario(UsuarioLogado);
-
-                }
-                set { }
-            }
-
+            public int UsuarioID { get; set; }            
 
             string UsuarioLogado = Session.Instance.UserID;
-            
-            public int IdUsuarioLogado()
-            {
-                Produto.Unit P = new Produto.Unit();
-                return P.ReturnIdUsuario(UsuarioLogado);
-            }
-            
 
             public void ValidaClasse()
             {
@@ -96,11 +81,12 @@ namespace ForLifeBiblioteca.Classes
             #region Funções CRUD
 
 
-            public string ToInsert()
+            public string ToInsert(string usuario)
             {
 
                 int idInsumo = ReturnIdInsumo(this.InsumoOrigem);
-                int idUsuario = IdUsuarioLogado();
+
+                int idUsuario = ReturnIdUsuario(usuario);
 
                 string SQL;
 
@@ -122,23 +108,51 @@ namespace ForLifeBiblioteca.Classes
                 return SQL;
             }
 
-            public string ToUpdate(string nome)
+            public string ToUpdate(string nome, string usuario)
             {
+
                 int idInsumo = ReturnIdInsumo(this.InsumoOrigem);
-                int idUsuario = IdUsuarioLogado();
+                int idUsuario = ReturnIdUsuario(usuario);
+                int status = 0;
+
+                if(Convert.ToInt32(this.StatusProduto) == 1)
+                {
+                    status = 1;
+                }
+                if (Convert.ToInt32(this.StatusProduto) == 2)
+                {
+                    status = 0;
+                }
 
                 string SQL;
 
-                SQL = @"UPDATE Produto SET ";
-                SQL += "nome = '" + this.NomeProduto + "'";
-                SQL += ",insumo_id = '" + idInsumo + "'";
-                SQL += ",periodo_colheita = '" + Convert.ToInt32(this.DtColheita) + "'";
-                SQL += ",periodo_vencimento = '" + Convert.ToInt32(this.DtVencimento) + "'";
-                SQL += ",usuario_id = '" + idUsuario + "'";
-                SQL += ",status = '" + Convert.ToInt32(this.StatusProduto) + "'";
-                SQL += "WHERE nome = '" + this.NomeProduto + "'";
+                if (BuscaProdutoExistenteSQL(nome) == true)
+                {                
+                    SQL = @"UPDATE Produto SET ";                    
+                    SQL += "insumo_id = '" + idInsumo + "'";
+                    SQL += ",periodo_colheita = '" + Convert.ToInt32(this.DtColheita) + "'";
+                    SQL += ",periodo_vencimento = '" + Convert.ToInt32(this.DtVencimento) + "'";
+                    SQL += ",usuario_id = '" + idUsuario + "'";
+                    SQL += ",status = '" + status + "'";
+                    SQL += "WHERE nome = '" + this.NomeProduto + "'";
 
-                return SQL;
+                    return SQL;
+
+                }
+                else
+                {
+                    SQL = @"UPDATE Produto SET ";
+                    SQL += "nome = '" + this.NomeProduto + "'";
+                    SQL += ",insumo_id = '" + idInsumo + "'";
+                    SQL += ",periodo_colheita = '" + Convert.ToInt32(this.DtColheita) + "'";
+                    SQL += ",periodo_vencimento = '" + Convert.ToInt32(this.DtVencimento) + "'";
+                    SQL += ",usuario_id = '" + idUsuario + "'";
+                    SQL += ",status = '" + Convert.ToInt32(this.StatusProduto) + "'";
+                    SQL += "WHERE nome = '" + this.NomeProduto + "'";
+
+                    return SQL;
+                }
+                
             }
 
             public Unit DataRowToUnit(DataRow dr)
@@ -147,14 +161,13 @@ namespace ForLifeBiblioteca.Classes
                 Unit u = new Unit();
                 u.NomeProduto = dr["nome"].ToString();
                 u.IdInsumoOrigem = Convert.ToInt32(dr["insumo_id"]);
-                u.DtColheita = Convert.ToInt32(dr["periodo_colheita"]);
-                u.DtVencimento = Convert.ToInt32(dr["periodo_vencimento"]);
+                u.DtColheita = Convert.ToDecimal(dr["periodo_colheita"]);
+                u.DtVencimento = Convert.ToDecimal(dr["periodo_vencimento"]);
                 u.UsuarioID = Convert.ToInt32(dr["usuario_id"]);
                 u.StatusProduto = Convert.ToInt32(dr["status"]);
 
                 return u;
             }
-
 
             public Unit DataRowToUnitUsuario(DataRow dr)
             {
@@ -239,7 +252,7 @@ namespace ForLifeBiblioteca.Classes
 
                 try
                 {
-                    string SQL = "SELECT * FROM Insumo WHERE id_usuario = '" + id + "'";
+                    string SQL = "SELECT * FROM Insumo WHERE id_insumo = '" + id + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -258,7 +271,7 @@ namespace ForLifeBiblioteca.Classes
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception("Erro ao buscar o usuario. " + ex.Message);
+                    throw new Exception("Erro ao buscar o insumo. " + ex.Message);
                 }
 
             }
@@ -280,7 +293,6 @@ namespace ForLifeBiblioteca.Classes
                     return true;
                 }
             }
-
             
 
             #endregion
@@ -288,24 +300,27 @@ namespace ForLifeBiblioteca.Classes
 
             #region CRUD SQLServer
 
-            public void IncluirSQL()
-            {
+            public void IncluirSQL(string usuario)
+            {                
+
                 try
                 {
-                    if (BuscaProdutoExistenteSQL(this.NomeProduto) == false)
+                    if (BuscaProdutoExistenteSQL(this.NomeProduto) == true)
                     {
 
-                        string SQL;
-                        SQL = this.ToInsert();
-                        var db = new SQLServerClass();
-                        db.SQLCommand(SQL);
-                        db.Close();
+                        if (MessageBox.Show("Produto " + NomeProduto + " já existe na nossa base, deseja alterar o cadastro?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            AlterarSQL(usuario);
+                        }
+                        else
+                        {
+                            MessageBox.Show("As alterações não serão salvas", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            
+                            
+                        }
+                    }
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Produto " + NomeProduto + " já existe na nossa base", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -341,7 +356,7 @@ namespace ForLifeBiblioteca.Classes
                 }
             }
 
-            public void AlterarSQL()
+            public void AlterarSQL(string usuario)
             {
                 try
                 {
@@ -357,7 +372,7 @@ namespace ForLifeBiblioteca.Classes
                     }
                     else
                     {
-                        SQL = this.ToUpdate(this.NomeProduto);
+                        SQL = this.ToUpdate(this.NomeProduto, usuario);
                         db.SQLCommand(SQL);
                         db.Close();
                     }
@@ -412,7 +427,7 @@ namespace ForLifeBiblioteca.Classes
                     for (int i = 0; i <= Dt.Rows.Count - 1; i++)
                     {
                         string Status = "";
-                        string Insumo = ReturnNomeInsumo(Convert.ToInt32(Dt.Rows[i]["id_insumo"]));
+                        string Insumo = ReturnNomeInsumo(Convert.ToInt32(Dt.Rows[i]["insumo_id"]));
 
                         if (Convert.ToInt32(Dt.Rows[i]["status"]) == 0)
                         {
@@ -435,13 +450,54 @@ namespace ForLifeBiblioteca.Classes
                     }
                     return ListaBusca;
 
+
+                    /* IMPLEMENTAR QUANDO FIZER O INSUMO.CS, BUSCAR ATRAVÉS DO BUSCARVARIOSSQL DO INSUMO
+                    if (Campo == "insumo_id")
+                    {
+                        
+                        
+
+                    } else
+                    {
+                        var SQL = "SELECT * FROM Produto WHERE " + Campo + " LIKE '%" + Valor + "%' ";
+                        var db = new SQLServerClass();
+                        var Dt = db.SQLQuery(SQL);
+
+
+                        for (int i = 0; i <= Dt.Rows.Count - 1; i++)
+                        {
+                            string Status = "";
+                            string Insumo = ReturnNomeInsumo(Convert.ToInt32(Dt.Rows[i]["id_insumo"]));
+
+                            if (Convert.ToInt32(Dt.Rows[i]["status"]) == 0)
+                            {
+                                Status = "Inativo";
+
+                            }
+                            else if (Convert.ToInt32(Dt.Rows[i]["status"]) == 1)
+                            {
+                                Status = "Ativo";
+                            }
+
+                            //Adicionar os campos necessários da busca
+                            ListaBusca.Add(new List<string>
+                        {
+                            Dt.Rows[i]["nome"].ToString(),
+                            Insumo,
+                            Status
+
+                        });
+                        }
+                        return ListaBusca;
+                        
+                    }*/
+
                 }
                 catch (Exception ex)
                 {
                     throw new Exception("Conexão gerou o erro: " + ex.Message);
                 }
             }
-
 
             public List<List<string>> BuscarTodosSQL()
             {
@@ -457,7 +513,7 @@ namespace ForLifeBiblioteca.Classes
                     for (int i = 0; i <= Dt.Rows.Count - 1; i++)
                     {
                         string Status = "";
-                        string Insumo = ReturnNomeInsumo(Convert.ToInt32(Dt.Rows[i]["id_insumo"]));
+                        string Insumo = ReturnNomeInsumo(Convert.ToInt32(Dt.Rows[i]["insumo_id"]));
 
                         if (Convert.ToInt32(Dt.Rows[i]["status"]) == 0)
                         {
