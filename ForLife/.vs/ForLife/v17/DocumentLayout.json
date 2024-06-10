@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\",
+  "WorkspaceRootPath": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forlife\\forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_estoqueproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_estoqueproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_estoqueinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_estoqueinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_MenuPrincipal_MDI.cs",
-              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
-              "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
-              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
-              "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAhwIQAAAAAAAAA",
+              "Title": "Frm_EstoqueProduto.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_EstoqueProduto.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_EstoqueProduto.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_EstoqueProduto.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_EstoqueProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T23:50:08.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T00:08:39.129Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frm_EstoqueInsumo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_EstoqueInsumo.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_EstoqueInsumo.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_EstoqueInsumo.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_EstoqueInsumo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T00:08:08.579Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_MenuPrincipal_MDI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T00:06:26.383Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

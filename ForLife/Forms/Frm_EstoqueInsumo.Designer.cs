@@ -37,15 +37,15 @@
             this.Btn_RelatorioEstoque = new System.Windows.Forms.Button();
             this.Lbl_PesqNomeInsumoEstoq = new System.Windows.Forms.Label();
             this.Grd_EstoqueInsumos = new System.Windows.Forms.DataGridView();
-            this.imageIcons = new System.Windows.Forms.ImageList(this.components);
-            this.Btn_Pesquisar = new System.Windows.Forms.Button();
-            this.Txt__PesqNomeInsumoEstoq = new System.Windows.Forms.TextBox();
-            this.Lbl_ValidadeInsumoEstoque = new System.Windows.Forms.Label();
-            this.MaskedTextBox_ValInsumoEstoque = new System.Windows.Forms.MaskedTextBox();
             this.Coluna_EstoqueInsumoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Coluna_EstoqueInsumoQtdAtual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Coluna_EstoqueInsumoValidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageIcons = new System.Windows.Forms.ImageList(this.components);
+            this.Txt__PesqNomeInsumoEstoq = new System.Windows.Forms.TextBox();
+            this.Lbl_ValidadeInsumoEstoque = new System.Windows.Forms.Label();
+            this.MaskedTextBox_ValInsumoEstoque = new System.Windows.Forms.MaskedTextBox();
             this.Btn_EstoqueInsumoGerenc = new System.Windows.Forms.Button();
+            this.Btn_Pesquisar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grd_EstoqueInsumos)).BeginInit();
             this.SuspendLayout();
@@ -113,7 +113,7 @@
             this.Coluna_EstoqueInsumoNome,
             this.Coluna_EstoqueInsumoQtdAtual,
             this.Coluna_EstoqueInsumoValidade});
-            this.Grd_EstoqueInsumos.Location = new System.Drawing.Point(47, 197);
+            this.Grd_EstoqueInsumos.Location = new System.Drawing.Point(46, 197);
             this.Grd_EstoqueInsumos.Margin = new System.Windows.Forms.Padding(2);
             this.Grd_EstoqueInsumos.MultiSelect = false;
             this.Grd_EstoqueInsumos.Name = "Grd_EstoqueInsumos";
@@ -126,31 +126,40 @@
             this.Grd_EstoqueInsumos.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.Grd_EstoqueInsumos.RowTemplate.Height = 24;
             this.Grd_EstoqueInsumos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grd_EstoqueInsumos.Size = new System.Drawing.Size(809, 302);
+            this.Grd_EstoqueInsumos.Size = new System.Drawing.Size(809, 358);
             this.Grd_EstoqueInsumos.TabIndex = 41;
             this.Grd_EstoqueInsumos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grd_Resultados_CellContentClick);
+            // 
+            // Coluna_EstoqueInsumoNome
+            // 
+            this.Coluna_EstoqueInsumoNome.DividerWidth = 1;
+            this.Coluna_EstoqueInsumoNome.HeaderText = "Nome Insumo";
+            this.Coluna_EstoqueInsumoNome.MinimumWidth = 6;
+            this.Coluna_EstoqueInsumoNome.Name = "Coluna_EstoqueInsumoNome";
+            this.Coluna_EstoqueInsumoNome.ReadOnly = true;
+            this.Coluna_EstoqueInsumoNome.Width = 450;
+            // 
+            // Coluna_EstoqueInsumoQtdAtual
+            // 
+            this.Coluna_EstoqueInsumoQtdAtual.HeaderText = "Quantidade atual";
+            this.Coluna_EstoqueInsumoQtdAtual.MinimumWidth = 6;
+            this.Coluna_EstoqueInsumoQtdAtual.Name = "Coluna_EstoqueInsumoQtdAtual";
+            this.Coluna_EstoqueInsumoQtdAtual.ReadOnly = true;
+            this.Coluna_EstoqueInsumoQtdAtual.Width = 150;
+            // 
+            // Coluna_EstoqueInsumoValidade
+            // 
+            this.Coluna_EstoqueInsumoValidade.HeaderText = "Validade";
+            this.Coluna_EstoqueInsumoValidade.MinimumWidth = 6;
+            this.Coluna_EstoqueInsumoValidade.Name = "Coluna_EstoqueInsumoValidade";
+            this.Coluna_EstoqueInsumoValidade.ReadOnly = true;
+            this.Coluna_EstoqueInsumoValidade.Width = 154;
             // 
             // imageIcons
             // 
             this.imageIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageIcons.ImageStream")));
             this.imageIcons.TransparentColor = System.Drawing.Color.Transparent;
             this.imageIcons.Images.SetKeyName(0, "Pesquisar.png");
-            // 
-            // Btn_Pesquisar
-            // 
-            this.Btn_Pesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.Btn_Pesquisar.ImageKey = "Pesquisar.png";
-            this.Btn_Pesquisar.ImageList = this.imageIcons;
-            this.Btn_Pesquisar.Location = new System.Drawing.Point(164, 145);
-            this.Btn_Pesquisar.Margin = new System.Windows.Forms.Padding(2);
-            this.Btn_Pesquisar.Name = "Btn_Pesquisar";
-            this.Btn_Pesquisar.Size = new System.Drawing.Size(143, 26);
-            this.Btn_Pesquisar.TabIndex = 50;
-            this.Btn_Pesquisar.Text = "Pesquisar";
-            this.Btn_Pesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Pesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Pesquisar.UseVisualStyleBackColor = true;
-            this.Btn_Pesquisar.Click += new System.EventHandler(this.Btn_Pesquisar_Click);
             // 
             // Txt__PesqNomeInsumoEstoq
             // 
@@ -183,31 +192,6 @@
             this.MaskedTextBox_ValInsumoEstoque.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MaskedTextBox_ValInsumoEstoque.ValidatingType = typeof(System.DateTime);
             // 
-            // Coluna_EstoqueInsumoNome
-            // 
-            this.Coluna_EstoqueInsumoNome.DividerWidth = 1;
-            this.Coluna_EstoqueInsumoNome.HeaderText = "Nome Insumo";
-            this.Coluna_EstoqueInsumoNome.MinimumWidth = 6;
-            this.Coluna_EstoqueInsumoNome.Name = "Coluna_EstoqueInsumoNome";
-            this.Coluna_EstoqueInsumoNome.ReadOnly = true;
-            this.Coluna_EstoqueInsumoNome.Width = 450;
-            // 
-            // Coluna_EstoqueInsumoQtdAtual
-            // 
-            this.Coluna_EstoqueInsumoQtdAtual.HeaderText = "Quantidade atual";
-            this.Coluna_EstoqueInsumoQtdAtual.MinimumWidth = 6;
-            this.Coluna_EstoqueInsumoQtdAtual.Name = "Coluna_EstoqueInsumoQtdAtual";
-            this.Coluna_EstoqueInsumoQtdAtual.ReadOnly = true;
-            this.Coluna_EstoqueInsumoQtdAtual.Width = 150;
-            // 
-            // Coluna_EstoqueInsumoValidade
-            // 
-            this.Coluna_EstoqueInsumoValidade.HeaderText = "Validade";
-            this.Coluna_EstoqueInsumoValidade.MinimumWidth = 6;
-            this.Coluna_EstoqueInsumoValidade.Name = "Coluna_EstoqueInsumoValidade";
-            this.Coluna_EstoqueInsumoValidade.ReadOnly = true;
-            this.Coluna_EstoqueInsumoValidade.Width = 154;
-            // 
             // Btn_EstoqueInsumoGerenc
             // 
             this.Btn_EstoqueInsumoGerenc.ForeColor = System.Drawing.Color.Black;
@@ -217,6 +201,22 @@
             this.Btn_EstoqueInsumoGerenc.TabIndex = 52;
             this.Btn_EstoqueInsumoGerenc.Text = "Gerenciamento";
             this.Btn_EstoqueInsumoGerenc.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Pesquisar
+            // 
+            this.Btn_Pesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
+            this.Btn_Pesquisar.ImageKey = "Pesquisar.png";
+            this.Btn_Pesquisar.ImageList = this.imageIcons;
+            this.Btn_Pesquisar.Location = new System.Drawing.Point(164, 145);
+            this.Btn_Pesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_Pesquisar.Name = "Btn_Pesquisar";
+            this.Btn_Pesquisar.Size = new System.Drawing.Size(143, 26);
+            this.Btn_Pesquisar.TabIndex = 50;
+            this.Btn_Pesquisar.Text = "Pesquisar";
+            this.Btn_Pesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Pesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Pesquisar.UseVisualStyleBackColor = true;
+            this.Btn_Pesquisar.Click += new System.EventHandler(this.Btn_Pesquisar_Click);
             // 
             // Frm_EstoqueInsumo
             // 
