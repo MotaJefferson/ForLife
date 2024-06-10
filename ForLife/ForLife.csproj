@@ -121,7 +121,6 @@
     <Compile Include="Forms\Frm_GerenciamentoInsumo.Designer.cs">
       <DependentUpon>Frm_GerenciamentoInsumo.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Forms\Frm_PesquisaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,13 +144,12 @@
     </Compile>
     <Compile Include="Forms\Frm_PesquisaProduto.Designer.cs">
       <DependentUpon>Frm_PesquisaProduto.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="Forms\Frm_PesquisaInsumoOrigem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Frm_PesquisaInsumoOrigem.Designer.cs">
       <DependentUpon>Frm_PesquisaInsumoOrigem.cs</DependentUpon>
->>>>>>> 85ecebc72c4dc636bce6aa8df3c1c5d12e02374b
     </Compile>
     <Compile Include="Forms\Frm_PesquisaUsuario.cs">
       <SubType>Form</SubType>
@@ -213,7 +211,6 @@
     <EmbeddedResource Include="Forms\Frm_GerenciarUsuario_UC.resx">
       <DependentUpon>Frm_GerenciarUsuario_UC.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Forms\Frm_PesquisaCliente.resx">
       <DependentUpon>Frm_PesquisaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,13 +222,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_PesquisaProduto.resx">
       <DependentUpon>Frm_PesquisaProduto.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_PesquisaInsumoOrigem.resx">
       <DependentUpon>Frm_PesquisaInsumoOrigem.cs</DependentUpon>
->>>>>>> 85ecebc72c4dc636bce6aa8df3c1c5d12e02374b
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_PesquisaUsuario.resx">
       <DependentUpon>Frm_PesquisaUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Venda.resx">
       <DependentUpon>Frm_Venda.cs</DependentUpon>
