@@ -37,61 +37,61 @@ namespace ForLife.Forms
             {
                 Usuario.Unit U = new Usuario.Unit();
 
-                if (Cmb_TipoUsuario.Text != "")
+                if (Cmb_PesqTipoUsuario.Text != "")
                 {
                     int index = 0;
 
-                    if (Cmb_TipoUsuario.SelectedIndex > 0)
+                    if (Cmb_PesqTipoUsuario.SelectedIndex > 0)
                     {
-                        index = Cmb_TipoUsuario.SelectedIndex;
+                        index = Cmb_PesqTipoUsuario.SelectedIndex;
                     }
 
                     var ListaGrid = U.BuscarVariosSQL("cargo", index.ToString());
-                    Grd_Resultados.Rows.Clear();
+                    Grd_ResultadosPesqUsuario.Rows.Clear();
 
                     for (int i = 0; i <= ListaGrid.Count - 1; i++)
                     {
                         DataGridViewRow row = new DataGridViewRow();
-                        row.CreateCells(Grd_Resultados);
+                        row.CreateCells(Grd_ResultadosPesqUsuario);
                         row.Cells[0].Value = ListaGrid[i][0].ToString();
                         row.Cells[1].Value = ListaGrid[i][1].ToString();
                         row.Cells[2].Value = ListaGrid[i][2].ToString();
                         row.Cells[3].Value = ListaGrid[i][3].ToString();
-                        Grd_Resultados.Rows.Add(row);
+                        Grd_ResultadosPesqUsuario.Rows.Add(row);
                     }
                 }
 
-                else if(Txt_Nome.Text != "")
+                else if(Txt_PesqNomeUsuario.Text != "")
                 {
-                    var ListaGrid = U.BuscarVariosSQL("nome", Txt_Nome.Text);
-                    Grd_Resultados.Rows.Clear();
+                    var ListaGrid = U.BuscarVariosSQL("nome", Txt_PesqNomeUsuario.Text);
+                    Grd_ResultadosPesqUsuario.Rows.Clear();
 
                     for (int i = 0; i <= ListaGrid.Count - 1; i++)
                     {
                         DataGridViewRow row = new DataGridViewRow();
-                        row.CreateCells(Grd_Resultados);
+                        row.CreateCells(Grd_ResultadosPesqUsuario);
                         row.Cells[0].Value = ListaGrid[i][0].ToString();
                         row.Cells[1].Value = ListaGrid[i][1].ToString();
                         row.Cells[2].Value = ListaGrid[i][2].ToString();
                         row.Cells[3].Value = ListaGrid[i][3].ToString();
-                        Grd_Resultados.Rows.Add(row);
+                        Grd_ResultadosPesqUsuario.Rows.Add(row);
                     }
                 }
                                 
-                else if (Txt_Usuario.Text != "")
+                else if (Txt_PesqUsuario.Text != "")
                 {
-                    var ListaGrid = U.BuscarVariosSQL("usuario", Txt_Usuario.Text);
-                    Grd_Resultados.Rows.Clear();
+                    var ListaGrid = U.BuscarVariosSQL("usuario", Txt_PesqUsuario.Text);
+                    Grd_ResultadosPesqUsuario.Rows.Clear();
 
                     for (int i = 0; i <= ListaGrid.Count - 1; i++)
                     {
                         DataGridViewRow row = new DataGridViewRow();
-                        row.CreateCells(Grd_Resultados);
+                        row.CreateCells(Grd_ResultadosPesqUsuario);
                         row.Cells[0].Value = ListaGrid[i][0].ToString();
                         row.Cells[1].Value = ListaGrid[i][1].ToString();
                         row.Cells[2].Value = ListaGrid[i][2].ToString();
                         row.Cells[3].Value = ListaGrid[i][3].ToString();
-                        Grd_Resultados.Rows.Add(row);
+                        Grd_ResultadosPesqUsuario.Rows.Add(row);
                     }
                 }
 
@@ -110,7 +110,7 @@ namespace ForLife.Forms
             try
             {
                 DataGridViewRow row = new DataGridViewRow();
-                row = Grd_Resultados.SelectedRows[0];
+                row = Grd_ResultadosPesqUsuario.SelectedRows[0];
                 string usuario = row.Cells[0].Value.ToString();
 
                 Usuario.Unit U = new Usuario.Unit();
@@ -142,17 +142,17 @@ namespace ForLife.Forms
                 Usuario.Unit U = new Usuario.Unit();
 
                 var ListaGrid = U.BuscarTodosSQL();
-                Grd_Resultados.Rows.Clear();
+                Grd_ResultadosPesqUsuario.Rows.Clear();
 
                 for (int i = 0; i <= ListaGrid.Count - 1; i++)
                 {
                     DataGridViewRow row = new DataGridViewRow();
-                    row.CreateCells(Grd_Resultados);
+                    row.CreateCells(Grd_ResultadosPesqUsuario);
                     row.Cells[0].Value = ListaGrid[i][0].ToString();
                     row.Cells[1].Value = ListaGrid[i][1].ToString();
                     row.Cells[2].Value = ListaGrid[i][2].ToString();
                     row.Cells[3].Value = ListaGrid[i][3].ToString();
-                    Grd_Resultados.Rows.Add(row);
+                    Grd_ResultadosPesqUsuario.Rows.Add(row);
                 }
 
 

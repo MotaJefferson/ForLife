@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_EstoqueProduto));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Lbl_TitleEstoqueProduto = new System.Windows.Forms.Label();
             this.imageIcons = new System.Windows.Forms.ImageList(this.components);
@@ -125,9 +125,9 @@
             // Btn_EstoqueProdutoGerenc
             // 
             this.Btn_EstoqueProdutoGerenc.ForeColor = System.Drawing.Color.Black;
-            this.Btn_EstoqueProdutoGerenc.Location = new System.Drawing.Point(540, 146);
+            this.Btn_EstoqueProdutoGerenc.Location = new System.Drawing.Point(476, 144);
             this.Btn_EstoqueProdutoGerenc.Name = "Btn_EstoqueProdutoGerenc";
-            this.Btn_EstoqueProdutoGerenc.Size = new System.Drawing.Size(143, 26);
+            this.Btn_EstoqueProdutoGerenc.Size = new System.Drawing.Size(134, 26);
             this.Btn_EstoqueProdutoGerenc.TabIndex = 58;
             this.Btn_EstoqueProdutoGerenc.Text = "Gerenciamento";
             this.Btn_EstoqueProdutoGerenc.UseVisualStyleBackColor = true;
@@ -137,10 +137,10 @@
             this.Btn_PesquisarProdutoEstoque.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
             this.Btn_PesquisarProdutoEstoque.ImageKey = "Pesquisar.png";
             this.Btn_PesquisarProdutoEstoque.ImageList = this.imageIcons;
-            this.Btn_PesquisarProdutoEstoque.Location = new System.Drawing.Point(218, 146);
+            this.Btn_PesquisarProdutoEstoque.Location = new System.Drawing.Point(154, 144);
             this.Btn_PesquisarProdutoEstoque.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_PesquisarProdutoEstoque.Name = "Btn_PesquisarProdutoEstoque";
-            this.Btn_PesquisarProdutoEstoque.Size = new System.Drawing.Size(143, 26);
+            this.Btn_PesquisarProdutoEstoque.Size = new System.Drawing.Size(134, 26);
             this.Btn_PesquisarProdutoEstoque.TabIndex = 57;
             this.Btn_PesquisarProdutoEstoque.Text = "Pesquisar";
             this.Btn_PesquisarProdutoEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -150,9 +150,9 @@
             // Btn_RelatorioEstoqueProduto
             // 
             this.Btn_RelatorioEstoqueProduto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_RelatorioEstoqueProduto.Location = new System.Drawing.Point(379, 146);
+            this.Btn_RelatorioEstoqueProduto.Location = new System.Drawing.Point(315, 144);
             this.Btn_RelatorioEstoqueProduto.Name = "Btn_RelatorioEstoqueProduto";
-            this.Btn_RelatorioEstoqueProduto.Size = new System.Drawing.Size(143, 26);
+            this.Btn_RelatorioEstoqueProduto.Size = new System.Drawing.Size(134, 26);
             this.Btn_RelatorioEstoqueProduto.TabIndex = 56;
             this.Btn_RelatorioEstoqueProduto.Text = "Relatório Completo";
             this.Btn_RelatorioEstoqueProduto.UseVisualStyleBackColor = true;
@@ -162,12 +162,12 @@
             this.Grd_EstoqueInsumos.AllowUserToAddRows = false;
             this.Grd_EstoqueInsumos.AllowUserToDeleteRows = false;
             this.Grd_EstoqueInsumos.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Grd_EstoqueInsumos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Grd_EstoqueInsumos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.Grd_EstoqueInsumos.BackgroundColor = System.Drawing.Color.White;
             this.Grd_EstoqueInsumos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grd_EstoqueInsumos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -180,11 +180,11 @@
             this.Grd_EstoqueInsumos.Name = "Grd_EstoqueInsumos";
             this.Grd_EstoqueInsumos.ReadOnly = true;
             this.Grd_EstoqueInsumos.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.ForestGreen;
-            this.Grd_EstoqueInsumos.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            this.Grd_EstoqueInsumos.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.Grd_EstoqueInsumos.RowTemplate.Height = 24;
             this.Grd_EstoqueInsumos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Grd_EstoqueInsumos.Size = new System.Drawing.Size(809, 351);

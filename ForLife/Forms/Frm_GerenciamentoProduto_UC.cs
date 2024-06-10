@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ForLifeBiblioteca.Classes;
 
 namespace ForLife.Forms
 {
@@ -15,6 +16,12 @@ namespace ForLife.Forms
         public Frm_GerenciamentoProduto_UC()
         {
             InitializeComponent();
+
+            Produto.Unit P = new Produto.Unit();
+
+                      
+            comboBox_InsumoOrigem.Items.Clear();
+            comboBox_InsumoOrigem.Items.Add(P.ListaInsumoSQL());
         }
 
     }
