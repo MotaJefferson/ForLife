@@ -3,8 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forlife\\forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forlife\\forms\\frm_gerenciamentoproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentoproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECE412C0-5BA5-4077-8134-1EDE640C18D1}|..\\ForLifeBiblioteca\\ForLifeBiblioteca.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forlifebiblioteca\\classes\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jeffe\\onedrive\\documentos\\unip\\2\u00BA semestre\\pim - 2\u00BA semestre 2024\\forlife - projeto\\forlife\\forlife\\forms\\frm_gerenciamentoproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentoproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +21,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLifeBiblioteca\\Classes\\Produto.cs",
+              "RelativeDocumentMoniker": "..\\ForLifeBiblioteca\\Classes\\Produto.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLifeBiblioteca\\Classes\\Produto.cs",
+              "RelativeToolTip": "..\\ForLifeBiblioteca\\Classes\\Produto.cs",
+              "ViewState": "AQIAAJwBAAAAAAAAAAAewKEBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T23:51:58.578Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "17a4fef3-22e2-42ed-bf40-cd80d31a6ced",
+        "Display": 1,
+        "X": 294,
+        "Y": 80,
+        "Width": 996,
+        "Height": 554,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_MenuPrincipal_MDI.cs",
-              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
-              "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
-              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
-              "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAhwIQAAAAAAAAA",
+              "Title": "Frm_GerenciamentoProduto_UC.cs",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "RelativeToolTip": "Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T23:50:08.686Z",
+              "WhenOpened": "2024-06-10T00:09:35.499Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_GerenciamentoProduto_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "ToolTip": "C:\\Users\\jeffe\\OneDrive\\Documentos\\UNIP\\2\u00BA Semestre\\PIM - 2\u00BA Semestre 2024\\ForLife - Projeto\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoProduto_UC.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_GerenciamentoProduto_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T23:51:39.426Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

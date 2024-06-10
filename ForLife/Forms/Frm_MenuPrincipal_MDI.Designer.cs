@@ -153,7 +153,6 @@ namespace ForLife.Forms
             this.insumoToolStripMenuItem.Name = "insumoToolStripMenuItem";
             this.insumoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.insumoToolStripMenuItem.Text = "Insumo";
-            this.insumoToolStripMenuItem.Click += new System.EventHandler(this.insumoToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
