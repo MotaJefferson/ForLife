@@ -17,29 +17,63 @@ namespace ForLife.Forms
 
         bool VerSenha = false;
 
+        ValidacaoLogin LerCampos()
+        {
+            ValidacaoLogin V = new ValidacaoLogin();
 
+            V.Login = Txt_Login.Text;
+            V.Password = Txt_senha.Text;
+
+            return V;
+        }
 
         public Frm_Login()
         {
-            InitializeComponent();          
+            InitializeComponent();
 
+            Txt_Login.Clear();
+            Txt_senha.Clear();
+             
         }
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
 
-            Session.Instance.UserID = Txt_Login.Text;
+            try
+            {
+                ValidacaoLogin V = new ValidacaoLogin();
 
-            this.Hide();
-            Frm_MenuPrincipal_MDI frm = new Frm_MenuPrincipal_MDI();
-            frm.Closed += (s, args) => this.Close();
-            frm.Show();
+                V = LerCampos();
+                V.ValidaClasse();
 
+                string usuario = V.RetornaUsuario(Txt_Login.Text);
+                string senha = V.RetornaSenha(usuario);
 
-                       
-            
+                if (usuario != null)
+                {
 
+                    if (senha != Txt_senha.Text)
+                    {
+                        MessageBox.Show("Senha incorreta", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                    else
+                    {
+                        DialogResult = DialogResult.OK;
+
+                        Session.Instance.UserID = Txt_Login.Text;
+
+                        this.Hide();
+                        Frm_MenuPrincipal_MDI frm = new Frm_MenuPrincipal_MDI();
+                        frm.Closed += (s, args) => this.Close();
+                        frm.Show();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+          
             
         }
 
@@ -69,6 +103,17 @@ namespace ForLife.Forms
             }
         }
 
+        private void btn_LoginDireto_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+
+            Session.Instance.UserID = Txt_Login.Text;
+
+            this.Hide();
+            Frm_MenuPrincipal_MDI frm = new Frm_MenuPrincipal_MDI();
+            frm.Closed += (s, args) => this.Close();
+            frm.Show();
+        }
     }
         
 }

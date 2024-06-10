@@ -47,6 +47,7 @@
     <Compile Include="Classes\DadosUsuario.cs" />
     <Compile Include="Classes\Produto.cs" />
     <Compile Include="Classes\Usuario.cs" />
+    <Compile Include="Classes\ValidacaoLogin.cs" />
     <Compile Include="Cls_Uteis.cs" />
     <Compile Include="Databases\SQLServerClass.cs" />
     <Compile Include="ForLifeDataSet.Designer.cs">
