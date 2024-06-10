@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_pesquisainsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_pesquisainsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_gerenciamentocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_estoqueproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_estoqueproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_gerenciamentofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_gerenciamentoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_gerenciarusuario_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciarusuario_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_gerenciamentoproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_gerenciamentoproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_menuprincipal_mdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_pesquisaproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_pesquisaproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_pesquisausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|solutionrelative:forms\\frm_pesquisausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A2917F-CFD5-468D-869C-DD40D1FC6CEB}|ForLife.csproj|c:\\users\\jaque\\source\\repos\\forlife\\forlife\\forms\\frm_pesquisafornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,46 +54,138 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_PesquisaInsumo.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaInsumo.cs",
-              "RelativeDocumentMoniker": "Forms\\Frm_PesquisaInsumo.cs",
-              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaInsumo.cs [Design]",
-              "RelativeToolTip": "Forms\\Frm_PesquisaInsumo.cs [Design]",
+              "Title": "Frm_Venda.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_Venda.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_Venda.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_Venda.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_Venda.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:21:14.698Z",
+              "WhenOpened": "2024-06-10T14:47:51.979Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Frm_PesquisaFornecedor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaFornecedor.cs",
-              "RelativeDocumentMoniker": "Forms\\Frm_PesquisaFornecedor.cs",
-              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaFornecedor.cs [Design]",
-              "RelativeToolTip": "Forms\\Frm_PesquisaFornecedor.cs [Design]",
+              "Title": "Frm_EstoqueProduto.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_EstoqueProduto.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_EstoqueProduto.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_EstoqueProduto.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_EstoqueProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:03:50.858Z",
+              "WhenOpened": "2024-06-10T15:14:02.398Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Frm_GerenciamentoCliente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoCliente.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciamentoCliente.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoCliente.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_GerenciamentoCliente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T15:13:54.721Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_GerenciamentoFornecedor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoFornecedor.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciamentoFornecedor.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoFornecedor.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_GerenciamentoFornecedor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T15:13:42.657Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_GerenciamentoInsumo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoInsumo.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciamentoInsumo.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoInsumo.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_GerenciamentoInsumo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T15:13:28.303Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Frm_GerenciarUsuario_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciarUsuario_UC.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciarUsuario_UC.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciarUsuario_UC.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_GerenciarUsuario_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T15:12:40.733Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Frm_PesquisaProduto.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaProduto.cs",
               "RelativeDocumentMoniker": "Forms\\Frm_PesquisaProduto.cs",
               "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaProduto.cs [Design]",
               "RelativeToolTip": "Forms\\Frm_PesquisaProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:21:36.532Z",
+              "WhenOpened": "2024-06-10T15:12:33.638Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Frm_PesquisaUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaUsuario.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_PesquisaUsuario.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaUsuario.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_PesquisaUsuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T15:12:31.721Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Frm_GerenciamentoProduto_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_GerenciamentoProduto_UC.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_GerenciamentoProduto_UC.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_GerenciamentoProduto_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T14:59:09.037Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Frm_PesquisaFornecedor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaFornecedor.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_PesquisaFornecedor.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_PesquisaFornecedor.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_PesquisaFornecedor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T14:40:46.904Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Frm_MenuPrincipal_MDI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs",
+              "RelativeDocumentMoniker": "Forms\\Frm_MenuPrincipal_MDI.cs",
+              "ToolTip": "C:\\Users\\jaque\\source\\repos\\ForLife\\ForLife\\Forms\\Frm_MenuPrincipal_MDI.cs [Design]",
+              "RelativeToolTip": "Forms\\Frm_MenuPrincipal_MDI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T14:36:32.704Z",
               "EditorCaption": " [Design]"
             }
           ]
