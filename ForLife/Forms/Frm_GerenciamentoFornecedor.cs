@@ -70,11 +70,11 @@ namespace ForLife.Forms
 
         void EscreveCampos(Fornecedor.Unit F)
         {
-            if(F.StatusFornecedor == 1)
+            if(F.StatusFornecedor == 0)
             {
                 Rbtn_FornecedorAtivo.Checked = true;
             }
-            if(F.StatusFornecedor == 2)
+            if(F.StatusFornecedor == 1)
             {
                 Rbtn_FornecedorInativo.Checked = true;
             }
@@ -143,18 +143,17 @@ namespace ForLife.Forms
                     Fornecedor.Unit F = new Fornecedor.Unit();
                     F = F.BuscarSQL(Txt_NomeFantasiaFornecedor.Text);
 
-                    if (F == null)
-                    {
-
-                    }
-                    else
+                    if (F != null)
                     {
                         EscreveCampos(F);
-                        MessageBox.Show("Deseja apagar o fornecedor " + Txt_NomeFantasiaFornecedor.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        F.ApagarSQL();
-                        MessageBox.Show("Fornecedor apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LimparCampos();
-                        HabilitarCampos(false);
+
+                        if (MessageBox.Show("Deseja apagar o fornecedor " + Txt_NomeFantasiaFornecedor.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            F.ApagarSQL();
+                            MessageBox.Show("Fornecedor apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LimparCampos();
+                            HabilitarCampos(false);
+                        }
                     }
                 }
                 catch (Exception Ex)

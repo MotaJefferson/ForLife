@@ -157,18 +157,17 @@ namespace ForLife.Forms
                     Insumo.Unit P = new Insumo.Unit();
                     P = P.BuscarSQL(Txt_NomeInsumo.Text);
 
-                    if (P == null)
-                    {
-
-                    }
-                    else
+                    if (P != null)
                     {
                         EscreveCampos(P);
-                        MessageBox.Show("Deseja apagar o insumo " + Txt_NomeInsumo.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        P.ApagarSQL();
-                        MessageBox.Show("Insumo apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LimparCampos();
-                        HabilitarCampos(false);
+
+                        if (MessageBox.Show("Deseja apagar o insumo " + Txt_NomeInsumo.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            P.ApagarSQL();
+                            MessageBox.Show("Insumo apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LimparCampos();
+                            HabilitarCampos(false);
+                        }
                     }
                 }
                 catch (Exception Ex)

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\DadosUsuario.cs" />
     <Compile Include="Classes\Fornecedor.cs" />
     <Compile Include="Classes\Insumo.cs" />

@@ -218,8 +218,8 @@
             // Txt_CnpjForn
             // 
             this.Txt_CnpjForn.Location = new System.Drawing.Point(48, 518);
-            this.Txt_CnpjForn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Txt_CnpjForn.Mask = "9999999-99. 9999. 9";
+            this.Txt_CnpjForn.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_CnpjForn.Mask = "00,000,000/0000-00";
             this.Txt_CnpjForn.Name = "Txt_CnpjForn";
             this.Txt_CnpjForn.Size = new System.Drawing.Size(147, 22);
             this.Txt_CnpjForn.TabIndex = 40;
@@ -256,7 +256,7 @@
             this.Btn_VoltarFornecedor.ImageKey = "Voltar.png";
             this.Btn_VoltarFornecedor.ImageList = this.imgList_Usuario;
             this.Btn_VoltarFornecedor.Location = new System.Drawing.Point(860, 624);
-            this.Btn_VoltarFornecedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_VoltarFornecedor.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_VoltarFornecedor.Name = "Btn_VoltarFornecedor";
             this.Btn_VoltarFornecedor.Size = new System.Drawing.Size(129, 34);
             this.Btn_VoltarFornecedor.TabIndex = 61;
@@ -274,7 +274,7 @@
             this.Btn_BuscarFornecedor.ImageKey = "Pesquisar.png";
             this.Btn_BuscarFornecedor.ImageList = this.imgList_Usuario;
             this.Btn_BuscarFornecedor.Location = new System.Drawing.Point(723, 624);
-            this.Btn_BuscarFornecedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_BuscarFornecedor.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_BuscarFornecedor.Name = "Btn_BuscarFornecedor";
             this.Btn_BuscarFornecedor.Size = new System.Drawing.Size(129, 34);
             this.Btn_BuscarFornecedor.TabIndex = 60;
@@ -292,7 +292,7 @@
             this.Btn_ExcluirFornecedor.ImageKey = "Apagar.png";
             this.Btn_ExcluirFornecedor.ImageList = this.imgList_Usuario;
             this.Btn_ExcluirFornecedor.Location = new System.Drawing.Point(587, 624);
-            this.Btn_ExcluirFornecedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_ExcluirFornecedor.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_ExcluirFornecedor.Name = "Btn_ExcluirFornecedor";
             this.Btn_ExcluirFornecedor.Size = new System.Drawing.Size(129, 34);
             this.Btn_ExcluirFornecedor.TabIndex = 59;
@@ -310,7 +310,7 @@
             this.Btn_SalvarFornecedor.ImageKey = "Salvar.png";
             this.Btn_SalvarFornecedor.ImageList = this.imgList_Usuario;
             this.Btn_SalvarFornecedor.Location = new System.Drawing.Point(450, 624);
-            this.Btn_SalvarFornecedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_SalvarFornecedor.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_SalvarFornecedor.Name = "Btn_SalvarFornecedor";
             this.Btn_SalvarFornecedor.Size = new System.Drawing.Size(129, 34);
             this.Btn_SalvarFornecedor.TabIndex = 58;
@@ -378,7 +378,7 @@
             this.Controls.Add(this.Rbtn_FornecedorAtivo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_GerenciamentoFornecedor";
             this.Size = new System.Drawing.Size(1200, 738);
             this.panel1.ResumeLayout(false);

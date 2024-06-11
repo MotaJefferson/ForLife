@@ -254,5 +254,37 @@ namespace ForLife.Forms
 
             }
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_GerenciamentoCliente F = new Frm_GerenciamentoCliente();
+            F.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Gerenciamento - Cliente";
+            TB.Text = "Gerenciamento - Cliente";
+
+            int index = -1;
+
+            for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
+            {
+                if (Tbc_Aplicacoes.TabPages[i].Text.Trim() == TB.Text.Trim())
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Tbc_Aplicacoes.SelectedIndex = index;
+            }
+            else
+            {
+                TB.Controls.Add(F);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+                Tbc_Aplicacoes.SelectTab(TB);
+
+            }
+        }
     }
 }

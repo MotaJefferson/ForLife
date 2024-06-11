@@ -69,10 +69,9 @@
             // 
             this.Lbl_Nome.AutoSize = true;
             this.Lbl_Nome.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Nome.Location = new System.Drawing.Point(19, 264);
-            this.Lbl_Nome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_Nome.Location = new System.Drawing.Point(25, 325);
             this.Lbl_Nome.Name = "Lbl_Nome";
-            this.Lbl_Nome.Size = new System.Drawing.Size(120, 20);
+            this.Lbl_Nome.Size = new System.Drawing.Size(147, 23);
             this.Lbl_Nome.TabIndex = 2;
             this.Lbl_Nome.Text = "Nome Completo";
             // 
@@ -80,10 +79,9 @@
             // 
             this.Lbl_Usuario.AutoSize = true;
             this.Lbl_Usuario.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Usuario.Location = new System.Drawing.Point(21, 334);
-            this.Lbl_Usuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_Usuario.Location = new System.Drawing.Point(28, 411);
             this.Lbl_Usuario.Name = "Lbl_Usuario";
-            this.Lbl_Usuario.Size = new System.Drawing.Size(60, 20);
+            this.Lbl_Usuario.Size = new System.Drawing.Size(72, 23);
             this.Lbl_Usuario.TabIndex = 7;
             this.Lbl_Usuario.Text = "Usuário";
             // 
@@ -92,21 +90,21 @@
             this.Txt_CodAcesso.AcceptsTab = true;
             this.Txt_CodAcesso.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.Txt_CodAcesso.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_CodAcesso.Location = new System.Drawing.Point(23, 361);
-            this.Txt_CodAcesso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_CodAcesso.Location = new System.Drawing.Point(31, 444);
+            this.Txt_CodAcesso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_CodAcesso.Name = "Txt_CodAcesso";
-            this.Txt_CodAcesso.Size = new System.Drawing.Size(649, 25);
+            this.Txt_CodAcesso.Size = new System.Drawing.Size(864, 30);
             this.Txt_CodAcesso.TabIndex = 4;
             // 
             // Txt_Senha
             // 
             this.Txt_Senha.AcceptsTab = true;
             this.Txt_Senha.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Senha.Location = new System.Drawing.Point(25, 430);
-            this.Txt_Senha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_Senha.Location = new System.Drawing.Point(33, 529);
+            this.Txt_Senha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_Senha.Name = "Txt_Senha";
             this.Txt_Senha.PasswordChar = '●';
-            this.Txt_Senha.Size = new System.Drawing.Size(293, 25);
+            this.Txt_Senha.Size = new System.Drawing.Size(389, 30);
             this.Txt_Senha.TabIndex = 5;
             this.Txt_Senha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Txt_Senha_KeyDown);
             // 
@@ -114,10 +112,9 @@
             // 
             this.Lbl_Senha.AutoSize = true;
             this.Lbl_Senha.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Senha.Location = new System.Drawing.Point(22, 406);
-            this.Lbl_Senha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_Senha.Location = new System.Drawing.Point(29, 500);
             this.Lbl_Senha.Name = "Lbl_Senha";
-            this.Lbl_Senha.Size = new System.Drawing.Size(51, 20);
+            this.Lbl_Senha.Size = new System.Drawing.Size(59, 23);
             this.Lbl_Senha.TabIndex = 10;
             this.Lbl_Senha.Text = "Senha";
             // 
@@ -125,10 +122,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(342, 406);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(456, 500);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.Size = new System.Drawing.Size(144, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "Confirmar Senha";
             // 
@@ -136,10 +132,10 @@
             // 
             this.Rbtn_Agricultor.AutoSize = true;
             this.Rbtn_Agricultor.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rbtn_Agricultor.Location = new System.Drawing.Point(23, 136);
-            this.Rbtn_Agricultor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Rbtn_Agricultor.Location = new System.Drawing.Point(31, 167);
+            this.Rbtn_Agricultor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rbtn_Agricultor.Name = "Rbtn_Agricultor";
-            this.Rbtn_Agricultor.Size = new System.Drawing.Size(94, 24);
+            this.Rbtn_Agricultor.Size = new System.Drawing.Size(112, 27);
             this.Rbtn_Agricultor.TabIndex = 13;
             this.Rbtn_Agricultor.Text = "Agricultor";
             this.Rbtn_Agricultor.UseVisualStyleBackColor = true;
@@ -148,10 +144,10 @@
             // 
             this.Rbtn_Gestor.AutoSize = true;
             this.Rbtn_Gestor.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rbtn_Gestor.Location = new System.Drawing.Point(273, 136);
-            this.Rbtn_Gestor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Rbtn_Gestor.Location = new System.Drawing.Point(364, 167);
+            this.Rbtn_Gestor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rbtn_Gestor.Name = "Rbtn_Gestor";
-            this.Rbtn_Gestor.Size = new System.Drawing.Size(70, 24);
+            this.Rbtn_Gestor.Size = new System.Drawing.Size(85, 27);
             this.Rbtn_Gestor.TabIndex = 15;
             this.Rbtn_Gestor.Text = "Gestor";
             this.Rbtn_Gestor.UseVisualStyleBackColor = true;
@@ -161,10 +157,10 @@
             this.Chk_Bloqueado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Chk_Bloqueado.AutoSize = true;
             this.Chk_Bloqueado.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chk_Bloqueado.Location = new System.Drawing.Point(697, 293);
-            this.Chk_Bloqueado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Chk_Bloqueado.Location = new System.Drawing.Point(950, 361);
+            this.Chk_Bloqueado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Chk_Bloqueado.Name = "Chk_Bloqueado";
-            this.Chk_Bloqueado.Size = new System.Drawing.Size(157, 24);
+            this.Chk_Bloqueado.Size = new System.Drawing.Size(188, 27);
             this.Chk_Bloqueado.TabIndex = 19;
             this.Chk_Bloqueado.Text = "Usuário Bloqueado";
             this.Chk_Bloqueado.UseVisualStyleBackColor = true;
@@ -175,10 +171,9 @@
             this.Lbl_TipoUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.Lbl_TipoUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_TipoUsuario.ForeColor = System.Drawing.Color.Ivory;
-            this.Lbl_TipoUsuario.Location = new System.Drawing.Point(19, 0);
-            this.Lbl_TipoUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_TipoUsuario.Location = new System.Drawing.Point(25, 0);
             this.Lbl_TipoUsuario.Name = "Lbl_TipoUsuario";
-            this.Lbl_TipoUsuario.Size = new System.Drawing.Size(104, 19);
+            this.Lbl_TipoUsuario.Size = new System.Drawing.Size(127, 25);
             this.Lbl_TipoUsuario.TabIndex = 20;
             this.Lbl_TipoUsuario.Text = "Tipo Usuário";
             // 
@@ -188,10 +183,9 @@
             this.Lbl_InfoUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.Lbl_InfoUsuarios.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_InfoUsuarios.ForeColor = System.Drawing.Color.Ivory;
-            this.Lbl_InfoUsuarios.Location = new System.Drawing.Point(19, 0);
-            this.Lbl_InfoUsuarios.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_InfoUsuarios.Location = new System.Drawing.Point(25, 0);
             this.Lbl_InfoUsuarios.Name = "Lbl_InfoUsuarios";
-            this.Lbl_InfoUsuarios.Size = new System.Drawing.Size(190, 19);
+            this.Lbl_InfoUsuarios.Size = new System.Drawing.Size(229, 25);
             this.Lbl_InfoUsuarios.TabIndex = 21;
             this.Lbl_InfoUsuarios.Text = "Informações do Usuário";
             // 
@@ -202,9 +196,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.panel1.Controls.Add(this.Lbl_TitleUsuario);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1080, 57);
+            this.panel1.Size = new System.Drawing.Size(1440, 70);
             this.panel1.TabIndex = 25;
             // 
             // Lbl_TitleUsuario
@@ -212,10 +206,9 @@
             this.Lbl_TitleUsuario.AutoSize = true;
             this.Lbl_TitleUsuario.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_TitleUsuario.ForeColor = System.Drawing.Color.Ivory;
-            this.Lbl_TitleUsuario.Location = new System.Drawing.Point(13, 11);
-            this.Lbl_TitleUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_TitleUsuario.Location = new System.Drawing.Point(17, 14);
             this.Lbl_TitleUsuario.Name = "Lbl_TitleUsuario";
-            this.Lbl_TitleUsuario.Size = new System.Drawing.Size(310, 30);
+            this.Lbl_TitleUsuario.Size = new System.Drawing.Size(391, 37);
             this.Lbl_TitleUsuario.TabIndex = 0;
             this.Lbl_TitleUsuario.Text = "Gerenciamento do Usuário";
             // 
@@ -224,29 +217,29 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.Lbl_TipoUsuario);
-            this.panel2.Location = new System.Drawing.Point(-1, 95);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(-1, 117);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(367, 23);
+            this.panel2.Size = new System.Drawing.Size(489, 28);
             this.panel2.TabIndex = 27;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.OliveDrab;
-            this.panel3.Location = new System.Drawing.Point(7, 41);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(9, 50);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 27);
+            this.panel3.Size = new System.Drawing.Size(331, 33);
             this.panel3.TabIndex = 28;
             // 
             // Rbtn_Comercial
             // 
             this.Rbtn_Comercial.AutoSize = true;
             this.Rbtn_Comercial.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rbtn_Comercial.Location = new System.Drawing.Point(142, 136);
-            this.Rbtn_Comercial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Rbtn_Comercial.Location = new System.Drawing.Point(189, 167);
+            this.Rbtn_Comercial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rbtn_Comercial.Name = "Rbtn_Comercial";
-            this.Rbtn_Comercial.Size = new System.Drawing.Size(94, 24);
+            this.Rbtn_Comercial.Size = new System.Drawing.Size(113, 27);
             this.Rbtn_Comercial.TabIndex = 14;
             this.Rbtn_Comercial.Text = "Comercial";
             this.Rbtn_Comercial.UseVisualStyleBackColor = true;
@@ -258,48 +251,46 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.panel4.Controls.Add(this.Lbl_InfoUsuarios);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(-1, 204);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(-1, 251);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1080, 25);
+            this.panel4.Size = new System.Drawing.Size(1440, 31);
             this.panel4.TabIndex = 29;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.OliveDrab;
-            this.panel5.Location = new System.Drawing.Point(7, 41);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(9, 50);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(248, 27);
+            this.panel5.Size = new System.Drawing.Size(331, 33);
             this.panel5.TabIndex = 28;
             // 
             // Lbl_ValidaUsuario
             // 
             this.Lbl_ValidaUsuario.AutoSize = true;
             this.Lbl_ValidaUsuario.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ValidaUsuario.Location = new System.Drawing.Point(693, 361);
-            this.Lbl_ValidaUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_ValidaUsuario.Location = new System.Drawing.Point(924, 444);
             this.Lbl_ValidaUsuario.Name = "Lbl_ValidaUsuario";
-            this.Lbl_ValidaUsuario.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_ValidaUsuario.Size = new System.Drawing.Size(0, 20);
             this.Lbl_ValidaUsuario.TabIndex = 30;
             // 
             // Lbl_ValidaSenha
             // 
             this.Lbl_ValidaSenha.AutoSize = true;
             this.Lbl_ValidaSenha.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ValidaSenha.Location = new System.Drawing.Point(693, 436);
-            this.Lbl_ValidaSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_ValidaSenha.Location = new System.Drawing.Point(924, 537);
             this.Lbl_ValidaSenha.Name = "Lbl_ValidaSenha";
-            this.Lbl_ValidaSenha.Size = new System.Drawing.Size(0, 19);
+            this.Lbl_ValidaSenha.Size = new System.Drawing.Size(0, 24);
             this.Lbl_ValidaSenha.TabIndex = 31;
             // 
             // Btn_VerSenha
             // 
             this.Btn_VerSenha.Image = global::ForLife.Properties.Resources.Visível;
-            this.Btn_VerSenha.Location = new System.Drawing.Point(646, 429);
-            this.Btn_VerSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_VerSenha.Location = new System.Drawing.Point(861, 528);
+            this.Btn_VerSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_VerSenha.Name = "Btn_VerSenha";
-            this.Btn_VerSenha.Size = new System.Drawing.Size(25, 25);
+            this.Btn_VerSenha.Size = new System.Drawing.Size(33, 31);
             this.Btn_VerSenha.TabIndex = 32;
             this.Btn_VerSenha.UseVisualStyleBackColor = true;
             this.Btn_VerSenha.Click += new System.EventHandler(this.Btn_VerSenha_Click);
@@ -312,10 +303,10 @@
             this.Btn_Novo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Novo.ImageKey = "Adicionar.png";
             this.Btn_Novo.ImageList = this.imgList_Usuario;
-            this.Btn_Novo.Location = new System.Drawing.Point(142, 503);
-            this.Btn_Novo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Btn_Novo.Location = new System.Drawing.Point(189, 645);
+            this.Btn_Novo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Btn_Novo.Name = "Btn_Novo";
-            this.Btn_Novo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_Novo.Size = new System.Drawing.Size(129, 34);
             this.Btn_Novo.TabIndex = 33;
             this.Btn_Novo.Text = "Novo";
             this.Btn_Novo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -342,10 +333,10 @@
             this.Btn_Editar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Editar.ImageKey = "Editar.png";
             this.Btn_Editar.ImageList = this.imgList_Usuario;
-            this.Btn_Editar.Location = new System.Drawing.Point(249, 503);
-            this.Btn_Editar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Btn_Editar.Location = new System.Drawing.Point(332, 645);
+            this.Btn_Editar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Btn_Editar.Name = "Btn_Editar";
-            this.Btn_Editar.Size = new System.Drawing.Size(97, 28);
+            this.Btn_Editar.Size = new System.Drawing.Size(129, 34);
             this.Btn_Editar.TabIndex = 34;
             this.Btn_Editar.Text = "Editar";
             this.Btn_Editar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -360,9 +351,10 @@
             this.Btn_Salvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Salvar.ImageKey = "Salvar.png";
             this.Btn_Salvar.ImageList = this.imgList_Usuario;
-            this.Btn_Salvar.Location = new System.Drawing.Point(354, 503);
+            this.Btn_Salvar.Location = new System.Drawing.Point(472, 645);
+            this.Btn_Salvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Salvar.Name = "Btn_Salvar";
-            this.Btn_Salvar.Size = new System.Drawing.Size(97, 28);
+            this.Btn_Salvar.Size = new System.Drawing.Size(129, 34);
             this.Btn_Salvar.TabIndex = 35;
             this.Btn_Salvar.Text = "Salvar";
             this.Btn_Salvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -377,9 +369,10 @@
             this.Btn_Excluir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Excluir.ImageKey = "Apagar.png";
             this.Btn_Excluir.ImageList = this.imgList_Usuario;
-            this.Btn_Excluir.Location = new System.Drawing.Point(457, 503);
+            this.Btn_Excluir.Location = new System.Drawing.Point(609, 645);
+            this.Btn_Excluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Excluir.Name = "Btn_Excluir";
-            this.Btn_Excluir.Size = new System.Drawing.Size(97, 28);
+            this.Btn_Excluir.Size = new System.Drawing.Size(129, 34);
             this.Btn_Excluir.TabIndex = 36;
             this.Btn_Excluir.Text = "Excluir";
             this.Btn_Excluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -394,9 +387,10 @@
             this.Btn_Buscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Buscar.ImageKey = "Pesquisar.png";
             this.Btn_Buscar.ImageList = this.imgList_Usuario;
-            this.Btn_Buscar.Location = new System.Drawing.Point(559, 503);
+            this.Btn_Buscar.Location = new System.Drawing.Point(745, 645);
+            this.Btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(97, 28);
+            this.Btn_Buscar.Size = new System.Drawing.Size(129, 34);
             this.Btn_Buscar.TabIndex = 37;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -411,9 +405,10 @@
             this.Btn_Voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Voltar.ImageKey = "Voltar.png";
             this.Btn_Voltar.ImageList = this.imgList_Usuario;
-            this.Btn_Voltar.Location = new System.Drawing.Point(662, 503);
+            this.Btn_Voltar.Location = new System.Drawing.Point(883, 645);
+            this.Btn_Voltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Voltar.Name = "Btn_Voltar";
-            this.Btn_Voltar.Size = new System.Drawing.Size(97, 28);
+            this.Btn_Voltar.Size = new System.Drawing.Size(129, 34);
             this.Btn_Voltar.TabIndex = 38;
             this.Btn_Voltar.Text = "Voltar";
             this.Btn_Voltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -426,26 +421,26 @@
             this.Txt_NomeCompleto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Txt_NomeCompleto.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_NomeCompleto.Location = new System.Drawing.Point(23, 292);
-            this.Txt_NomeCompleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_NomeCompleto.Location = new System.Drawing.Point(31, 359);
+            this.Txt_NomeCompleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_NomeCompleto.Name = "Txt_NomeCompleto";
-            this.Txt_NomeCompleto.Size = new System.Drawing.Size(649, 25);
+            this.Txt_NomeCompleto.Size = new System.Drawing.Size(864, 30);
             this.Txt_NomeCompleto.TabIndex = 1;
             // 
             // Txt_ConfirmarSenha
             // 
             this.Txt_ConfirmarSenha.AcceptsTab = true;
             this.Txt_ConfirmarSenha.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_ConfirmarSenha.Location = new System.Drawing.Point(345, 430);
-            this.Txt_ConfirmarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_ConfirmarSenha.Location = new System.Drawing.Point(460, 529);
+            this.Txt_ConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_ConfirmarSenha.Name = "Txt_ConfirmarSenha";
             this.Txt_ConfirmarSenha.PasswordChar = '●';
-            this.Txt_ConfirmarSenha.Size = new System.Drawing.Size(290, 25);
+            this.Txt_ConfirmarSenha.Size = new System.Drawing.Size(385, 30);
             this.Txt_ConfirmarSenha.TabIndex = 6;
             // 
             // Frm_GerenciarUsuario_UC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(253)))), ((int)(((byte)(221)))));
             this.Controls.Add(this.Btn_Voltar);
@@ -472,9 +467,9 @@
             this.Controls.Add(this.Txt_NomeCompleto);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_GerenciarUsuario_UC";
-            this.Size = new System.Drawing.Size(900, 600);
+            this.Size = new System.Drawing.Size(1200, 738);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -63,12 +63,13 @@
             // 
             this.Btn_PesqexibirTodosForn.ForeColor = System.Drawing.Color.Black;
             this.Btn_PesqexibirTodosForn.Location = new System.Drawing.Point(464, 165);
-            this.Btn_PesqexibirTodosForn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_PesqexibirTodosForn.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_PesqexibirTodosForn.Name = "Btn_PesqexibirTodosForn";
             this.Btn_PesqexibirTodosForn.Size = new System.Drawing.Size(160, 31);
             this.Btn_PesqexibirTodosForn.TabIndex = 56;
             this.Btn_PesqexibirTodosForn.Text = "Exibir todos";
             this.Btn_PesqexibirTodosForn.UseVisualStyleBackColor = true;
+            this.Btn_PesqexibirTodosForn.Click += new System.EventHandler(this.Btn_PesqexibirTodosForn_Click);
             // 
             // Lbl_PesqCnpjForn
             // 
@@ -174,6 +175,7 @@
             this.Grd_ResultadosPesqFornecedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Grd_ResultadosPesqFornecedor.Size = new System.Drawing.Size(847, 281);
             this.Grd_ResultadosPesqFornecedor.TabIndex = 60;
+            this.Grd_ResultadosPesqFornecedor.DoubleClick += new System.EventHandler(this.Grd_ResultadosPesqFornecedor_DoubleClick);
             // 
             // Coluna_PesqNomeFantForn
             // 
@@ -223,8 +225,9 @@
             this.Controls.Add(this.Txt_PesqRazaoSocialForn);
             this.Controls.Add(this.Txt_PesqNomeFantasiaForn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_PesquisaFornecedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pesquisar Fornecedor";
             ((System.ComponentModel.ISupportInitialize)(this.Grd_ResultadosPesqFornecedor)).EndInit();
             this.ResumeLayout(false);

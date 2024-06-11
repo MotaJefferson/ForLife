@@ -25,6 +25,7 @@ namespace ForLifeBiblioteca.Classes
             public string RazaoSocial { get; set; }
 
             [Required(ErrorMessage = "CNPJ é obrigatório")]
+            [RegularExpression(@"^\d+$", ErrorMessage = "CNPJ é obrigatório")]
             public string CNPJ { get; set; }
 
 
@@ -54,7 +55,7 @@ namespace ForLifeBiblioteca.Classes
             {
                 int status = 0;
                 int idUsuario = ReturnIdUsuario(usuario);
-                int cnpj = Convert.ToInt32(this.CNPJ.Replace(".", "").Replace("/", "").Replace("-", ""));
+                
 
                 if (Convert.ToInt32(this.StatusFornecedor) == 1)
                 {
@@ -75,7 +76,7 @@ namespace ForLifeBiblioteca.Classes
                         ,status)
                         VALUES ";
                 SQL += "('" + idUsuario + "'";
-                SQL += ",'" + cnpj + "'";
+                SQL += ",'" + this.CNPJ + "'";
                 SQL += ",'" + this.NomeFantasia + "'";
                 SQL += ",'" + this.RazaoSocial + "'";
                 SQL += ",'" + status + "')";
@@ -87,7 +88,7 @@ namespace ForLifeBiblioteca.Classes
             {
                 int idUsuario = ReturnIdUsuario(usuario);
                 int status = 0;
-                int cnpj = Convert.ToInt32(this.CNPJ.Replace(".", "").Replace("/", "").Replace("-", ""));
+                
 
                 if (Convert.ToInt32(this.StatusFornecedor) == 1)
                 {
@@ -107,7 +108,7 @@ namespace ForLifeBiblioteca.Classes
                     SQL += ",nome = '" + this.NomeFantasia + "'";
                     SQL += ",razao_social = '" + this.RazaoSocial + "'";
                     SQL += ",status = '" + status + "'";
-                    SQL += "WHERE CNPJ = '" + cnpj + "'";
+                    SQL += "WHERE CNPJ = '" + this.CNPJ + "'";
 
                     return SQL;
                 }
@@ -115,11 +116,11 @@ namespace ForLifeBiblioteca.Classes
                 {
                     SQL = @"UPDATE Fornecedor SET ";
                     SQL += "usuario_id = '" + idUsuario + "'";
-                    SQL += ",CNPJ = '" + cnpj + "'";
+                    SQL += ",CNPJ = '" + this.CNPJ + "'";
                     SQL += ",nome = '" + this.NomeFantasia + "'";
                     SQL += ",razao_social = '" + this.RazaoSocial + "'";
                     SQL += ",status = '" + status + "'";
-                    SQL += "WHERE CNPJ = '" + cnpj + "'";
+                    SQL += "WHERE CNPJ = '" + this.CNPJ + "'";
 
                     return SQL;
                 }
@@ -332,12 +333,12 @@ namespace ForLifeBiblioteca.Classes
                         
                         string status = null;
 
-                        if (Convert.ToInt32(Dt.Rows[i]["ativo"]) == 1)
+                        if (Convert.ToInt32(Dt.Rows[i]["status"]) == 1)
                         {
                             status = "Ativo";
                         }
 
-                        else if (Convert.ToInt32(Dt.Rows[i]["ativo"]) == 0)
+                        else if (Convert.ToInt32(Dt.Rows[i]["status"]) == 0)
                         {
                             status = "Inativo";
                         }
@@ -377,12 +378,12 @@ namespace ForLifeBiblioteca.Classes
                         string status = null;
 
 
-                        if (Convert.ToInt32(Dt.Rows[i]["ativo"]) == 1)
+                        if (Convert.ToInt32(Dt.Rows[i]["status"]) == 1)
                         {
                             status = "Ativo";
                         }
 
-                        else if (Convert.ToInt32(Dt.Rows[i]["ativo"]) == 0)
+                        else if (Convert.ToInt32(Dt.Rows[i]["status"]) == 0)
                         {
                             status = "Inativo";
                         }

@@ -266,18 +266,17 @@ namespace ForLife.Forms
                     Usuario.Unit C = new Usuario.Unit();
                     C = C.BuscarSQL(Txt_CodAcesso.Text);
 
-                    if(C == null)
-                    {
-
-                    }
-                    else
+                    if (C != null)
                     {
                         EscreveCampos(C);
-                        MessageBox.Show("Deseja apagar o usuário " + Txt_CodAcesso.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        C.ApagarSQL();
-                        MessageBox.Show("Usuário apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LimparCampos();
-                        HabilitarCampos(false);
+
+                        if (MessageBox.Show("Deseja apagar o usuário" + Txt_CodAcesso.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            C.ApagarSQL();
+                            MessageBox.Show("Usuário apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LimparCampos();
+                            HabilitarCampos(false);
+                        }
                     }
                 }
                 catch (Exception Ex)

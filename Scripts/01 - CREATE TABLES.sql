@@ -19,6 +19,7 @@ CREATE TABLE Fornecedor (
     nome VARCHAR(255) NOT NULL,
     razao_social VARCHAR(255) NOT NULL,
     CPF varchar (14) NULL,
+	status BIT NOT NULL
     FOREIGN KEY (usuario_id) REFERENCES Usuario(id_usuario)
 );
 
@@ -28,7 +29,13 @@ CREATE TABLE Cliente (
     nome VARCHAR(255) NOT NULL,
     CPF varchar (14) NOT NULL,
     telefone VARCHAR(20) NOT NULL,
-    endereco VARCHAR(255) NOT NULL
+    logadouro VARCHAR(255) NULL,
+	numero INT NULL,
+	complemento VARCHAR(100) NULL,
+	bairro VARCHAR(100) NULL,
+	cidade VARCHAR(100) NULL,
+	UF CHAR(2) NULL,
+	status BIT NOT NULL
 );
 
 -- Tabela Insumo

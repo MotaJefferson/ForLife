@@ -206,18 +206,17 @@ namespace ForLife.Forms
                     Produto.Unit P = new Produto.Unit();
                     P = P.BuscarSQL(Txt_NomeProduto.Text);
 
-                    if (P == null)
-                    {
-
-                    }
-                    else
+                    if (P != null)
                     {
                         EscreveCampos(P);
-                        MessageBox.Show("Deseja apagar o produto " + Txt_NomeProduto.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        P.ApagarSQL();
-                        MessageBox.Show("Produto apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LimparCampos();
-                        HabilitarCampos(false);
+
+                        if (MessageBox.Show("Deseja apagar o produto " + Txt_NomeProduto.Text + " ?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            P.ApagarSQL();
+                            MessageBox.Show("Produto apagado com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LimparCampos();
+                            HabilitarCampos(false);
+                        }
                     }
                 }
                 catch (Exception Ex)
