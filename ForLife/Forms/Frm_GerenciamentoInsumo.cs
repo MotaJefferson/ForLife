@@ -194,7 +194,7 @@ namespace ForLife.Forms
                     I = LeituraFormulario();
                     I.ValidaClasse();
 
-                    if (Txt_NomeInsumo.Enabled == true)
+                    if (I.BuscaInsumoExistenteSQL(Txt_NomeInsumo.Text) == false)
                     {
                         I.IncluirSQL(UsuarioLogado);
                         MessageBox.Show("O insumo " + Txt_NomeInsumo.Text + " incluído com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);

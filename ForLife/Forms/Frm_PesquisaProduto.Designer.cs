@@ -34,9 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.imageIcons = new System.Windows.Forms.ImageList(this.components);
             this.Btn_PesquisarProduto = new System.Windows.Forms.Button();
-            this.Txt_Validade = new System.Windows.Forms.TextBox();
             this.Btn_PesquisarExibirTodosInsumo = new System.Windows.Forms.Button();
-            this.Lbl_PesqValidadeProduto = new System.Windows.Forms.Label();
             this.Lbl_PesqInsumoOrigemProduto = new System.Windows.Forms.Label();
             this.Lbl_PesqNomeProduto = new System.Windows.Forms.Label();
             this.Txt_InsumoOrigem = new System.Windows.Forms.TextBox();
@@ -59,7 +57,7 @@
             this.Btn_PesquisarProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
             this.Btn_PesquisarProduto.ImageKey = "Pesquisar.png";
             this.Btn_PesquisarProduto.ImageList = this.imageIcons;
-            this.Btn_PesquisarProduto.Location = new System.Drawing.Point(284, 162);
+            this.Btn_PesquisarProduto.Location = new System.Drawing.Point(284, 132);
             this.Btn_PesquisarProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_PesquisarProduto.Name = "Btn_PesquisarProduto";
             this.Btn_PesquisarProduto.Size = new System.Drawing.Size(160, 31);
@@ -69,37 +67,17 @@
             this.Btn_PesquisarProduto.UseVisualStyleBackColor = true;
             this.Btn_PesquisarProduto.Click += new System.EventHandler(this.Btn_PesquisarProduto_Click);
             // 
-            // Txt_Validade
-            // 
-            this.Txt_Validade.AcceptsTab = true;
-            this.Txt_Validade.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Validade.Location = new System.Drawing.Point(284, 119);
-            this.Txt_Validade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Txt_Validade.Name = "Txt_Validade";
-            this.Txt_Validade.Size = new System.Drawing.Size(355, 25);
-            this.Txt_Validade.TabIndex = 90;
-            // 
             // Btn_PesquisarExibirTodosInsumo
             // 
             this.Btn_PesquisarExibirTodosInsumo.ForeColor = System.Drawing.Color.Black;
-            this.Btn_PesquisarExibirTodosInsumo.Location = new System.Drawing.Point(480, 162);
-            this.Btn_PesquisarExibirTodosInsumo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_PesquisarExibirTodosInsumo.Location = new System.Drawing.Point(480, 132);
+            this.Btn_PesquisarExibirTodosInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_PesquisarExibirTodosInsumo.Name = "Btn_PesquisarExibirTodosInsumo";
             this.Btn_PesquisarExibirTodosInsumo.Size = new System.Drawing.Size(160, 31);
             this.Btn_PesquisarExibirTodosInsumo.TabIndex = 89;
             this.Btn_PesquisarExibirTodosInsumo.Text = "Exibir todos";
             this.Btn_PesquisarExibirTodosInsumo.UseVisualStyleBackColor = true;
             this.Btn_PesquisarExibirTodosInsumo.Click += new System.EventHandler(this.Btn_PesquisarExibirTodosInsumo_Click);
-            // 
-            // Lbl_PesqValidadeProduto
-            // 
-            this.Lbl_PesqValidadeProduto.AutoSize = true;
-            this.Lbl_PesqValidadeProduto.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.Lbl_PesqValidadeProduto.Location = new System.Drawing.Point(200, 124);
-            this.Lbl_PesqValidadeProduto.Name = "Lbl_PesqValidadeProduto";
-            this.Lbl_PesqValidadeProduto.Size = new System.Drawing.Size(72, 20);
-            this.Lbl_PesqValidadeProduto.TabIndex = 88;
-            this.Lbl_PesqValidadeProduto.Text = "Validade";
             // 
             // Lbl_PesqInsumoOrigemProduto
             // 
@@ -158,7 +136,7 @@
             this.Coluna_PesqNomeInsumo,
             this.Coluna_PesqInsumoOrigem,
             this.Coluna_PesqBloqueioProduto});
-            this.Grd_ResultadosPesqProduto.Location = new System.Drawing.Point(32, 222);
+            this.Grd_ResultadosPesqProduto.Location = new System.Drawing.Point(32, 198);
             this.Grd_ResultadosPesqProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Grd_ResultadosPesqProduto.MultiSelect = false;
             this.Grd_ResultadosPesqProduto.Name = "Grd_ResultadosPesqProduto";
@@ -171,7 +149,7 @@
             this.Grd_ResultadosPesqProduto.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.Grd_ResultadosPesqProduto.RowTemplate.Height = 24;
             this.Grd_ResultadosPesqProduto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grd_ResultadosPesqProduto.Size = new System.Drawing.Size(847, 281);
+            this.Grd_ResultadosPesqProduto.Size = new System.Drawing.Size(847, 305);
             this.Grd_ResultadosPesqProduto.TabIndex = 92;
             this.Grd_ResultadosPesqProduto.DoubleClick += new System.EventHandler(this.Grd_ResultadosPesqProduto_DoubleClick);
             // 
@@ -207,15 +185,13 @@
             this.ClientSize = new System.Drawing.Size(912, 530);
             this.Controls.Add(this.Grd_ResultadosPesqProduto);
             this.Controls.Add(this.Btn_PesquisarProduto);
-            this.Controls.Add(this.Txt_Validade);
             this.Controls.Add(this.Btn_PesquisarExibirTodosInsumo);
-            this.Controls.Add(this.Lbl_PesqValidadeProduto);
             this.Controls.Add(this.Lbl_PesqInsumoOrigemProduto);
             this.Controls.Add(this.Lbl_PesqNomeProduto);
             this.Controls.Add(this.Txt_InsumoOrigem);
             this.Controls.Add(this.Txt_NomeProduto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_PesquisaProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pesquisar Produto";
@@ -228,9 +204,7 @@
         #endregion
         private System.Windows.Forms.ImageList imageIcons;
         private System.Windows.Forms.Button Btn_PesquisarProduto;
-        private System.Windows.Forms.TextBox Txt_Validade;
         private System.Windows.Forms.Button Btn_PesquisarExibirTodosInsumo;
-        private System.Windows.Forms.Label Lbl_PesqValidadeProduto;
         private System.Windows.Forms.Label Lbl_PesqInsumoOrigemProduto;
         private System.Windows.Forms.Label Lbl_PesqNomeProduto;
         private System.Windows.Forms.TextBox Txt_InsumoOrigem;

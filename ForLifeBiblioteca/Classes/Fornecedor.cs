@@ -1,35 +1,35 @@
-﻿using ForLifeBiblioteca.Databases;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
+using ForLifeBiblioteca.Databases;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ForLifeBiblioteca.Classes
 {
-    public class Insumo
+    public class Fornecedor
     {
         public class Unit
         {
-            [Required(ErrorMessage = "Defina um status do insumo")]
-            [RegularExpression("^(1|2)$", ErrorMessage = "Defina um status do insumo")]
-            public int StatusInsumo { get; set; }
+            [Required(ErrorMessage = "Defina um status do fornecedor")]
+            [RegularExpression("^(1|2)$", ErrorMessage = "Defina um status do fornecedor")]
+            public int StatusFornecedor { get; set; }
 
-            [Required(ErrorMessage = "Nome do Insumo é obrigatório")]
-            public string NomeInsumo { get; set; }
+            [Required(ErrorMessage = "Nome fantasia é obrigatório")]
+            public string NomeFantasia { get; set; }
 
-            [Required(ErrorMessage = "Defina um status do insumo")]
-            [RegularExpression("^(1|2)$", ErrorMessage = "Defina um status do insumo")]
-            public int TipoInsumo { get; set; }
+            [Required(ErrorMessage = "Razão social é obrigatório")]
+            public string RazaoSocial { get; set; }
+
+            [Required(ErrorMessage = "CNPJ é obrigatório")]
+            public string CNPJ { get; set; }
+
 
             public int UsuarioID { get; set; }
-
             string UsuarioLogado = Session.Instance.UserID;
-
 
             public void ValidaClasse()
             {
@@ -52,88 +52,74 @@ namespace ForLifeBiblioteca.Classes
 
             public string ToInsert(string usuario)
             {
-                string tipo = null;
                 int status = 0;
                 int idUsuario = ReturnIdUsuario(usuario);
+                int cnpj = Convert.ToInt32(this.CNPJ.Replace(".", "").Replace("/", "").Replace("-", ""));
 
-                if (this.TipoInsumo == 1)
-                {
-                    tipo = "Semente";
-                }
-                if (this.TipoInsumo == 2)
-                {
-                    tipo = "Muda";
-                }
-
-                if (Convert.ToInt32(this.StatusInsumo) == 1)
+                if (Convert.ToInt32(this.StatusFornecedor) == 1)
                 {
                     status = 1;
                 }
-                if (Convert.ToInt32(this.StatusInsumo) == 2)
+                if (Convert.ToInt32(this.StatusFornecedor) == 2)
                 {
                     status = 0;
                 }
 
                 string SQL;
 
-                SQL = @"INSERT INTO Insumo
-                        (nome
-                        ,tipo
-                        ,ativo
-                        ,usuario_id)
+                SQL = @"INSERT INTO Fornecedor
+                        (usuario_id
+                        ,CNPJ
+                        ,nome
+                        ,razao_social
+                        ,status)
                         VALUES ";
-                SQL += "('" + this.NomeInsumo + "'";
-                SQL += ",'" + tipo + "'";
-                SQL += ",'" + status + "'";
-                SQL += ",'" + idUsuario + "')";
+                SQL += "('" + idUsuario + "'";
+                SQL += ",'" + cnpj + "'";
+                SQL += ",'" + this.NomeFantasia + "'";
+                SQL += ",'" + this.RazaoSocial + "'";
+                SQL += ",'" + status + "')";
 
                 return SQL;
             }
 
             public string ToUpdate(string nome, string usuario)
             {
-                string tipo = null;
                 int idUsuario = ReturnIdUsuario(usuario);
                 int status = 0;
+                int cnpj = Convert.ToInt32(this.CNPJ.Replace(".", "").Replace("/", "").Replace("-", ""));
 
-                if (this.TipoInsumo == 1)
-                {
-                    tipo = "Semente";
-                }
-                if (this.TipoInsumo == 2)
-                {
-                    tipo = "Muda";
-                }
-
-                if (Convert.ToInt32(this.StatusInsumo) == 1)
+                if (Convert.ToInt32(this.StatusFornecedor) == 1)
                 {
                     status = 1;
                 }
-                if (Convert.ToInt32(this.StatusInsumo) == 2)
+                if (Convert.ToInt32(this.StatusFornecedor) == 2)
                 {
                     status = 0;
                 }
 
                 string SQL;
 
-                if (BuscaInsumoExistenteSQL(nome) == true)
+                if (BuscaFornecedorExistenteSQL(nome) == true)
                 {
-                    SQL = @"UPDATE Insumo SET ";
-                    SQL += "tipo = '" + tipo + "'";
-                    SQL += ",ativo = '" + status + "'";
-                    SQL += ",usuario_id = '" + idUsuario + "'";
-                    SQL += "WHERE nome = '" + this.NomeInsumo + "'";
+                    SQL = @"UPDATE Fornecedor SET ";
+                    SQL += "usuario_id = '" + idUsuario + "'";
+                    SQL += ",nome = '" + this.NomeFantasia + "'";
+                    SQL += ",razao_social = '" + this.RazaoSocial + "'";
+                    SQL += ",status = '" + status + "'";
+                    SQL += "WHERE CNPJ = '" + cnpj + "'";
 
                     return SQL;
                 }
                 else
                 {
-                    SQL = @"UPDATE Insumo SET ";
-                    SQL += "nome = '" + tipo + "'";
-                    SQL += ",tipo = '" + tipo + "'";
-                    SQL += ",ativo = '" + status + "'";
-                    SQL += ",usuario_id = '" + idUsuario + "'";
-                    SQL += "WHERE nome = '" + this.NomeInsumo + "'";
+                    SQL = @"UPDATE Fornecedor SET ";
+                    SQL += "usuario_id = '" + idUsuario + "'";
+                    SQL += ",CNPJ = '" + cnpj + "'";
+                    SQL += ",nome = '" + this.NomeFantasia + "'";
+                    SQL += ",razao_social = '" + this.RazaoSocial + "'";
+                    SQL += ",status = '" + status + "'";
+                    SQL += "WHERE CNPJ = '" + cnpj + "'";
 
                     return SQL;
                 }
@@ -143,21 +129,11 @@ namespace ForLifeBiblioteca.Classes
             {
                 Unit u = new Unit();
 
-                int tipoInsumo = 0;
-
-                if(dr["tipo"].ToString() == "Semente")
-                {
-                    tipoInsumo = 1;
-                }
-
-                if (dr["tipo"].ToString() == "Muda")
-                {
-                    tipoInsumo = 2;
-                }
-
-                u.NomeInsumo = dr["nome"].ToString();
-                u.TipoInsumo = tipoInsumo;
-                u.StatusInsumo = Convert.ToInt32(dr["status"]);
+                u.UsuarioID = Convert.ToInt32(dr["usuario_id"]);
+                u.CNPJ = dr["CNPJ"].ToString();
+                u.NomeFantasia = dr["nome"].ToString();
+                u.RazaoSocial = dr["razao_social"].ToString();
+                u.StatusFornecedor = Convert.ToInt32(dr["status"]);
 
                 return u;
             }
@@ -172,9 +148,9 @@ namespace ForLifeBiblioteca.Classes
                 return u;
             }
 
-            public bool BuscaInsumoExistenteSQL(string insumo)
+            public bool BuscaFornecedorExistenteSQL(string fornecedor)
             {
-                string SQL = "SELECT * FROM Insumo WHERE nome = '" + insumo + "'";
+                string SQL = "SELECT * FROM Fornecedor WHERE nome = '" + fornecedor + "'";
 
                 var db = new SQLServerClass();
                 var Dt = db.SQLQuery(SQL);
@@ -192,7 +168,6 @@ namespace ForLifeBiblioteca.Classes
 
             public int ReturnIdUsuario(string usuario)
             {
-
                 try
                 {
                     string SQL = "SELECT * FROM Usuario WHERE usuario = '" + usuario + "'";
@@ -216,10 +191,10 @@ namespace ForLifeBiblioteca.Classes
                 {
                     throw new Exception("Erro ao buscar o usuario. " + ex.Message);
                 }
-
             }
 
             #endregion
+
 
             #region Funções CRUD SQLServer
 
@@ -227,17 +202,16 @@ namespace ForLifeBiblioteca.Classes
             {
                 try
                 {
-                    if (BuscaInsumoExistenteSQL(this.NomeInsumo) == true)
+                    if (BuscaFornecedorExistenteSQL(this.NomeFantasia) == true)
                     {
 
-                        if (MessageBox.Show("Insumo " + NomeInsumo + " já existe na nossa base, deseja alterar o cadastro?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        if (MessageBox.Show("Fornecedor " + NomeFantasia + " já existe na nossa base, deseja alterar o cadastro?", "ForLife", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                         {
                             AlterarSQL(usuario);
                         }
                         else
                         {
                             MessageBox.Show("As alterações não serão salvas", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
 
                         }
                     }
@@ -253,15 +227,15 @@ namespace ForLifeBiblioteca.Classes
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception("Inclusão não permitida do insumo: " + this.NomeInsumo + ", erro: " + ex.Message);
+                    throw new Exception("Inclusão não permitida do fornecedor: " + this.NomeFantasia + ", erro: " + ex.Message);
                 }
             }
 
-            public Unit BuscarSQL(string insumo)
+            public Unit BuscarSQL(string fornecedor)
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Insumo WHERE nome = '" + insumo + "'";
+                    string SQL = "SELECT * FROM Fornecedor WHERE nome = '" + fornecedor + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -289,7 +263,7 @@ namespace ForLifeBiblioteca.Classes
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Insumo WHERE nome = '" + this.NomeInsumo + "'";
+                    string SQL = "SELECT * FROM Fornecedor WHERE nome = '" + this.NomeFantasia + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -297,11 +271,11 @@ namespace ForLifeBiblioteca.Classes
                     if (Dt.Rows.Count == 0)
                     {
                         db.Close();
-                        throw new Exception("Insumo não existe");
+                        throw new Exception("Fornecedor não existe");
                     }
                     else
                     {
-                        SQL = this.ToUpdate(this.NomeInsumo, usuario);
+                        SQL = this.ToUpdate(this.NomeFantasia, usuario);
                         db.SQLCommand(SQL);
                         db.Close();
                     }
@@ -317,7 +291,7 @@ namespace ForLifeBiblioteca.Classes
             {
                 try
                 {
-                    string SQL = "SELECT * FROM Produto WHERE nome = '" + this.NomeInsumo + "'";
+                    string SQL = "SELECT * FROM Fornecedor WHERE nome = '" + this.NomeFantasia + "'";
 
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
@@ -325,11 +299,11 @@ namespace ForLifeBiblioteca.Classes
                     if (Dt.Rows.Count == 0)
                     {
                         db.Close();
-                        throw new Exception("Insumo não existe");
+                        throw new Exception("Fornecedor não existe");
                     }
                     else
                     {
-                        SQL = "DELETE FROM Insumo WHERE nome = '" + this.NomeInsumo + "'";
+                        SQL = "DELETE FROM Fornecedor WHERE nome = '" + this.NomeFantasia + "'";
                         db.SQLCommand(SQL);
                         db.Close();
                     }
@@ -337,27 +311,28 @@ namespace ForLifeBiblioteca.Classes
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception("Erro ao excluir o insumo: " + ex.Message);
+                    throw new Exception("Erro ao excluir o fornecedor: " + ex.Message);
                 }
             }
 
             public List<List<string>> BuscarVariosSQL(string Campo, string Valor)
             {
+
                 List<List<string>> ListaBusca = new List<List<string>>();
 
                 try
                 {
-                    var SQL = "SELECT * FROM Insumo WHERE " + Campo + " LIKE '%" + Valor + "%' ";
+                    var SQL = "SELECT * FROM Fornecedor WHERE " + Campo + " LIKE '%" + Valor + "%' ";
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
 
 
                     for (int i = 0; i <= Dt.Rows.Count - 1; i++)
                     {
-                        string tipo = null;
+                        
                         string status = null;
-                                                
-                        if(Convert.ToInt32(Dt.Rows[i]["ativo"]) == 1)
+
+                        if (Convert.ToInt32(Dt.Rows[i]["ativo"]) == 1)
                         {
                             status = "Ativo";
                         }
@@ -366,12 +341,13 @@ namespace ForLifeBiblioteca.Classes
                         {
                             status = "Inativo";
                         }
-                        
-                        //Adicionar os campos necessários da busca
+
+                        //Nome Fantasia, Razão Social, CNPJ, Status
                         ListaBusca.Add(new List<string>
                         {
                             Dt.Rows[i]["nome"].ToString(),
-                            Dt.Rows[i]["tipo"].ToString(),
+                            Dt.Rows[i]["razao_social"].ToString(),
+                            Dt.Rows[i]["CNPJ"].ToString(),
                             status
                         });
                     }
@@ -390,7 +366,7 @@ namespace ForLifeBiblioteca.Classes
 
                 try
                 {
-                    var SQL = "SELECT * FROM Insumo";
+                    var SQL = "SELECT * FROM Fornecedor";
                     var db = new SQLServerClass();
                     var Dt = db.SQLQuery(SQL);
 
@@ -411,15 +387,16 @@ namespace ForLifeBiblioteca.Classes
                             status = "Inativo";
                         }
 
-                        //Adicionar os campos necessários da busca
+                        //Nome Fantasia, Razão Social, CNPJ, Status
                         ListaBusca.Add(new List<string>
                         {
                             Dt.Rows[i]["nome"].ToString(),
-                            Dt.Rows[i]["tipo"].ToString(),
+                            Dt.Rows[i]["razao_social"].ToString(),
+                            Dt.Rows[i]["CNPJ"].ToString(),
                             status
                         });
 
-                        
+
 
                     }
                     return ListaBusca;
@@ -431,15 +408,13 @@ namespace ForLifeBiblioteca.Classes
                 }
             }
 
-
-
             #endregion
+
         }
 
         public class List
         {
             public List<Unit> ListUnit { get; set; }
-
 
         }
     }

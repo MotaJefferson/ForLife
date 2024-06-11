@@ -88,7 +88,7 @@ namespace ForLife.Forms
             }
 
             Txt_NomeProduto.Text = P.NomeProduto;
-            Txt_InsumoOrigem.Text = P.ReturnNomeInsumo(P.IdInsumoOrigem); // P.InsumoOrigem;
+            Txt_InsumoOrigem.Text = P.ReturnNomeInsumo(P.IdInsumoOrigem);
 
             Num_Vencimento.Value = P.DtVencimento;
             Num_Colheita.Value = P.DtColheita;
@@ -155,7 +155,7 @@ namespace ForLife.Forms
                     P.ValidaClasse();
                     P.ValidaComplemento();
 
-                    if (Txt_NomeProduto.Enabled == true)
+                    if (P.BuscaProdutoExistenteSQL(Txt_NomeProduto.Text) == false)
                     {
                         P.IncluirSQL(UsuarioLogado);
 
