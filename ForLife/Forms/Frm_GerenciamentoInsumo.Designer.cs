@@ -33,7 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Lbl_TitleInsumo = new System.Windows.Forms.Label();
             this.Lbl_NomeInsumo = new System.Windows.Forms.Label();
-            this.Txt_NomeProduto = new System.Windows.Forms.TextBox();
+            this.Txt_NomeInsumo = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Lbl_InfoInsumo = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -65,9 +65,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.panel1.Controls.Add(this.Lbl_TitleInsumo);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1262, 59);
+            this.panel1.Size = new System.Drawing.Size(1683, 73);
             this.panel1.TabIndex = 29;
             // 
             // Lbl_TitleInsumo
@@ -75,10 +75,9 @@
             this.Lbl_TitleInsumo.AutoSize = true;
             this.Lbl_TitleInsumo.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_TitleInsumo.ForeColor = System.Drawing.Color.Ivory;
-            this.Lbl_TitleInsumo.Location = new System.Drawing.Point(13, 11);
-            this.Lbl_TitleInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_TitleInsumo.Location = new System.Drawing.Point(17, 14);
             this.Lbl_TitleInsumo.Name = "Lbl_TitleInsumo";
-            this.Lbl_TitleInsumo.Size = new System.Drawing.Size(307, 30);
+            this.Lbl_TitleInsumo.Size = new System.Drawing.Size(388, 37);
             this.Lbl_TitleInsumo.TabIndex = 0;
             this.Lbl_TitleInsumo.Text = "Gerenciamento do Insumo";
             // 
@@ -86,24 +85,23 @@
             // 
             this.Lbl_NomeInsumo.AutoSize = true;
             this.Lbl_NomeInsumo.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeInsumo.Location = new System.Drawing.Point(31, 248);
-            this.Lbl_NomeInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_NomeInsumo.Location = new System.Drawing.Point(41, 305);
             this.Lbl_NomeInsumo.Name = "Lbl_NomeInsumo";
-            this.Lbl_NomeInsumo.Size = new System.Drawing.Size(104, 20);
+            this.Lbl_NomeInsumo.Size = new System.Drawing.Size(126, 23);
             this.Lbl_NomeInsumo.TabIndex = 40;
             this.Lbl_NomeInsumo.Text = "Nome Insumo";
             // 
-            // Txt_NomeProduto
+            // Txt_NomeInsumo
             // 
-            this.Txt_NomeProduto.AcceptsTab = true;
-            this.Txt_NomeProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Txt_NomeInsumo.AcceptsTab = true;
+            this.Txt_NomeInsumo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Txt_NomeProduto.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_NomeProduto.Location = new System.Drawing.Point(35, 276);
-            this.Txt_NomeProduto.Margin = new System.Windows.Forms.Padding(2);
-            this.Txt_NomeProduto.Name = "Txt_NomeProduto";
-            this.Txt_NomeProduto.Size = new System.Drawing.Size(618, 25);
-            this.Txt_NomeProduto.TabIndex = 39;
+            this.Txt_NomeInsumo.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_NomeInsumo.Location = new System.Drawing.Point(47, 340);
+            this.Txt_NomeInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Txt_NomeInsumo.Name = "Txt_NomeInsumo";
+            this.Txt_NomeInsumo.Size = new System.Drawing.Size(823, 30);
+            this.Txt_NomeInsumo.TabIndex = 39;
             // 
             // panel4
             // 
@@ -112,10 +110,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.panel4.Controls.Add(this.Lbl_InfoInsumo);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(0, 193);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(0, 238);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1080, 25);
+            this.panel4.Size = new System.Drawing.Size(1440, 31);
             this.panel4.TabIndex = 38;
             // 
             // Lbl_InfoInsumo
@@ -124,30 +122,29 @@
             this.Lbl_InfoInsumo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.Lbl_InfoInsumo.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_InfoInsumo.ForeColor = System.Drawing.Color.Ivory;
-            this.Lbl_InfoInsumo.Location = new System.Drawing.Point(19, 0);
-            this.Lbl_InfoInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_InfoInsumo.Location = new System.Drawing.Point(25, 0);
             this.Lbl_InfoInsumo.Name = "Lbl_InfoInsumo";
-            this.Lbl_InfoInsumo.Size = new System.Drawing.Size(189, 19);
+            this.Lbl_InfoInsumo.Size = new System.Drawing.Size(228, 25);
             this.Lbl_InfoInsumo.TabIndex = 21;
             this.Lbl_InfoInsumo.Text = "Informações do Insumo";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.OliveDrab;
-            this.panel5.Location = new System.Drawing.Point(7, 41);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(9, 50);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(248, 27);
+            this.panel5.Size = new System.Drawing.Size(331, 33);
             this.panel5.TabIndex = 28;
             // 
             // Rbtn_ProdutoInativo
             // 
             this.Rbtn_ProdutoInativo.AutoSize = true;
             this.Rbtn_ProdutoInativo.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rbtn_ProdutoInativo.Location = new System.Drawing.Point(140, 134);
-            this.Rbtn_ProdutoInativo.Margin = new System.Windows.Forms.Padding(2);
+            this.Rbtn_ProdutoInativo.Location = new System.Drawing.Point(187, 165);
+            this.Rbtn_ProdutoInativo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rbtn_ProdutoInativo.Name = "Rbtn_ProdutoInativo";
-            this.Rbtn_ProdutoInativo.Size = new System.Drawing.Size(73, 24);
+            this.Rbtn_ProdutoInativo.Size = new System.Drawing.Size(86, 27);
             this.Rbtn_ProdutoInativo.TabIndex = 37;
             this.Rbtn_ProdutoInativo.Text = "Inativo";
             this.Rbtn_ProdutoInativo.UseVisualStyleBackColor = true;
@@ -156,10 +153,10 @@
             // 
             this.Rbtn_ProdutoAtivo.AutoSize = true;
             this.Rbtn_ProdutoAtivo.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rbtn_ProdutoAtivo.Location = new System.Drawing.Point(35, 134);
-            this.Rbtn_ProdutoAtivo.Margin = new System.Windows.Forms.Padding(2);
+            this.Rbtn_ProdutoAtivo.Location = new System.Drawing.Point(47, 165);
+            this.Rbtn_ProdutoAtivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rbtn_ProdutoAtivo.Name = "Rbtn_ProdutoAtivo";
-            this.Rbtn_ProdutoAtivo.Size = new System.Drawing.Size(62, 24);
+            this.Rbtn_ProdutoAtivo.Size = new System.Drawing.Size(74, 27);
             this.Rbtn_ProdutoAtivo.TabIndex = 36;
             this.Rbtn_ProdutoAtivo.Text = "Ativo";
             this.Rbtn_ProdutoAtivo.UseVisualStyleBackColor = true;
@@ -169,19 +166,19 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.Lbl_statusInsumo);
-            this.panel2.Location = new System.Drawing.Point(-1, 93);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(-1, 114);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(367, 23);
+            this.panel2.Size = new System.Drawing.Size(489, 28);
             this.panel2.TabIndex = 35;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.OliveDrab;
-            this.panel3.Location = new System.Drawing.Point(7, 41);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(9, 50);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 27);
+            this.panel3.Size = new System.Drawing.Size(331, 33);
             this.panel3.TabIndex = 28;
             // 
             // Lbl_statusInsumo
@@ -190,10 +187,9 @@
             this.Lbl_statusInsumo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
             this.Lbl_statusInsumo.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_statusInsumo.ForeColor = System.Drawing.Color.Ivory;
-            this.Lbl_statusInsumo.Location = new System.Drawing.Point(19, 0);
-            this.Lbl_statusInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_statusInsumo.Location = new System.Drawing.Point(25, 0);
             this.Lbl_statusInsumo.Name = "Lbl_statusInsumo";
-            this.Lbl_statusInsumo.Size = new System.Drawing.Size(141, 19);
+            this.Lbl_statusInsumo.Size = new System.Drawing.Size(171, 25);
             this.Lbl_statusInsumo.TabIndex = 20;
             this.Lbl_statusInsumo.Text = "Status do Insumo";
             // 
@@ -205,13 +201,15 @@
             this.Btn_VoltarInsumo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_VoltarInsumo.ImageKey = "Voltar.png";
             this.Btn_VoltarInsumo.ImageList = this.imgList_Usuario;
-            this.Btn_VoltarInsumo.Location = new System.Drawing.Point(638, 434);
+            this.Btn_VoltarInsumo.Location = new System.Drawing.Point(851, 607);
+            this.Btn_VoltarInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_VoltarInsumo.Name = "Btn_VoltarInsumo";
-            this.Btn_VoltarInsumo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_VoltarInsumo.Size = new System.Drawing.Size(129, 34);
             this.Btn_VoltarInsumo.TabIndex = 55;
             this.Btn_VoltarInsumo.Text = "Voltar";
             this.Btn_VoltarInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_VoltarInsumo.UseVisualStyleBackColor = true;
+            this.Btn_VoltarInsumo.Click += new System.EventHandler(this.Btn_VoltarInsumo_Click);
             // 
             // imgList_Usuario
             // 
@@ -233,13 +231,15 @@
             this.Btn_BuscarInsumo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_BuscarInsumo.ImageKey = "Pesquisar.png";
             this.Btn_BuscarInsumo.ImageList = this.imgList_Usuario;
-            this.Btn_BuscarInsumo.Location = new System.Drawing.Point(535, 434);
+            this.Btn_BuscarInsumo.Location = new System.Drawing.Point(713, 607);
+            this.Btn_BuscarInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_BuscarInsumo.Name = "Btn_BuscarInsumo";
-            this.Btn_BuscarInsumo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_BuscarInsumo.Size = new System.Drawing.Size(129, 34);
             this.Btn_BuscarInsumo.TabIndex = 54;
             this.Btn_BuscarInsumo.Text = "Buscar";
             this.Btn_BuscarInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_BuscarInsumo.UseVisualStyleBackColor = true;
+            this.Btn_BuscarInsumo.Click += new System.EventHandler(this.Btn_BuscarInsumo_Click);
             // 
             // Btn_ExcluirInsumo
             // 
@@ -249,13 +249,15 @@
             this.Btn_ExcluirInsumo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_ExcluirInsumo.ImageKey = "Apagar.png";
             this.Btn_ExcluirInsumo.ImageList = this.imgList_Usuario;
-            this.Btn_ExcluirInsumo.Location = new System.Drawing.Point(433, 434);
+            this.Btn_ExcluirInsumo.Location = new System.Drawing.Point(577, 607);
+            this.Btn_ExcluirInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_ExcluirInsumo.Name = "Btn_ExcluirInsumo";
-            this.Btn_ExcluirInsumo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_ExcluirInsumo.Size = new System.Drawing.Size(129, 34);
             this.Btn_ExcluirInsumo.TabIndex = 53;
             this.Btn_ExcluirInsumo.Text = "Excluir";
             this.Btn_ExcluirInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_ExcluirInsumo.UseVisualStyleBackColor = true;
+            this.Btn_ExcluirInsumo.Click += new System.EventHandler(this.Btn_ExcluirInsumo_Click);
             // 
             // Btn_SalvarInsumo
             // 
@@ -265,13 +267,15 @@
             this.Btn_SalvarInsumo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_SalvarInsumo.ImageKey = "Salvar.png";
             this.Btn_SalvarInsumo.ImageList = this.imgList_Usuario;
-            this.Btn_SalvarInsumo.Location = new System.Drawing.Point(330, 434);
+            this.Btn_SalvarInsumo.Location = new System.Drawing.Point(440, 607);
+            this.Btn_SalvarInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_SalvarInsumo.Name = "Btn_SalvarInsumo";
-            this.Btn_SalvarInsumo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_SalvarInsumo.Size = new System.Drawing.Size(129, 34);
             this.Btn_SalvarInsumo.TabIndex = 52;
             this.Btn_SalvarInsumo.Text = "Salvar";
             this.Btn_SalvarInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_SalvarInsumo.UseVisualStyleBackColor = true;
+            this.Btn_SalvarInsumo.Click += new System.EventHandler(this.Btn_SalvarInsumo_Click);
             // 
             // Btn_EditarInsumo
             // 
@@ -281,14 +285,15 @@
             this.Btn_EditarInsumo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_EditarInsumo.ImageKey = "Editar.png";
             this.Btn_EditarInsumo.ImageList = this.imgList_Usuario;
-            this.Btn_EditarInsumo.Location = new System.Drawing.Point(225, 434);
-            this.Btn_EditarInsumo.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_EditarInsumo.Location = new System.Drawing.Point(300, 607);
+            this.Btn_EditarInsumo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Btn_EditarInsumo.Name = "Btn_EditarInsumo";
-            this.Btn_EditarInsumo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_EditarInsumo.Size = new System.Drawing.Size(129, 34);
             this.Btn_EditarInsumo.TabIndex = 51;
             this.Btn_EditarInsumo.Text = "Editar";
             this.Btn_EditarInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_EditarInsumo.UseVisualStyleBackColor = true;
+            this.Btn_EditarInsumo.Click += new System.EventHandler(this.Btn_EditarInsumo_Click);
             // 
             // Btn_NovoInsumo
             // 
@@ -299,24 +304,25 @@
             this.Btn_NovoInsumo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_NovoInsumo.ImageKey = "Adicionar.png";
             this.Btn_NovoInsumo.ImageList = this.imgList_Usuario;
-            this.Btn_NovoInsumo.Location = new System.Drawing.Point(118, 434);
-            this.Btn_NovoInsumo.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_NovoInsumo.Location = new System.Drawing.Point(157, 607);
+            this.Btn_NovoInsumo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Btn_NovoInsumo.Name = "Btn_NovoInsumo";
-            this.Btn_NovoInsumo.Size = new System.Drawing.Size(97, 28);
+            this.Btn_NovoInsumo.Size = new System.Drawing.Size(129, 34);
             this.Btn_NovoInsumo.TabIndex = 50;
             this.Btn_NovoInsumo.Text = "Novo";
             this.Btn_NovoInsumo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_NovoInsumo.UseVisualStyleBackColor = true;
+            this.Btn_NovoInsumo.Click += new System.EventHandler(this.Btn_NovoInsumo_Click);
             // 
             // Rdb_TipoMuda
             // 
             this.Rdb_TipoMuda.AutoSize = true;
             this.Rdb_TipoMuda.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rdb_TipoMuda.ForeColor = System.Drawing.Color.Black;
-            this.Rdb_TipoMuda.Location = new System.Drawing.Point(126, 36);
-            this.Rdb_TipoMuda.Margin = new System.Windows.Forms.Padding(2);
+            this.Rdb_TipoMuda.Location = new System.Drawing.Point(168, 44);
+            this.Rdb_TipoMuda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rdb_TipoMuda.Name = "Rdb_TipoMuda";
-            this.Rdb_TipoMuda.Size = new System.Drawing.Size(67, 24);
+            this.Rdb_TipoMuda.Size = new System.Drawing.Size(78, 27);
             this.Rdb_TipoMuda.TabIndex = 57;
             this.Rdb_TipoMuda.Text = "Muda";
             this.Rdb_TipoMuda.UseVisualStyleBackColor = true;
@@ -326,11 +332,12 @@
             this.Rdb_TipoSemente.AutoSize = true;
             this.Rdb_TipoSemente.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rdb_TipoSemente.ForeColor = System.Drawing.Color.Black;
-            this.Rdb_TipoSemente.Location = new System.Drawing.Point(14, 36);
-            this.Rdb_TipoSemente.Margin = new System.Windows.Forms.Padding(2);
+            this.Rdb_TipoSemente.Location = new System.Drawing.Point(19, 44);
+            this.Rdb_TipoSemente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rdb_TipoSemente.Name = "Rdb_TipoSemente";
-            this.Rdb_TipoSemente.Size = new System.Drawing.Size(86, 24);
+            this.Rdb_TipoSemente.Size = new System.Drawing.Size(103, 27);
             this.Rdb_TipoSemente.TabIndex = 56;
+            this.Rdb_TipoSemente.TabStop = true;
             this.Rdb_TipoSemente.Text = "Semente";
             this.Rdb_TipoSemente.UseVisualStyleBackColor = true;
             // 
@@ -340,16 +347,18 @@
             this.groupBox_TipodeInsumo.Controls.Add(this.Rdb_TipoMuda);
             this.groupBox_TipodeInsumo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_TipodeInsumo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(157)))), ((int)(((byte)(45)))));
-            this.groupBox_TipodeInsumo.Location = new System.Drawing.Point(35, 316);
+            this.groupBox_TipodeInsumo.Location = new System.Drawing.Point(47, 389);
+            this.groupBox_TipodeInsumo.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_TipodeInsumo.Name = "groupBox_TipodeInsumo";
-            this.groupBox_TipodeInsumo.Size = new System.Drawing.Size(232, 87);
+            this.groupBox_TipodeInsumo.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox_TipodeInsumo.Size = new System.Drawing.Size(309, 107);
             this.groupBox_TipodeInsumo.TabIndex = 58;
             this.groupBox_TipodeInsumo.TabStop = false;
             this.groupBox_TipodeInsumo.Text = "Tipo de insumo";
             // 
             // Frm_GerenciamentoInsumo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(253)))), ((int)(((byte)(221)))));
             this.Controls.Add(this.Btn_VoltarInsumo);
@@ -359,15 +368,16 @@
             this.Controls.Add(this.Btn_EditarInsumo);
             this.Controls.Add(this.Btn_NovoInsumo);
             this.Controls.Add(this.Lbl_NomeInsumo);
-            this.Controls.Add(this.Txt_NomeProduto);
+            this.Controls.Add(this.Txt_NomeInsumo);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.Rbtn_ProdutoInativo);
             this.Controls.Add(this.Rbtn_ProdutoAtivo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox_TipodeInsumo);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_GerenciamentoInsumo";
-            this.Size = new System.Drawing.Size(900, 600);
+            this.Size = new System.Drawing.Size(1200, 738);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -386,7 +396,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Lbl_TitleInsumo;
         private System.Windows.Forms.Label Lbl_NomeInsumo;
-        private System.Windows.Forms.TextBox Txt_NomeProduto;
+        private System.Windows.Forms.TextBox Txt_NomeInsumo;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label Lbl_InfoInsumo;
         private System.Windows.Forms.Panel panel5;

@@ -301,7 +301,9 @@ namespace ForLifeBiblioteca.Classes
             #region CRUD SQLServer
 
             public void IncluirSQL(string usuario)
-            {                
+            {
+                
+                //int idUsuario = ReturnIdUsuario(usuario);
 
                 try
                 {
@@ -315,11 +317,17 @@ namespace ForLifeBiblioteca.Classes
                         else
                         {
                             MessageBox.Show("As alterações não serão salvas", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            
-                            
+
                         }
                     }
-
+                    else
+                    {
+                        string SQL;
+                        SQL = this.ToInsert(usuario);
+                        var db = new SQLServerClass();
+                        db.SQLCommand(SQL);
+                        db.Close();
+                    }
 
                 }
                 catch (Exception ex)
@@ -396,7 +404,7 @@ namespace ForLifeBiblioteca.Classes
                     if (Dt.Rows.Count == 0)
                     {
                         db.Close();
-                        throw new Exception("Usuário não existe");
+                        throw new Exception("Produto não existe");
                     }
                     else
                     {

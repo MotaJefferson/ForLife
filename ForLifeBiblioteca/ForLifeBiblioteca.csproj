@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DadosUsuario.cs" />
+    <Compile Include="Classes\Insumo.cs" />
     <Compile Include="Classes\Produto.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Classes\ValidacaoLogin.cs" />

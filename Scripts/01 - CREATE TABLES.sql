@@ -37,7 +37,6 @@ CREATE TABLE Insumo (
     nome VARCHAR(255) NOT NULL,
     tipo VARCHAR(50) NOT NULL,
     ativo BIT NOT NULL,
-    periodo_vencimento INT NOT NULL,
     usuario_id INT NOT NULL,
     FOREIGN KEY (usuario_id) REFERENCES Usuario(id_usuario)
 );

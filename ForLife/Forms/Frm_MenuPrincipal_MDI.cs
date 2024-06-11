@@ -190,5 +190,37 @@ namespace ForLife.Forms
             }
 
         }
+
+        private void insumoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_GerenciamentoInsumo F = new Frm_GerenciamentoInsumo();
+            F.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Gerenciamento - Insumo";
+            TB.Text = "Gerenciamento - Insumo";
+
+            int index = -1;
+
+            for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
+            {
+                if (Tbc_Aplicacoes.TabPages[i].Text.Trim() == TB.Text.Trim())
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Tbc_Aplicacoes.SelectedIndex = index;
+            }
+            else
+            {
+                TB.Controls.Add(F);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+                Tbc_Aplicacoes.SelectTab(TB);
+
+            }
+        }
     }
 }

@@ -46,8 +46,8 @@ namespace ForLife.Forms
 
         private void LimparCampos()
         {
-            Rbtn_ProdutoAtivo.Enabled = false;
-            Rbtn_ProdutoInativo.Enabled = false;
+            Rbtn_ProdutoAtivo.Checked = false;
+            Rbtn_ProdutoInativo.Checked = false;
             Txt_NomeProduto.Clear();
             Txt_InsumoOrigem.Clear();
             Num_Vencimento.Value = 0;
@@ -158,7 +158,9 @@ namespace ForLife.Forms
                     if (Txt_NomeProduto.Enabled == true)
                     {
                         P.IncluirSQL(UsuarioLogado);
-                        
+
+                        MessageBox.Show("O produto " + Txt_NomeProduto.Text + " incluído com sucesso", "ForLife", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                         HabilitarCampos(false);
                     }
                     else

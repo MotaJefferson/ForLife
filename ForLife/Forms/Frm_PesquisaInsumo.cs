@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ForLifeBiblioteca.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace ForLife.Forms
 {
     public partial class Frm_PesquisaInsumo : Form
     {
+        public Insumo.Unit RetornoPesquisa;
+
         public Frm_PesquisaInsumo()
         {
             InitializeComponent();
