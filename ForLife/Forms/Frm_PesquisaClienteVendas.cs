@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ForLife.Forms
 {
-    public partial class Frm_Venda : UserControl
+    public partial class Frm_PesquisaClienteVendas : Form
     {
-        public Frm_Venda()
+        public Frm_PesquisaClienteVendas()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

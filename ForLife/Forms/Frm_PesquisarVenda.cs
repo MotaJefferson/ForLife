@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ForLife.Forms
 {
-    public partial class Frm_Venda : UserControl
+    public partial class Frm_PesquisarVenda : Form
     {
-        public Frm_Venda()
+        public Frm_PesquisarVenda()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
