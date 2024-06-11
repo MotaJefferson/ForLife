@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ForLifeBiblioteca.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,43 @@ namespace ForLife.Forms
         public Frm_Plantio()
         {
             InitializeComponent();
+        }
+
+        void EscreveCampos(Produto.Unit P)
+        {
+            
+            Txt_produtoDesejadoPlantio.Text = P.NomeProduto;
+        }
+
+        private void Btn_Pesquisa_produtoDesejadoPlantio_Click(object sender, EventArgs e)
+        {
+            Frm_PesquisaProduto F = new Frm_PesquisaProduto();
+            F.ShowDialog();
+
+            if (F.RetornoPesquisa != null)
+            {
+                EscreveCampos(F.RetornoPesquisa);
+            }
+        }
+
+        private void Frm_Plantio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_PlantarProdutoPlantio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_AtualizarPlantacao_Click(object sender, EventArgs e)
+        {
+                        
+        }
+
+        private void Btn_PesquisarNaPlantacao_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

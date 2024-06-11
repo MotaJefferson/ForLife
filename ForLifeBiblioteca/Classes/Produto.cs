@@ -458,48 +458,6 @@ namespace ForLifeBiblioteca.Classes
                     }
                     return ListaBusca;
 
-
-                    /* IMPLEMENTAR QUANDO FIZER O INSUMO.CS, BUSCAR ATRAVÉS DO BUSCARVARIOSSQL DO INSUMO
-                    if (Campo == "insumo_id")
-                    {
-                        
-                        
-
-                    } else
-                    {
-                        var SQL = "SELECT * FROM Produto WHERE " + Campo + " LIKE '%" + Valor + "%' ";
-                        var db = new SQLServerClass();
-                        var Dt = db.SQLQuery(SQL);
-
-
-                        for (int i = 0; i <= Dt.Rows.Count - 1; i++)
-                        {
-                            string Status = "";
-                            string Insumo = ReturnNomeInsumo(Convert.ToInt32(Dt.Rows[i]["id_insumo"]));
-
-                            if (Convert.ToInt32(Dt.Rows[i]["status"]) == 0)
-                            {
-                                Status = "Inativo";
-
-                            }
-                            else if (Convert.ToInt32(Dt.Rows[i]["status"]) == 1)
-                            {
-                                Status = "Ativo";
-                            }
-
-                            //Adicionar os campos necessários da busca
-                            ListaBusca.Add(new List<string>
-                        {
-                            Dt.Rows[i]["nome"].ToString(),
-                            Insumo,
-                            Status
-
-                        });
-                        }
-                        return ListaBusca;
-                        
-                    }*/
-
                 }
                 catch (Exception ex)
                 {

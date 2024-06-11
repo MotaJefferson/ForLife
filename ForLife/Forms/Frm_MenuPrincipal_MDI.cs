@@ -84,8 +84,8 @@ namespace ForLife.Forms
             Frm_GerenciarUsuario_UC F = new Frm_GerenciarUsuario_UC();
             F.Dock = DockStyle.Fill;
             TabPage TB = new TabPage();
-            TB.Name = "Usuário";
-            TB.Text = "Usuário";
+            TB.Name = "Gerenciamento - Usuário";
+            TB.Text = "Gerenciamento - Usuário";
             
             int index = -1;
 
@@ -126,7 +126,7 @@ namespace ForLife.Forms
             }
         }
 
-        private void insumosToolStripMenuItem_Click(object sender, EventArgs e)
+        public void insumosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_EstoqueInsumo F = new Frm_EstoqueInsumo();
             F.Dock = DockStyle.Fill;
@@ -262,6 +262,107 @@ namespace ForLife.Forms
             TabPage TB = new TabPage();
             TB.Name = "Gerenciamento - Cliente";
             TB.Text = "Gerenciamento - Cliente";
+
+            int index = -1;
+
+            for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
+            {
+                if (Tbc_Aplicacoes.TabPages[i].Text.Trim() == TB.Text.Trim())
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Tbc_Aplicacoes.SelectedIndex = index;
+            }
+            else
+            {
+                TB.Controls.Add(F);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+                Tbc_Aplicacoes.SelectTab(TB);
+
+            }
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_EstoqueProduto F = new Frm_EstoqueProduto();
+            F.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Estoque - Produto";
+            TB.Text = "Estoque - Produto";
+
+            int index = -1;
+
+            for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
+            {
+                if (Tbc_Aplicacoes.TabPages[i].Text.Trim() == TB.Text.Trim())
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Tbc_Aplicacoes.SelectedIndex = index;
+            }
+            else
+            {
+                TB.Controls.Add(F);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+                Tbc_Aplicacoes.SelectTab(TB);
+
+            }
+        }
+
+        private void plantioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Plantio F = new Frm_Plantio();
+            F.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Plantio";
+            TB.Text = "Plantio";
+
+            int index = -1;
+
+            for (int i = 0; i < Tbc_Aplicacoes.TabCount; i++)
+            {
+                if (Tbc_Aplicacoes.TabPages[i].Text.Trim() == TB.Text.Trim())
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Tbc_Aplicacoes.SelectedIndex = index;
+            }
+            else
+            {
+                TB.Controls.Add(F);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+                Tbc_Aplicacoes.SelectTab(TB);
+
+            }
+        }
+
+        private void vendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void realizarVendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Venda F = new Frm_Venda();
+            F.Dock = DockStyle.Fill;
+            TabPage TB = new TabPage();
+            TB.Name = "Vendas";
+            TB.Text = "Vendas";
 
             int index = -1;
 

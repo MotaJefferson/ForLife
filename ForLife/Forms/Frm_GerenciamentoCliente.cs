@@ -97,11 +97,11 @@ namespace ForLife.Forms
 
         void EscreveCampos(Cliente.Unit C)
         {
-            if (C.StatusCliente == 0)
+            if (C.StatusCliente == 1)
             {
                 Rbtn_ClienteAtivo.Checked = true;
             }
-            if (C.StatusCliente == 1)
+            if (C.StatusCliente == 0)
             {
                 Rbtn_ClienteInativo.Checked = true;
             }

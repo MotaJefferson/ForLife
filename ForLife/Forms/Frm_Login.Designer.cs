@@ -43,7 +43,6 @@ namespace ForLife.Forms
             this.Btn_Login = new System.Windows.Forms.Button();
             this.Pic_Login = new System.Windows.Forms.PictureBox();
             this.Btn_VerSenha = new System.Windows.Forms.Button();
-            this.btn_LoginDireto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Login)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,23 +121,12 @@ namespace ForLife.Forms
             this.Btn_VerSenha.UseVisualStyleBackColor = false;
             this.Btn_VerSenha.Click += new System.EventHandler(this.Btn_VerSenha_Click);
             // 
-            // btn_LoginDireto
-            // 
-            this.btn_LoginDireto.Location = new System.Drawing.Point(303, 488);
-            this.btn_LoginDireto.Name = "btn_LoginDireto";
-            this.btn_LoginDireto.Size = new System.Drawing.Size(101, 35);
-            this.btn_LoginDireto.TabIndex = 34;
-            this.btn_LoginDireto.Text = "sem login";
-            this.btn_LoginDireto.UseVisualStyleBackColor = true;
-            this.btn_LoginDireto.Click += new System.EventHandler(this.btn_LoginDireto_Click);
-            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(253)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(416, 535);
-            this.Controls.Add(this.btn_LoginDireto);
             this.Controls.Add(this.Btn_VerSenha);
             this.Controls.Add(this.Btn_Login);
             this.Controls.Add(this.Txt_senha);
@@ -168,6 +156,5 @@ namespace ForLife.Forms
         private System.Windows.Forms.TextBox Txt_senha;
         private System.Windows.Forms.Button Btn_Login;
         private System.Windows.Forms.Button Btn_VerSenha;
-        private Button btn_LoginDireto;
     }
 }

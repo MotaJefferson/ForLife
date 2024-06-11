@@ -46,8 +46,11 @@
   <ItemGroup>
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\DadosUsuario.cs" />
+    <Compile Include="Classes\EstoqueInsumo.cs" />
+    <Compile Include="Classes\EstoqueProduto.cs" />
     <Compile Include="Classes\Fornecedor.cs" />
     <Compile Include="Classes\Insumo.cs" />
+    <Compile Include="Classes\Plantio.cs" />
     <Compile Include="Classes\Produto.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Classes\ValidacaoLogin.cs" />

@@ -61,3 +61,25 @@ Select
 From Produto p
 		Join ProdutoEstoque pe ON p.id_produto = pe.produto_id
 GO		
+
+----------------------------------------------------------------------------------------
+
+CREATE VIEW TelaEstoqueInsumoW
+ AS
+ SELECT I.nome
+      ,E.quantidade_atual
+	  ,E.data_vencimento_estimado
+  FROM Insumo I
+  JOIN InsumoEstoque E ON E.insumo_id = I.id_insumo
+  GO
+
+----------------------------------------------------------------------------------------
+
+CREATE VIEW TelaEstoqueProdutoW
+ AS
+ SELECT P.nome
+      ,E.quantidade_atual
+	  ,E.data_vencimento_estimado
+  FROM Produto P
+  JOIN ProdutoEstoque E ON E.produto_id = P.id_produto
+  GO
